@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="Reference/design-v2/assets/likhon-mark.svg" width="88" height="88" alt="The Likhon quill">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Reference/design-v2/assets/likhon-mark-blue-dark.svg">
+    <img src="Reference/design-v2/assets/likhon-mark-blue.svg" width="88" height="88" alt="The Likhon quill">
+  </picture>
 </p>
 
 <h1 align="center">লিখন · Likhon</h1>
