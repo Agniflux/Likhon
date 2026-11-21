@@ -23,13 +23,13 @@
   #define AppVersion "0.2.1"
 #endif
 #ifndef ExePath
-  #define ExePath "..\Product\Portable\likhon.exe"
+  #define ExePath "..\Portable\likhon.exe"
 #endif
 #ifndef DictDir
-  #define DictDir "..\Product\Portable\dict"
+  #define DictDir "..\Portable\dict"
 #endif
 #ifndef OutDir
-  #define OutDir "..\Product\Setup"
+  #define OutDir "..\Setup"
 #endif
 
 [Setup]
@@ -49,7 +49,7 @@ DisableWelcomePage=no
 DisableReadyPage=yes
 UninstallDisplayName=Likhon
 UninstallDisplayIcon={app}\likhon.exe
-SetupIconFile=..\Source\assets\icons\likhon.ico
+SetupIconFile=..\..\Source\assets\icons\likhon.ico
 OutputDir={#OutDir}
 OutputBaseFilename=Likhon-Setup-{#AppVersion}
 Compression=lzma2/ultra64
@@ -167,9 +167,9 @@ Source: "{#ExePath}"; DestDir: "{app}"; DestName: "likhon.exe"; Flags: ignorever
 ; The system dictionary (read-only SQLite, MPL-2.0) with its licence and source note, beside the exe like Portable.
 Source: "{#DictDir}\*"; DestDir: "{app}\dict"; Flags: ignoreversion
 ; The MPL-2.0 notices and the source offer, beside the exe (License notices, 2026-11-21).
-Source: "..\NOTICE"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\NOTICES.md"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\SOURCE-OFFER.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\..\NOTICE"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\..\NOTICES.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\..\SOURCE-OFFER.txt"; DestDir: "{app}"; Flags: ignoreversion
 ; Installer window only (never installed): the brand mark, and Hind Siliguri (OFL 1.1) loaded privately for this window.
 Source: "art\mark-44.bmp"; Flags: dontcopy
 Source: "art\mark-66.bmp"; Flags: dontcopy
@@ -177,8 +177,8 @@ Source: "art\mark-88.bmp"; Flags: dontcopy
 Source: "art\splash-464.bmp"; Flags: dontcopy
 Source: "art\splash-696.bmp"; Flags: dontcopy
 Source: "art\splash-928.bmp"; Flags: dontcopy
-Source: "..\Source\assets\fonts\HindSiliguri-Regular.ttf"; Flags: dontcopy
-Source: "..\Source\assets\fonts\HindSiliguri-Bold.ttf"; Flags: dontcopy
+Source: "..\..\Source\assets\fonts\HindSiliguri-Regular.ttf"; Flags: dontcopy
+Source: "..\..\Source\assets\fonts\HindSiliguri-Bold.ttf"; Flags: dontcopy
 
 [Icons]
 Name: "{autoprograms}\Likhon"; Filename: "{app}\likhon.exe"

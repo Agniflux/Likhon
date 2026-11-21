@@ -23,10 +23,10 @@ strip --strip-unneeded "$root/usr/lib/ibus-likhon/ibus-engine-likhon"
 # The first-run agreement (shown once, by the engine), its text, and the command that deletes learned words.
 install -m 0755 "$here/ibus-engine/likhon-agreement" "$root/usr/lib/ibus-likhon/likhon-agreement"
 install -m 0755 "$here/ibus-engine/likhon-delete-words" "$root/usr/bin/likhon-delete-words"
-for l in en bn; do sed -e '1s/^\xEF\xBB\xBF//' -e 's/\r$//' "$here/../Installer/license/eula.$l.txt" > "$root/usr/share/ibus-likhon/agreement.$l.txt"; chmod 0644 "$root/usr/share/ibus-likhon/agreement.$l.txt"; done
+for l in en bn; do sed -e '1s/^\xEF\xBB\xBF//' -e 's/\r$//' "$src/assets/legal/eula.$l.txt" > "$root/usr/share/ibus-likhon/agreement.$l.txt"; chmod 0644 "$root/usr/share/ibus-likhon/agreement.$l.txt"; done
 # The dictionary (read-only SQLite, MPL-2.0, from Avro Keyboard's word list and ours) with its licence and source note.
 dict="$src/assets/dict/mpl"
-# words.full.sqlite (the owner's enlarged list, never in git) wins over the public Avro-derived words.sqlite when it exists.
+# words.full.sqlite (the enlarged list, in git since 2026-11-21) wins over the Avro-only words.sqlite when it exists.
 words="$dict/words.sqlite"; [ -f "$dict/words.full.sqlite" ] && words="$dict/words.full.sqlite"
 install -m 0644 "$words" "$root/usr/share/ibus-likhon/words.sqlite"
 install -m 0644 "$dict/LICENSE" "$root/usr/share/ibus-likhon/LICENSE"

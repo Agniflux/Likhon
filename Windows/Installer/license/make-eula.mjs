@@ -49,12 +49,17 @@ function plain(md, lang, version) {
   return `${head}\n\n${body}\n`;
 }
 
-const cargo = fs.readFileSync(path.join(here, '..', '..', 'Source', 'Cargo.toml'), 'utf8');
+const cargo = fs.readFileSync(path.join(here, '..', '..', '..', 'Source', 'Cargo.toml'), 'utf8');
 const version = cargo.match(/^version\s*=\s*"([^"]+)"/m)[1];
 for (const lang of ['en', 'bn']) {
   const md = fs.readFileSync(path.join(legal, lang, 'license.md'), 'utf8');
   const text = plain(md, lang, version).replace(/\n/g, '\r\n');
   const file = path.join(here, `eula.${lang}.txt`);
   fs.writeFileSync(file, '﻿' + text, 'utf8');
+  // The apps (Windows first run, the Linux package, the macOS app) read the same text from Source/assets/legal, so they do not
+  // depend on where the installer folder is.
+  const shared = path.join(here, '..', '..', '..', 'Source', 'assets', 'legal');
+  fs.mkdirSync(shared, { recursive: true });
+  fs.writeFileSync(path.join(shared, `eula.${lang}.txt`), '﻿' + text, 'utf8');
   console.log(`${path.basename(file)}: ${text.length} characters`);
 }

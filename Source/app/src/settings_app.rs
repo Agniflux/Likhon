@@ -184,7 +184,7 @@ fn serve(path: &str, page: &str) -> Response<Cow<'static, [u8]>> {
         (Cow::Owned(boot(page).to_string().into_bytes()), "application/json")
     } else if path == "agreement.en.txt" || path == "agreement.bn.txt" {
         // The software license agreement, the same text as the installer's page and the website (make-eula.mjs).
-        let text = if path == "agreement.en.txt" { include_str!("../../../Installer/license/eula.en.txt") } else { include_str!("../../../Installer/license/eula.bn.txt") };
+        let text = if path == "agreement.en.txt" { include_str!("../../assets/legal/eula.en.txt") } else { include_str!("../../assets/legal/eula.bn.txt") };
         (Cow::Borrowed(text.trim_start_matches('\u{feff}').as_bytes()), "text/plain; charset=utf-8")
     } else if let Some((_, bytes)) = UI.iter().find(|(p, _)| *p == path) {
         let kind = match path.rsplit('.').next() {

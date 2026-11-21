@@ -17,6 +17,10 @@ Words: 159380. Suffixes: 737. Autocorrect: 2222. Rows left out: 4 words,
 
 ## What is not in this file
 
-Nothing else. This public file holds the Avro Keyboard words only. A larger local dictionary (extra words from a
-word list the maintainers hold, with its sources still being recorded) is not part of this repository and is not
-distributed from it; `scripts/dict/make-public-dictionary.py` shows how this file is made from it.
+Nothing else: this file holds the Avro Keyboard words only.
+
+`words.full.sqlite`, beside it, is the larger dictionary the apps ship (since 2026-11-21 it is in this repository too): the
+same Avro Keyboard words plus 676,678 more words from a word list the maintainers (Agniflux Enterprise) hold, 2,222
+autocorrect entries, under the MPL-2.0 like the rest of the dictionary. The sources of the added words are still being
+recorded; this note will list them when they are. The build scripts use `words.full.sqlite` when it exists;
+`scripts/dict/make-public-dictionary.py` shows how the Avro-only file is made from it.

@@ -228,8 +228,8 @@ Notes for contributors:
 ## The dictionary
 
 `Source/assets/dict/mpl/words.sqlite` is the Avro Keyboard word list: 159,380 words, 737 suffixes and 2,222 autocorrect
-entries, under the MPL-2.0, with its source in `SOURCE.md`. A builder can put a larger `words.full.sqlite` beside it;
-the build scripts use that file when it exists, and it is never committed.
+entries, under the MPL-2.0, with its source in `SOURCE.md`. The larger `words.full.sqlite` beside it (the same words plus 676,678
+more, also MPL-2.0) is what the apps ship; the build scripts use it when it exists.
 
 ## Privacy
 

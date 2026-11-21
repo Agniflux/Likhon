@@ -5,6 +5,10 @@ dist/
 node_modules/
 vendor/
 Product/Portable/*
+Windows/Portable/*
+Windows/Setup/*
+!Windows/Portable/.gitkeep
+!Windows/Setup/.gitkeep
 Product/Setup/*
 Product/Linux/*
 Product/Mac/*
@@ -50,4 +54,3 @@ AGENTS.md
 
 # No clear licence or source recorded: not published
 /Source/assets/layouts/unijoy/
-/Source/assets/dict/mpl/words.full.sqlite

@@ -1,17 +1,17 @@
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
 # not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds Desktop\Product\Setup\Likhon-Setup-<version>.exe from an already built (and signed) likhon.exe.
-#   .\build-installer.ps1                          uses ..\Product\Portable\likhon.exe
+#   .\build-installer.ps1                          uses ..\Portable\likhon.exe
 #   .\build-installer.ps1 -Exe D:\path\likhon.exe  another build (for example the signed one from CI)
 # Writes SHA256SUMS.txt next to the installer. Signing (SignPath "installer" config, then the Ed25519 .sig) comes after.
 param(
-    [string]$Exe = (Join-Path $PSScriptRoot '..\Product\Portable\likhon.exe'),
+    [string]$Exe = (Join-Path $PSScriptRoot '..\Portable\likhon.exe'),
     [string]$Version = '',
     [string]$Sub = ''
 )
 $ErrorActionPreference = 'Stop'
 if (-not $Version) {
-    $toml = Get-Content (Join-Path $PSScriptRoot '..\Source\Cargo.toml') -Raw
+    $toml = Get-Content (Join-Path $PSScriptRoot '..\..\Source\Cargo.toml') -Raw
     $Version = [regex]::Match($toml, '(?m)^version\s*=\s*"([^"]+)"').Groups[1].Value
 }
 $iscc = Get-Command iscc -ErrorAction SilentlyContinue
@@ -20,7 +20,7 @@ if (-not $iscc) { $iscc = Get-Item 'D:\Program Files\Inno Setup 7\ISCC.exe', "${
 if (-not $iscc) { throw 'Inno Setup 6 or 7 is not installed (winget install JRSoftware.InnoSetup).' }
 if (-not (Test-Path $Exe)) { throw "likhon.exe not found: $Exe" }
 $exeFull = (Resolve-Path $Exe).Path
-$out = Join-Path $PSScriptRoot '..\Product\Setup'
+$out = Join-Path $PSScriptRoot '..\Setup'
 if ($Sub) {
     if ($Sub -notmatch '^[a-z0-9-]+$') { throw '-Sub must be a plain folder name' }
     $out = Join-Path $out $Sub

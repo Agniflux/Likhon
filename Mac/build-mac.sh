@@ -43,11 +43,11 @@ mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources"
 cp "$build/LikhonInputMethod" "$app/Contents/MacOS/LikhonInputMethod"
 sed "s|@VERSION@|$version|g" "$here/Info.plist.in" > "$app/Contents/Info.plist"
 dict="$src/assets/dict/mpl"
-# words.full.sqlite (the owner's enlarged list, never in git) wins over the public Avro-derived words.sqlite when it exists.
+# words.full.sqlite (the enlarged list, in git since 2026-11-21) wins over the Avro-only words.sqlite when it exists.
 words="$dict/words.sqlite"; [ -f "$dict/words.full.sqlite" ] && words="$dict/words.full.sqlite"
 cp "$words" "$app/Contents/Resources/words.sqlite"
-# The first-run agreement text (the same as the installer's and the website's; Desktop/Installer/license/make-eula.mjs).
-for l in en bn; do perl -pe 's/^\xEF\xBB\xBF//; s/\r$//' "$here/../Installer/license/eula.$l.txt" > "$app/Contents/Resources/agreement.$l.txt"; done
+# The first-run agreement text (the same as the installer's and the website's; Desktop/Installer/license/make-eula.mjs; text in Source/assets/legal).
+for l in en bn; do perl -pe 's/^\xEF\xBB\xBF//; s/\r$//' "$src/assets/legal/eula.$l.txt" > "$app/Contents/Resources/agreement.$l.txt"; done
 cp "$dict/LICENSE" "$app/Contents/Resources/DICTIONARY-LICENSE.txt"
 for f in NOTICE NOTICES.md SOURCE-OFFER.txt; do cp "$here/../$f" "$app/Contents/Resources/$f"; done
 cp "$dict/SOURCE.md" "$app/Contents/Resources/DICTIONARY-SOURCE.md"

@@ -6,7 +6,7 @@
 # Source: Reference\design-v2\assets\splash.png (the same picture the app's splash uses; it is bundled in the installer only as these .bmp files).
 Add-Type -AssemblyName System.Drawing
 $here = $PSScriptRoot
-$src = [System.Drawing.Image]::FromFile((Resolve-Path (Join-Path $here '..\..\Reference\design-v2\assets\splash.png')).Path)
+$src = [System.Drawing.Image]::FromFile((Resolve-Path (Join-Path $here '..\..\..\Reference\design-v2\assets\splash.png')).Path)
 $bg = [System.Drawing.Color]::FromArgb(0xFB, 0xF9, 0xF4)
 # Crop: the child, the birds and the sun (source is 3202 x 2136).
 $crop = New-Object System.Drawing.Rectangle 200, 930, 2800, 724
