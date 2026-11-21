@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-15-intel]
+        os: [ubuntu-22.04, macos-14]
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -42,9 +42,7 @@ jobs:
 
   macos-dmg:
     needs: engine-tests
-    # An Intel Mac runner: this repository is private, where GitHub does not offer the Apple Silicon one. build-mac.sh
-    # still makes the universal app (it cross-builds the arm64 half with the Rust and Swift targets).
-    runs-on: macos-15-intel
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
