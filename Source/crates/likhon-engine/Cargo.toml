@@ -1,0 +1,22 @@
+[package]
+name = "likhon-engine"
+description = "Typing engine: pure logic, no I/O. Linked into likhon.exe and built to WebAssembly for the website (root CLAUDE.md, 5a)."
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+# Phonetic base (M1 evaluation, root CLAUDE.md 5a): MIT, no dependencies beyond std.
+okkhor = { version = "0.10.0", features = ["editor"] }
+# Layout files are JSON (shared/schemas/layout.schema.json), parsed strictly in fixed.rs.
+serde_json = "1.0.154"
+
+[features]
+# Khipro Classic's input-method file inside the engine: the website's WebAssembly build and the tests. likhon.exe and
+# likhon_tsf.dll turn it off and read the file added from the library instead (owner, 2026-10-23).
+default = ["bundled-khipro"]
+bundled-khipro = []

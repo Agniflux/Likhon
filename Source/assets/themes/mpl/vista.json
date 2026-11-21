@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "vista",
+  "name": {
+    "en": "Vista",
+    "bn": "ভিস্তা"
+  },
+  "author": "Md. Tanbin Islam Siyam",
+  "light": {
+    "desk": "#E8E9E9",
+    "surface": "#FFFFFF",
+    "surface2": "#F1F2F2",
+    "line": "#C8CACA",
+    "ink": "#1A1C1D",
+    "muted": "#4E5253",
+    "accent": "#0078D4",
+    "on": "#FFFFFF",
+    "sel": "#FCEBC2"
+  },
+  "dark": {
+    "desk": "#111213",
+    "surface": "#1A1C1D",
+    "surface2": "#2A2C2D",
+    "line": "#575858",
+    "ink": "#FFFFFF",
+    "muted": "#B4B5B5",
+    "accent": "#E7A810",
+    "on": "#000000",
+    "sel": "#4A3B12"
+  }
+}

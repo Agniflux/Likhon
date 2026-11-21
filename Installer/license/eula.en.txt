@@ -1,0 +1,107 @@
+﻿Likhon software license agreement
+Version 0.2.1
+Last updated: 2026-11-21
+
+This agreement is between you and Agniflux Enterprise ("we", "us"), the maker of Likhon. It covers the
+Likhon app for Windows (likhon.exe, in its Portable and installed forms), its text service (likhon_tsf.dll),
+the installer, updates to any of these, and items you add to the app from the Likhon library. By installing,
+copying or using Likhon you accept this agreement. If you do not accept it, do not install or use Likhon.
+
+1. Your license
+
+We give you a free, worldwide, non-exclusive license to:
+
+- install and use Likhon on any number of computers, at home, at work, in schools or anywhere else;
+- copy likhon.exe and use the copy as the Portable edition, for example from a USB drive; and
+- give unchanged copies of the Portable or installer download to others, as long as this agreement and the
+  open-source notices stay with them.
+
+We do not sell Likhon: it is free, there is no paid edition, and nothing in the app is locked behind a payment.
+The name Likhon and its logo are ours, so you may not pass off a changed copy as Likhon (see section 5).
+
+Likhon's own code is licensed under the Mozilla Public License 2.0 (see Software licensing terms).
+That license also applies, and where it gives you more rights than this agreement, its terms win.
+
+2. Parts made by others
+
+Likhon includes software, data and fonts made by others, such as files from Avro Keyboard under the Mozilla Public
+License 2.0, the Hind Siliguri font under the SIL Open Font License 1.1, and Rust libraries mostly under the MIT
+license. Each of these parts is licensed to you under its own license, not under this agreement, and nothing here
+limits the rights those licenses give you. The full list and texts are in the app (Settings > About > Open-source
+credits), on Open-source licenses and credits, and in License notices.
+
+Items you add from the Likhon library (layouts, themes, word lists, fonts and others) are made by their uploaders
+and come under the license shown on each item's page.
+
+3. What Likhon does on your computer
+
+So that you know what you are agreeing to:
+
+- Typing. To turn your keystrokes into Bangla, Likhon reads them while it is switched on, either through a
+  keyboard hook (Portable) or as a Windows text service (installed with the keyboard-list option). What you type is
+  processed on your computer only. It is never sent anywhere and never written to a log.
+- Learning words. Likhon can remember words you type so it can suggest them later. They are kept in a file on
+  your computer. It never learns from fields that Windows reports as password fields, and you can see, export
+  or delete these words in Settings.
+- Where it writes. Likhon keeps its files in a folder beside likhon.exe (or in your user profile if that
+  folder is read-only). It writes to the Windows registry only for what you switch on: Start with Windows and fonts
+  you install (for your Windows account), and adding Likhon to the Windows keyboard list (which asks for
+  administrator permission once). The installer adds only what you choose on its feature page: the text service and
+  its registration, a Start with Windows entry, fonts, shortcuts and its uninstall entry.
+- Restoring the Windows Bangla font. Likhon no longer changes which font Windows uses for Bangla. If an earlier
+  version changed it, Settings › Fonts can put Windows' own setting back; this asks for administrator permission.
+- The internet. Likhon connects to the internet only when you ask it to: to check for updates, open or download
+  from the library, download the dictionary, or donate words. There is no telemetry and no background connection. What these
+  requests send is described in the Privacy notice.
+
+4. Updates
+
+Likhon never updates itself. When you check for updates, it tells you whether a newer version is on our website
+and can open the download page; you download and run the new version yourself. Before a library item is added,
+Likhon checks that the downloaded file matches the checksum in our library list. Updates are covered by this
+agreement unless they come with a new one.
+
+5. Restrictions
+
+You may not:
+
+- remove or change the copyright, license or attribution notices in Likhon;
+- use Likhon's name or logo for a changed version, or in a way that suggests we made or endorse something we did
+  not;
+- use Likhon to break the law, or to read or record other people's typing without their knowledge; or
+- get around the signature checks so that the app installs packages or updates as if we had signed them.
+
+These limits do not take away any right you have under an open-source license for a part of Likhon, or under the
+law of your country.
+
+6. No warranty
+
+Likhon is free and is provided "as is" and "as available". To the fullest extent the law allows, we give no
+warranty of any kind, express or implied, including any warranty of merchantability, fitness for a particular
+purpose, accuracy (for example of spelling suggestions, autocorrect or legacy-encoding conversion), or
+non-infringement. Keep copies of important documents: check converted text before you rely on it.
+
+7. No liability
+
+Likhon is given to you free of charge, and you use it at your own risk. To the fullest extent the law allows, we
+are not liable for any loss or damage of any kind, direct or indirect, including loss of data, profits or business,
+arising from Likhon or this agreement, even if we were told it might happen. Nothing in this agreement excludes
+liability that the law does not allow to be excluded, such as for fraud, or for death or personal injury caused by
+negligence.
+
+8. Ending this agreement
+
+You can end this agreement at any time by deleting every copy of Likhon you have (the installer's uninstaller
+removes what it added; for Portable, delete its folder). If you break this agreement, your license under it ends
+automatically. Sections 2, 6, 7, 8 and 9 continue after it ends.
+
+9. General
+
+- Law and courts. This agreement is governed by the laws of Bangladesh. The courts of Dhaka have
+  jurisdiction, but this does not take away the protection of the consumer laws of the country where you live.
+- Changes. We may update this agreement for new versions of Likhon. The version that comes with a release
+  applies to that release. The date at the top shows the last change.
+- Language. This agreement is written in English and Bangla. If the two differ, the English version applies.
+- Whole agreement. This agreement, the licenses of the parts in section 2, and the Privacy notice
+  are the whole agreement about the app. If a part of it cannot be enforced, the rest still applies.
+- Contact. info@agniflux.com, 1/39, East Basabo, Sabujbagh, Dhaka 1214, Bangladesh.

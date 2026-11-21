@@ -1,0 +1,36 @@
+/* The Settings window with the component library (owner decision 2026-10-23; never named on screen). Built by build.mjs
+   into dist/ui.css, loaded after styles.css. The Desktop design (Reference/design-v2/Likhon Desktop.dc.html §7) keeps
+   its shapes, sizes, colours, type and icons; the library adds its component behaviour: focus rings, the soft shadow,
+   transitions, and disabled states of buttons, switches, segments, selects, fields and cards. Tailwind's utilities and
+   the library's plugin come in; Tailwind's page reset (preflight) and the library's script do not (nothing here uses
+   its interactive parts, and the exe stays smaller). Colours: ../../shared/ui/likhon-theme.css, which follows the
+   tokens and the chosen Likhon theme (applyTheme in app.ts). */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "flowbite/src/themes/default.css";
+@import "../../shared/ui/likhon-theme.css";
+@plugin "flowbite/plugin";
+
+@source "./app.ts";
+@source "./index.html";
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+.btn { @apply shadow-xs transition-colors duration-150 focus:outline-none focus-visible:ring-4 focus-visible:ring-neutral-tertiary disabled:cursor-not-allowed; }
+.btn.primary { @apply focus-visible:ring-brand-medium; }
+.btn.danger { @apply shadow-none hover:bg-danger-soft focus-visible:ring-danger-soft; }
+.btn:active:not(:disabled) { @apply shadow-none; }
+
+.switch { @apply transition-colors duration-150 cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-soft disabled:cursor-not-allowed; }
+.switch::after { @apply shadow-xs transition-all duration-150; }
+
+.seg button { @apply transition-colors duration-150 cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-soft disabled:cursor-not-allowed; }
+.sel select { @apply transition-shadow duration-150 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand-soft disabled:cursor-not-allowed; }
+:where(input[type='text'], input[type='search'], input[type='number'], textarea) {
+    @apply transition-shadow duration-150 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand-soft;
+}
+:where(input[type='checkbox'], input[type='radio']) { accent-color: var(--c-accent); }
+
+.card, .theme { @apply transition-shadow duration-150 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-soft; }
+.card:hover:not(:disabled), .theme:hover { @apply shadow-sm; }
+.table, .note { @apply shadow-xs; }

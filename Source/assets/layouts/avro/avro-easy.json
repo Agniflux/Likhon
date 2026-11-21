@@ -1,0 +1,232 @@
+{
+  "format": "likhon-layout",
+  "version": 1,
+  "id": "avro-easy",
+  "name": {
+    "en": "Avro Easy",
+    "bn": "অভ্র ইজি"
+  },
+  "kind": "fixed",
+  "author": "www.omicronlab.com",
+  "description": "",
+  "layoutVersion": "3",
+  "license": "MPL-2.0",
+  "source": "https://github.com/mugli/Avro-Keyboard/blob/6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1/assets/keyboard-layouts/Avro%20Easy.avrolayout",
+  "keys": {
+    "0": {
+      "normal": "০",
+      "shift": ")"
+    },
+    "1": {
+      "normal": "১",
+      "shift": "!"
+    },
+    "2": {
+      "normal": "২",
+      "shift": "ঁ"
+    },
+    "3": {
+      "normal": "৩",
+      "shift": "#"
+    },
+    "4": {
+      "normal": "৪",
+      "shift": "৳"
+    },
+    "5": {
+      "normal": "৫",
+      "shift": "%"
+    },
+    "6": {
+      "normal": "৬",
+      "shift": "ঃ"
+    },
+    "7": {
+      "normal": "৭",
+      "shift": "ৎ"
+    },
+    "8": {
+      "normal": "৮",
+      "shift": "*"
+    },
+    "9": {
+      "normal": "৯",
+      "shift": "("
+    },
+    "`": {
+      "normal": "‌",
+      "shift": "‍"
+    },
+    "-": {
+      "normal": "-",
+      "shift": "_"
+    },
+    "=": {
+      "normal": "=",
+      "shift": "+"
+    },
+    "q": {
+      "normal": "ড়",
+      "shift": "ঢ়"
+    },
+    "w": {
+      "normal": "ং",
+      "shift": "ঙ"
+    },
+    "e": {
+      "normal": "য",
+      "shift": "য়"
+    },
+    "r": {
+      "normal": "র",
+      "shift": "ল"
+    },
+    "t": {
+      "normal": "ট",
+      "shift": "ঠ"
+    },
+    "y": {
+      "normal": "ড",
+      "shift": "ঢ"
+    },
+    "u": {
+      "normal": "ত",
+      "shift": "থ"
+    },
+    "i": {
+      "normal": "দ",
+      "shift": "ধ"
+    },
+    "o": {
+      "normal": "চ",
+      "shift": "ছ"
+    },
+    "p": {
+      "normal": "প",
+      "shift": "ফ"
+    },
+    "[": {
+      "normal": "[",
+      "shift": "{"
+    },
+    "]": {
+      "normal": "]",
+      "shift": "}"
+    },
+    "\\": {
+      "normal": "ৱ",
+      "shift": "ৰ"
+    },
+    "a": {
+      "normal": "ো",
+      "shift": "ৌ",
+      "altgr": "ও",
+      "shiftAltgr": "ঔ"
+    },
+    "s": {
+      "normal": "ে",
+      "shift": "ৈ",
+      "altgr": "এ",
+      "shiftAltgr": "ঐ"
+    },
+    "d": {
+      "normal": "ু",
+      "shift": "ূ",
+      "altgr": "উ",
+      "shiftAltgr": "ঊ"
+    },
+    "f": {
+      "normal": "ি",
+      "shift": "ী",
+      "altgr": "ই",
+      "shiftAltgr": "ঈ"
+    },
+    "g": {
+      "normal": "া",
+      "shift": "অ",
+      "altgr": "আ",
+      "shiftAltgr": "অ"
+    },
+    "h": {
+      "normal": "্",
+      "shift": "।"
+    },
+    "j": {
+      "normal": "জ",
+      "shift": "ঝ"
+    },
+    "k": {
+      "normal": "ক",
+      "shift": "খ"
+    },
+    "l": {
+      "normal": "গ",
+      "shift": "ঘ"
+    },
+    ";": {
+      "normal": ";",
+      "shift": ":"
+    },
+    "'": {
+      "normal": "'",
+      "shift": "\""
+    },
+    "z": {
+      "normal": "ৃ",
+      "shift": "র্"
+    },
+    "x": {
+      "normal": "্র",
+      "shift": "্য"
+    },
+    "c": {
+      "normal": "শ",
+      "shift": "হ"
+    },
+    "v": {
+      "normal": "স",
+      "shift": "ষ"
+    },
+    "b": {
+      "normal": "ব",
+      "shift": "ভ"
+    },
+    "n": {
+      "normal": "ন",
+      "shift": "ণ"
+    },
+    "m": {
+      "normal": "ম",
+      "shift": "ঞ"
+    },
+    ",": {
+      "normal": ",",
+      "shift": "<"
+    },
+    ".": {
+      "normal": ".",
+      "shift": ">"
+    },
+    "/": {
+      "normal": "/",
+      "shift": "?"
+    }
+  },
+  "numpad": {
+    "0": "০",
+    "1": "১",
+    "2": "২",
+    "3": "৩",
+    "4": "৪",
+    "5": "৫",
+    "6": "৬",
+    "7": "৭",
+    "8": "৮",
+    "9": "৯",
+    "+": "+",
+    ".": ".",
+    "/": "/",
+    "*": "*",
+    "-": "-"
+  }
+}

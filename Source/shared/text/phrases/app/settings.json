@@ -1,0 +1,2716 @@
+{
+  "app.set.missingTitle": {
+    "en": "Settings can’t open",
+    "bn": "সেটিংস খোলা যাচ্ছে না",
+    "status": "needs review",
+    "bnFrom": "41dd47da"
+  },
+  "app.set.missingBody": {
+    "en": "Settings need a part of Windows (WebView2) that is not on this PC. Typing keeps working as before.",
+    "bn": "সেটিংস দেখাতে উইন্ডোজের একটি অংশ (WebView2) লাগে, যা এই পিসিতে নেই। লেখা আগের মতোই চলবে।",
+    "status": "needs review",
+    "bnFrom": "626a85c4"
+  },
+  "app.set.general.color.system": {
+    "en": "Follow Windows",
+    "bn": "উইন্ডোজ অনুযায়ী",
+    "status": "needs review",
+    "bnFrom": "3b8e54a6"
+  },
+  "app.set.layouts.phonetic": {
+    "en": "Phonetic",
+    "bn": "ফোনেটিক",
+    "status": "needs review",
+    "bnFrom": "7d357070"
+  },
+  "app.set.layouts.probhat": {
+    "en": "Probhat",
+    "bn": "প্রভাত",
+    "status": "needs review",
+    "bnFrom": "dfe633e4"
+  },
+  "app.set.layouts.jatiya": {
+    "en": "Jatiya",
+    "bn": "জাতীয়",
+    "status": "needs review",
+    "bnFrom": "a9b541f3"
+  },
+  "app.set.layouts.unijoy": {
+    "en": "UniJoy",
+    "bn": "ইউনিজয়",
+    "status": "needs review",
+    "bnFrom": "4f2747f2"
+  },
+  "app.set.layouts.khipro": {
+    "en": "Khipro",
+    "bn": "ক্ষিপ্র",
+    "status": "needs review",
+    "bnFrom": "829ccd29"
+  },
+  "app.set.hotkeys.press": {
+    "en": "Press a key…",
+    "bn": "কী চাপুন…",
+    "status": "needs review",
+    "bnFrom": "9026d7b5"
+  },
+  "app.set.hotkeys.conflict": {
+    "en": "{key} is used by another program. Pick another key, or it may not work.",
+    "bn": "{key} অন্য একটি প্রোগ্রাম ব্যবহার করছে। অন্য কী বেছে নিন, নইলে এটি কাজ নাও করতে পারে।",
+    "status": "needs review",
+    "bnFrom": "eb8f06fa"
+  },
+  "app.set.hotkeys.needKey": {
+    "en": "Use a function key, or a key with Ctrl or Alt.",
+    "bn": "একটি ফাংশন কী, অথবা Ctrl বা Alt-এর সঙ্গে একটি কী বেছে নিন।",
+    "status": "draft",
+    "bnFrom": "bf974235"
+  },
+  "app.set.appearance.t.paper": {
+    "en": "Paper",
+    "bn": "কাগজ",
+    "status": "draft",
+    "bnFrom": "22d507f2"
+  },
+  "app.set.appearance.t.green": {
+    "en": "Green",
+    "bn": "সবুজ",
+    "status": "draft",
+    "bnFrom": "933bf21a"
+  },
+  "app.set.tools.numIn": {
+    "en": "Text with digits",
+    "bn": "সংখ্যাসহ লেখা",
+    "status": "draft",
+    "bnFrom": "535f491d"
+  },
+  "app.set.tools.numOut": {
+    "en": "With Bangla digits",
+    "bn": "বাংলা সংখ্যায়",
+    "status": "draft",
+    "bnFrom": "14be818b"
+  },
+  "app.set.tools.numNote": {
+    "en": "Changes 0–9 into ০–৯. A date written as 21/02/2026 is also shown in Bangla, in the Bangla calendar (বঙ্গাব্দ), with the weekday.",
+    "bn": "0–9 বদলে ০–৯ হয়। 21/02/2026 ধরনের তারিখ বাংলায়, বঙ্গাব্দে ও বারসহ দেখায়।",
+    "status": "needs review",
+    "bnFrom": "a8014dec"
+  },
+  "app.set.tools.numSample": {
+    "en": "Room 12, floor 3. Meeting on 21/02/2026.",
+    "bn": "রুম 12, তলা 3। সভা 21/02/2026 তারিখে।",
+    "status": "needs review",
+    "bnFrom": "5c2a90b3"
+  },
+  "app.set.layouts.munir": {
+    "en": "Munir Optima",
+    "bn": "মুনীর অপটিমা",
+    "status": "needs review",
+    "bnFrom": "d665354d"
+  },
+  "app.set.window": {
+    "en": "Likhon Settings",
+    "bn": "লিখন সেটিংস",
+    "status": "needs review",
+    "bnFrom": "d5cebfc5"
+  },
+  "app.set.minimize": {
+    "en": "Minimize",
+    "bn": "ছোট করুন",
+    "status": "needs review",
+    "bnFrom": "1c5b768c"
+  },
+  "app.set.maximize": {
+    "en": "Maximize",
+    "bn": "বড় করুন",
+    "status": "needs review",
+    "bnFrom": "35afae8b"
+  },
+  "app.set.closeWin": {
+    "en": "Close",
+    "bn": "বন্ধ করুন",
+    "status": "needs review",
+    "bnFrom": "bbfa773e"
+  },
+  "app.set.navAria": {
+    "en": "Settings pages",
+    "bn": "সেটিংসের পাতা",
+    "status": "needs review",
+    "bnFrom": "032a4a5c"
+  },
+  "app.set.find": {
+    "en": "Find a setting",
+    "bn": "সেটিং খুঁজুন",
+    "status": "needs review",
+    "bnFrom": "fff44d9a"
+  },
+  "app.set.findNone": {
+    "en": "No setting matches “{q}”.",
+    "bn": "“{q}” মেলে এমন কোনো সেটিং নেই।",
+    "status": "needs review",
+    "bnFrom": "70daa443"
+  },
+  "app.set.restore": {
+    "en": "Restore defaults for this page",
+    "bn": "এই পাতার ডিফল্টে ফিরুন",
+    "status": "needs review",
+    "bnFrom": "ed20c2c9"
+  },
+  "app.set.soon": {
+    "en": "Later",
+    "bn": "পরে আসছে",
+    "status": "needs review",
+    "bnFrom": "56e2f5d3"
+  },
+  "app.set.soonTip": {
+    "en": "This part is not built yet.",
+    "bn": "এই অংশটি এখনো তৈরি হয়নি।",
+    "status": "needs review",
+    "bnFrom": "09678708"
+  },
+  "app.set.change": {
+    "en": "Change",
+    "bn": "বদলান",
+    "status": "needs review",
+    "bnFrom": "64fbd995"
+  },
+  "app.set.notSet": {
+    "en": "Not set",
+    "bn": "ঠিক করা নেই",
+    "status": "needs review",
+    "bnFrom": "93039e60"
+  },
+  "app.set.cancel": {
+    "en": "Cancel",
+    "bn": "বাতিল",
+    "status": "needs review",
+    "bnFrom": "77dfd213"
+  },
+  "app.set.close": {
+    "en": "Close",
+    "bn": "বন্ধ",
+    "status": "needs review",
+    "bnFrom": "bbfa773e"
+  },
+  "app.set.add": {
+    "en": "Add",
+    "bn": "যোগ করুন",
+    "status": "needs review",
+    "bnFrom": "61cc55aa"
+  },
+  "app.set.import": {
+    "en": "Import",
+    "bn": "আমদানি",
+    "status": "needs review",
+    "bnFrom": "d6fbc9d2"
+  },
+  "app.set.export": {
+    "en": "Export",
+    "bn": "রপ্তানি",
+    "status": "needs review",
+    "bnFrom": "f3e4fadb"
+  },
+  "app.set.copy": {
+    "en": "Copy",
+    "bn": "কপি",
+    "status": "needs review",
+    "bnFrom": "af74f7c5"
+  },
+  "app.set.copied": {
+    "en": "Copied",
+    "bn": "কপি হয়েছে",
+    "status": "needs review",
+    "bnFrom": "8e3df45a"
+  },
+  "app.set.paste": {
+    "en": "Paste",
+    "bn": "পেস্ট",
+    "status": "needs review",
+    "bnFrom": "db248300"
+  },
+  "app.set.opensSite": {
+    "en": "Opens the Likhon website in your browser",
+    "bn": "ব্রাউজারে লিখন ওয়েবসাইট খুলবে",
+    "status": "needs review",
+    "bnFrom": "c642a1a0"
+  },
+  "app.set.nav.general": {
+    "en": "General",
+    "bn": "সাধারণ",
+    "status": "needs review",
+    "bnFrom": "9239ee2c"
+  },
+  "app.set.nav.typing": {
+    "en": "Typing",
+    "bn": "টাইপিং",
+    "status": "needs review",
+    "bnFrom": "5614fd83"
+  },
+  "app.set.nav.layouts": {
+    "en": "Layouts",
+    "bn": "লেআউট",
+    "status": "needs review",
+    "bnFrom": "28e6f54e"
+  },
+  "app.set.nav.suggestions": {
+    "en": "Suggestions",
+    "bn": "প্রস্তাব",
+    "status": "needs review",
+    "bnFrom": "861edba0"
+  },
+  "app.set.nav.autocorrect": {
+    "en": "Autocorrect",
+    "bn": "স্বয়ংশুদ্ধি",
+    "status": "needs review",
+    "bnFrom": "eea9db4f"
+  },
+  "app.set.nav.shortcuts": {
+    "en": "Shortcuts",
+    "bn": "শর্টকাট",
+    "status": "needs review",
+    "bnFrom": "90c93523"
+  },
+  "app.set.nav.appearance": {
+    "en": "Appearance",
+    "bn": "চেহারা",
+    "status": "needs review",
+    "bnFrom": "41def7a0"
+  },
+  "app.set.nav.legacy": {
+    "en": "Legacy output",
+    "bn": "লেগেসি আউটপুট",
+    "status": "needs review",
+    "bnFrom": "d29c25ac"
+  },
+  "app.set.nav.library": {
+    "en": "Library",
+    "bn": "লাইব্রেরি",
+    "status": "needs review",
+    "bnFrom": "b8100f5b"
+  },
+  "app.set.nav.tools": {
+    "en": "Tools",
+    "bn": "টুলস",
+    "status": "needs review",
+    "bnFrom": "4fa8cc86"
+  },
+  "app.set.nav.privacy": {
+    "en": "Privacy",
+    "bn": "গোপনীয়তা",
+    "status": "needs review",
+    "bnFrom": "cf01481f"
+  },
+  "app.set.nav.updates": {
+    "en": "Updates",
+    "bn": "আপডেট",
+    "status": "needs review",
+    "bnFrom": "c76d1807"
+  },
+  "app.set.nav.about": {
+    "en": "About",
+    "bn": "সম্পর্কে",
+    "status": "needs review",
+    "bnFrom": "6b21fb79"
+  },
+  "app.set.general.sub": {
+    "en": "How Likhon starts and how you switch it on and off.",
+    "bn": "লিখন কীভাবে চালু হয় ও কীভাবে বদলাবেন।",
+    "status": "needs review",
+    "bnFrom": "58a83f7f"
+  },
+  "app.set.general.startH": {
+    "en": "Start with Windows",
+    "bn": "উইন্ডোজের সঙ্গে চালু",
+    "status": "needs review",
+    "bnFrom": "ee4e7bfb"
+  },
+  "app.set.general.startP": {
+    "en": "Likhon opens in the tray when you sign in to Windows. Only for you, no administrator needed.",
+    "bn": "উইন্ডোজে সাইন ইন করলে লিখন ট্রেতে চালু হয়। শুধু আপনার জন্য, প্রশাসকের অনুমতি লাগে না।",
+    "status": "needs review",
+    "bnFrom": "ebf43858"
+  },
+  "app.set.general.toggleH": {
+    "en": "Switch Bangla and English",
+    "bn": "বাংলা-ইংরেজি বদল",
+    "status": "needs review",
+    "bnFrom": "2e20b058"
+  },
+  "app.set.general.toggleP": {
+    "en": "Works in every window, except the apps listed below.",
+    "bn": "নিচের তালিকার অ্যাপ ছাড়া সব উইন্ডোতে কাজ করে।",
+    "status": "needs review",
+    "bnFrom": "4bd1ee44"
+  },
+  "app.set.general.nextH": {
+    "en": "Next layout",
+    "bn": "পরের লেআউট",
+    "status": "needs review",
+    "bnFrom": "14a715fe"
+  },
+  "app.set.general.tbH": {
+    "en": "Top bar",
+    "bn": "টপ বার",
+    "status": "needs review",
+    "bnFrom": "7566bd0e"
+  },
+  "app.set.general.tbP": {
+    "en": "Hidden: use the tray icon and shortcuts only.",
+    "bn": "লুকানো থাকলে শুধু ট্রে ও শর্টকাট।",
+    "status": "needs review",
+    "bnFrom": "aa10af60"
+  },
+  "app.set.general.tb.always": {
+    "en": "Always show",
+    "bn": "সবসময় দেখান",
+    "status": "needs review",
+    "bnFrom": "022f0119"
+  },
+  "app.set.general.tb.bangla": {
+    "en": "Only while typing Bangla",
+    "bn": "শুধু বাংলা লেখার সময়",
+    "status": "needs review",
+    "bnFrom": "2dfa0656"
+  },
+  "app.set.general.tb.compact": {
+    "en": "Compact",
+    "bn": "ছোট আকারে",
+    "status": "needs review",
+    "bnFrom": "1df39aa5"
+  },
+  "app.set.general.fadeH": {
+    "en": "Fade the top bar when idle",
+    "bn": "অলস অবস্থায় টপ বার ঝাপসা",
+    "status": "needs review",
+    "bnFrom": "b57371d9"
+  },
+  "app.set.general.fade.never": {
+    "en": "Never",
+    "bn": "কখনো না",
+    "status": "needs review",
+    "bnFrom": "80c3052d"
+  },
+  "app.set.general.fade.hide": {
+    "en": "Hide",
+    "bn": "লুকান",
+    "status": "needs review",
+    "bnFrom": "34d8b60f"
+  },
+  "app.set.general.langH": {
+    "en": "Interface language",
+    "bn": "ইন্টারফেসের ভাষা",
+    "status": "needs review",
+    "bnFrom": "9407e9ca"
+  },
+  "app.set.general.habitsH": {
+    "en": "Habits from another keyboard",
+    "bn": "অন্য কিবোর্ডের অভ্যাস",
+    "status": "needs review",
+    "bnFrom": "59f1c404"
+  },
+  "app.set.general.habitsP": {
+    "en": "Copies shortcuts and small behaviours you are used to.",
+    "bn": "পরিচিত শর্টকাট ও ছোট আচরণ নিয়ে আসে।",
+    "status": "needs review",
+    "bnFrom": "1020f767"
+  },
+  "app.set.general.habitsDefault": {
+    "en": "Likhon default",
+    "bn": "লিখন ডিফল্ট",
+    "status": "needs review",
+    "bnFrom": "0ec2a79d"
+  },
+  "app.set.general.passH": {
+    "en": "Apps that keep F12",
+    "bn": "যে অ্যাপে F12 অ্যাপেরই থাকে",
+    "status": "needs review",
+    "bnFrom": "d4f0f90a"
+  },
+  "app.set.general.passP": {
+    "en": "In these apps the switch key does what the app wants, and Likhon stays out of the way.",
+    "bn": "এই অ্যাপগুলোতে বদলের কী অ্যাপের নিজের কাজ করে, লিখন বাধা দেয় না।",
+    "status": "needs review",
+    "bnFrom": "edb32608"
+  },
+  "app.set.general.passApp": {
+    "en": "App",
+    "bn": "অ্যাপ",
+    "status": "needs review",
+    "bnFrom": "fc4a695f"
+  },
+  "app.set.general.passFile": {
+    "en": "Program file",
+    "bn": "প্রোগ্রাম ফাইল",
+    "status": "needs review",
+    "bnFrom": "1713c16c"
+  },
+  "app.set.general.passDefault": {
+    "en": "Built in",
+    "bn": "আগে থেকে",
+    "status": "needs review",
+    "bnFrom": "6b0c36de"
+  },
+  "app.set.general.passRemove": {
+    "en": "Remove {name}",
+    "bn": "{name} সরান",
+    "status": "needs review",
+    "bnFrom": "df7193a5"
+  },
+  "app.set.general.passEmpty": {
+    "en": "No apps. The switch key works everywhere.",
+    "bn": "কোনো অ্যাপ নেই। বদলের কী সব জায়গায় কাজ করে।",
+    "status": "needs review",
+    "bnFrom": "4e046594"
+  },
+  "app.set.general.passAdd": {
+    "en": "Add a running app",
+    "bn": "চালু অ্যাপ যোগ করুন",
+    "status": "needs review",
+    "bnFrom": "a86f78b1"
+  },
+  "app.set.general.passBrowse": {
+    "en": "Choose a program file…",
+    "bn": "প্রোগ্রাম ফাইল বাছুন…",
+    "status": "needs review",
+    "bnFrom": "da604454"
+  },
+  "app.set.general.passSearch": {
+    "en": "Search running apps",
+    "bn": "চালু অ্যাপ খুঁজুন",
+    "status": "needs review",
+    "bnFrom": "ba1c679b"
+  },
+  "app.set.general.passRunning": {
+    "en": "Running now",
+    "bn": "এখন চালু",
+    "status": "needs review",
+    "bnFrom": "33cfd5d5"
+  },
+  "app.set.general.passNone": {
+    "en": "No other apps are running.",
+    "bn": "আর কোনো অ্যাপ চালু নেই।",
+    "status": "needs review",
+    "bnFrom": "9a90e543"
+  },
+  "app.set.general.dataH": {
+    "en": "Data folder",
+    "bn": "ডেটা ফোল্ডার",
+    "status": "needs review",
+    "bnFrom": "9421c021"
+  },
+  "app.set.general.dataPortable": {
+    "en": "Beside likhon.exe, so it travels with the app",
+    "bn": "likhon.exe-এর পাশে, তাই অ্যাপের সঙ্গেই থাকে",
+    "status": "needs review",
+    "bnFrom": "cfe16569"
+  },
+  "app.set.general.dataProfile": {
+    "en": "In your user profile, because the app’s folder is read-only",
+    "bn": "আপনার প্রোফাইলে, কারণ অ্যাপের ফোল্ডারে লেখা যায় না",
+    "status": "needs review",
+    "bnFrom": "3d092af9"
+  },
+  "app.set.general.openFolder": {
+    "en": "Open folder",
+    "bn": "ফোল্ডার খুলুন",
+    "status": "needs review",
+    "bnFrom": "f9630141"
+  },
+  "app.set.typing.sub": {
+    "en": "How phonetic typing turns English letters into Bangla.",
+    "bn": "ফোনেটিক টাইপিং কীভাবে কাজ করবে।",
+    "status": "needs review",
+    "bnFrom": "70c1b8ae"
+  },
+  "app.set.typing.preH": {
+    "en": "Selected suggestion",
+    "bn": "নির্বাচিত প্রস্তাব",
+    "status": "needs review",
+    "bnFrom": "95f0fd8e"
+  },
+  "app.set.typing.preP": {
+    "en": "What Space types when the list is open: a dictionary spelling of a misspelled word, or exactly what you typed.",
+    "bn": "তালিকা খোলা থাকলে Space কী বসাবে: ভুল বানানের অভিধান রূপ, নাকি ঠিক যা লিখেছেন।",
+    "status": "needs review",
+    "bnFrom": "c87630b0"
+  },
+  "app.set.typing.pre.dict": {
+    "en": "Dictionary word",
+    "bn": "অভিধানের শব্দ",
+    "status": "needs review",
+    "bnFrom": "a5ac0d29"
+  },
+  "app.set.typing.pre.plain": {
+    "en": "Plain phonetic",
+    "bn": "সরল ফোনেটিক",
+    "status": "needs review",
+    "bnFrom": "cd0e6b19"
+  },
+  "app.set.typing.autoH": {
+    "en": "Autocorrect common misspellings",
+    "bn": "সাধারণ ভুল বানান ঠিক করুন",
+    "status": "needs review",
+    "bnFrom": "2192bb03"
+  },
+  "app.set.typing.nextH": {
+    "en": "Suggest the next word",
+    "bn": "পরের শব্দ প্রস্তাব",
+    "status": "needs review",
+    "bnFrom": "1b8c08db"
+  },
+  "app.set.typing.learnH": {
+    "en": "Learn words I type often",
+    "bn": "বারবার লেখা শব্দ শিখুন",
+    "status": "needs review",
+    "bnFrom": "e6ae198e"
+  },
+  "app.set.typing.learnP": {
+    "en": "Stays on this computer. Never in password fields.",
+    "bn": "এই কম্পিউটারেই থাকে। পাসওয়ার্ডের ঘরে কখনো নয়।",
+    "status": "needs review",
+    "bnFrom": "252f52ee"
+  },
+  "app.set.typing.emojiH": {
+    "en": "Emoji by name",
+    "bn": "নাম লিখে ইমোজি",
+    "status": "needs review",
+    "bnFrom": "3ca54e83"
+  },
+  "app.set.typing.emojiP": {
+    "en": "Type a name between colons, like :hashi:.",
+    "bn": "দুই কোলনের মাঝে নাম লিখুন, যেমন :hashi:।",
+    "status": "needs review",
+    "bnFrom": "cfb45c89"
+  },
+  "app.set.typing.digitsH": {
+    "en": "Digits",
+    "bn": "সংখ্যা",
+    "status": "needs review",
+    "bnFrom": "2260ce49"
+  },
+  "app.set.typing.dariH": {
+    "en": "Full stop key",
+    "bn": "দাঁড়ি কী",
+    "status": "needs review",
+    "bnFrom": "d00f419e"
+  },
+  "app.set.typing.dariP": {
+    "en": "What the . key types.",
+    "bn": ". কী চাপলে কী বসবে।",
+    "status": "needs review",
+    "bnFrom": "f765297e"
+  },
+  "app.set.typing.visargaH": {
+    "en": "Colon key",
+    "bn": "কোলন কী",
+    "status": "draft"
+  },
+  "app.set.typing.visargaP": {
+    "en": "What the : key types: a visarga ঃ or a plain colon.",
+    "bn": ": কী চাপলে বিসর্গ ঃ বসবে, নাকি সাধারণ কোলন।",
+    "status": "draft"
+  },
+  "app.set.typing.numpickH": {
+    "en": "Number keys pick a suggestion",
+    "bn": "সংখ্যা কী দিয়ে পরামর্শ বাছাই",
+    "status": "draft"
+  },
+  "app.set.typing.numpickP": {
+    "en": "While you type a word, 1 to 9 take that row of the list. Off: digits are typed as digits.",
+    "bn": "শব্দ লেখার সময় ১ থেকে ৯ চাপলে তালিকার সেই সারি বসবে। বন্ধ থাকলে সংখ্যাই বসবে।",
+    "status": "draft"
+  },
+  "app.set.typing.learnedH": {
+    "en": "Learned words",
+    "bn": "শেখা শব্দ",
+    "status": "needs review",
+    "bnFrom": "b3270238"
+  },
+  "app.set.typing.learnedP": {
+    "en": "None yet",
+    "bn": "এখনো নেই",
+    "status": "needs review",
+    "bnFrom": "80e9901f"
+  },
+  "app.set.typing.review": {
+    "en": "Review…",
+    "bn": "দেখুন…",
+    "status": "needs review",
+    "bnFrom": "ce9d6d3b"
+  },
+  "app.set.layouts.sub": {
+    "en": "Choose the layout Bangla typing uses.",
+    "bn": "বাংলা লেখার সময় কোন লেআউট চলবে, বেছে নিন।",
+    "status": "needs review",
+    "bnFrom": "8653d5f3"
+  },
+  "app.set.layouts.listAria": {
+    "en": "Layouts",
+    "bn": "লেআউট",
+    "status": "needs review",
+    "bnFrom": "28e6f54e"
+  },
+  "app.set.layouts.phoneticP": {
+    "en": "Type Bangla with English letters",
+    "bn": "ইংরেজি অক্ষরে বাংলা",
+    "status": "needs review",
+    "bnFrom": "328283ab"
+  },
+  "app.set.layouts.fixedP": {
+    "en": "Fixed layout",
+    "bn": "নির্দিষ্ট লেআউট",
+    "status": "needs review",
+    "bnFrom": "5053f64d"
+  },
+  "app.set.layouts.jatiyaP": {
+    "en": "National standard",
+    "bn": "জাতীয় মান",
+    "status": "needs review",
+    "bnFrom": "73dcd218"
+  },
+  "app.set.layouts.khiproP": {
+    "en": "Fast phonetic",
+    "bn": "দ্রুত ফোনেটিক",
+    "status": "needs review",
+    "bnFrom": "1012e11d"
+  },
+  "app.set.layouts.inUse": {
+    "en": "In use",
+    "bn": "চালু আছে",
+    "status": "needs review",
+    "bnFrom": "20716e92"
+  },
+  "app.set.layouts.pending": {
+    "en": "Licence check first",
+    "bn": "লাইসেন্স যাচাই বাকি",
+    "status": "needs review",
+    "bnFrom": "9ea1dbcd"
+  },
+  "app.set.layouts.viewerH": {
+    "en": "See the chart for a layout",
+    "bn": "লেআউটের চার্ট দেখুন",
+    "status": "needs review",
+    "bnFrom": "522c96f2"
+  },
+  "app.set.layouts.viewerBtn": {
+    "en": "Open layout viewer",
+    "bn": "লেআউট দেখুন",
+    "status": "needs review",
+    "bnFrom": "5323bb25"
+  },
+  "app.set.layouts.fileH": {
+    "en": "Add a layout from a file",
+    "bn": "ফাইল থেকে লেআউট যোগ",
+    "status": "needs review",
+    "bnFrom": "d293b5a1"
+  },
+  "app.set.layouts.fileP": {
+    "en": ".json layout files (Likhon layout format) from the website or a friend.",
+    "bn": "ওয়েবসাইট বা বন্ধুর কাছ থেকে পাওয়া .json লেআউট ফাইল (লিখন লেআউট ফরম্যাট)।",
+    "status": "needs review",
+    "bnFrom": "1becdfd8"
+  },
+  "app.set.layouts.fileBtn": {
+    "en": "Open file…",
+    "bn": "ফাইল খুলুন…",
+    "status": "needs review",
+    "bnFrom": "2efd54ae"
+  },
+  "app.set.sug.sub": {
+    "en": "The small window that follows your cursor.",
+    "bn": "কার্সরের সঙ্গে চলা ছোট উইন্ডো।",
+    "status": "needs review",
+    "bnFrom": "00c1e749"
+  },
+  "app.set.sug.showH": {
+    "en": "Show suggestions",
+    "bn": "প্রস্তাব দেখান",
+    "status": "needs review",
+    "bnFrom": "58986af1"
+  },
+  "app.set.sug.countH": {
+    "en": "How many to show",
+    "bn": "কতগুলো দেখাবে",
+    "status": "needs review",
+    "bnFrom": "09baa9ce"
+  },
+  "app.set.sug.nextCountH": {
+    "en": "How many next words",
+    "bn": "পরের শব্দ কতগুলো",
+    "status": "needs review",
+    "bnFrom": "e0398a74"
+  },
+  "app.set.sug.posH": {
+    "en": "Window position",
+    "bn": "উইন্ডোর অবস্থান",
+    "status": "needs review",
+    "bnFrom": "47480db8"
+  },
+  "app.set.sug.pos.follow": {
+    "en": "Follow cursor",
+    "bn": "কার্সরের সঙ্গে",
+    "status": "needs review",
+    "bnFrom": "2f5def36"
+  },
+  "app.set.sug.pos.anchored": {
+    "en": "Anchored",
+    "bn": "আটকানো",
+    "status": "needs review",
+    "bnFrom": "52551cb1"
+  },
+  "app.set.sug.pwH": {
+    "en": "Hide in password fields",
+    "bn": "পাসওয়ার্ডের ঘরে লুকান",
+    "status": "needs review",
+    "bnFrom": "d2f89e4a"
+  },
+  "app.set.sug.pwP": {
+    "en": "Always on. Likhon asks Windows whether the box is a password box; if Windows cannot tell, words are not learned there.",
+    "bn": "সবসময় চালু। ঘরটি পাসওয়ার্ডের কিনা লিখন উইন্ডোজকে জিজ্ঞেস করে; উইন্ডোজ বলতে না পারলে সেখানে শব্দ শেখা হয় না।",
+    "status": "needs review",
+    "bnFrom": "0bb41d71"
+  },
+  "app.set.sug.badgeH": {
+    "en": "Show the caret badge when switching",
+    "bn": "বদলালে কার্সর ব্যাজ দেখান",
+    "status": "needs review",
+    "bnFrom": "78f2fc42"
+  },
+  "app.set.auto.sub": {
+    "en": "Words fixed as you type. Your own entries win over the built-in list.",
+    "bn": "টাইপের সময় ঠিক হওয়া শব্দ। আপনার তালিকা আগে।",
+    "status": "needs review",
+    "bnFrom": "c492a503"
+  },
+  "app.set.auto.c1": {
+    "en": "You type",
+    "bn": "আপনি লেখেন",
+    "status": "needs review",
+    "bnFrom": "0d4e3779"
+  },
+  "app.set.auto.c2": {
+    "en": "Becomes",
+    "bn": "হয়ে যায়",
+    "status": "needs review",
+    "bnFrom": "369e445c"
+  },
+  "app.set.auto.empty": {
+    "en": "Your own fixes will show here.",
+    "bn": "আপনার নিজের সংশোধন এখানে দেখাবে।",
+    "status": "needs review",
+    "bnFrom": "bbe71964"
+  },
+  "app.set.auto.note": {
+    "en": "Rows that came from a library list are flagged. Links and long rewrites are highlighted so a swapped word can’t hide.",
+    "bn": "লাইব্রেরির তালিকা থেকে আসা সারি চিহ্নিত থাকে। লিংক ও লম্বা বদল আলাদা করে দেখানো হয়।",
+    "status": "needs review",
+    "bnFrom": "644a806d"
+  },
+  "app.set.short.sub": {
+    "en": "Short codes that expand into longer text.",
+    "bn": "ছোট কোড লিখলে পুরো লেখা বসে।",
+    "status": "needs review",
+    "bnFrom": "743c9679"
+  },
+  "app.set.short.c1": {
+    "en": "Code",
+    "bn": "কোড",
+    "status": "needs review",
+    "bnFrom": "adac6937"
+  },
+  "app.set.short.c2": {
+    "en": "Expands to",
+    "bn": "যা বসবে",
+    "status": "needs review",
+    "bnFrom": "2c1bd25f"
+  },
+  "app.set.short.empty": {
+    "en": "No shortcuts yet. For example, ;ty could become ধন্যবাদ।",
+    "bn": "এখনো কোনো শর্টকাট নেই। যেমন ;ty লিখলে বসতে পারে ধন্যবাদ।",
+    "status": "needs review",
+    "bnFrom": "b0dd0b85"
+  },
+  "app.set.short.spaceH": {
+    "en": "Expand on Space",
+    "bn": "Space চাপলে বসান",
+    "status": "needs review",
+    "bnFrom": "1d83ed4c"
+  },
+  "app.set.short.spaceP": {
+    "en": "Off: expand on Tab only.",
+    "bn": "বন্ধ থাকলে শুধু Tab-এ।",
+    "status": "needs review",
+    "bnFrom": "8167091d"
+  },
+  "app.set.look.sub": {
+    "en": "Themes change the top bar and suggestion window.",
+    "bn": "থিম টপ বার ও প্রস্তাব উইন্ডো বদলায়।",
+    "status": "needs review",
+    "bnFrom": "190460a3"
+  },
+  "app.set.look.themesAria": {
+    "en": "Themes",
+    "bn": "থিম",
+    "status": "needs review",
+    "bnFrom": "94d5186b"
+  },
+  "app.set.look.darkH": {
+    "en": "Light or dark",
+    "bn": "হালকা না গাঢ়",
+    "status": "needs review",
+    "bnFrom": "a17b3a7e"
+  },
+  "app.set.look.darkP": {
+    "en": "Every theme has a light and a dark version. Follow Windows switches them with Windows.",
+    "bn": "প্রতিটি থিমের হালকা ও গাঢ় রূপ আছে। উইন্ডোজ অনুযায়ী বাছলে উইন্ডোজের সঙ্গে বদলায়।",
+    "status": "needs review",
+    "bnFrom": "9d1d55bd"
+  },
+  "app.set.look.fontH": {
+    "en": "Likhon's font",
+    "bn": "লিখনের ফন্ট",
+    "status": "needs review",
+    "bnFrom": "2b636157"
+  },
+  "app.set.look.sizeH": {
+    "en": "Text size",
+    "bn": "লেখার আকার",
+    "status": "needs review",
+    "bnFrom": "3cc6e124"
+  },
+  "app.set.look.rowH": {
+    "en": "Row height",
+    "bn": "সারির উচ্চতা",
+    "status": "needs review",
+    "bnFrom": "0c1073d4"
+  },
+  "app.set.look.moreH": {
+    "en": "More themes",
+    "bn": "আরও থিম",
+    "status": "needs review",
+    "bnFrom": "31766249"
+  },
+  "app.set.look.moreP": {
+    "en": "From the community library.",
+    "bn": "কমিউনিটি লাইব্রেরি থেকে।",
+    "status": "needs review",
+    "bnFrom": "13f34588"
+  },
+  "app.set.look.moreBtn": {
+    "en": "Browse library",
+    "bn": "লাইব্রেরি দেখুন",
+    "status": "needs review",
+    "bnFrom": "eff9f4a3"
+  },
+  "app.set.look.fileH": {
+    "en": "Add a theme from a file",
+    "bn": "ফাইল থেকে থিম যোগ",
+    "status": "needs review",
+    "bnFrom": "8cd6062b"
+  },
+  "app.set.general.color.light": {
+    "en": "Light",
+    "bn": "হালকা",
+    "status": "needs review",
+    "bnFrom": "a36ef8ab"
+  },
+  "app.set.general.color.dark": {
+    "en": "Dark",
+    "bn": "গাঢ়",
+    "status": "needs review",
+    "bnFrom": "ae1ef014"
+  },
+  "app.set.legacy.sub": {
+    "en": "For old documents and print shops that still use Bijoy-style fonts.",
+    "bn": "পুরোনো ডকুমেন্ট ও বিজয়-ধরনের ফন্টের জন্য।",
+    "status": "needs review",
+    "bnFrom": "5754e964"
+  },
+  "app.set.legacy.onH": {
+    "en": "Type in legacy encoding",
+    "bn": "লেগেসি এনকোডিং-এ টাইপ",
+    "status": "needs review",
+    "bnFrom": "6f43b6d8"
+  },
+  "app.set.legacy.onP": {
+    "en": "What you type goes out in the legacy encoding chosen below. The top bar shows a Legacy badge while this is on; Shift+F12 switches between it and Unicode.",
+    "bn": "আপনি যা টাইপ করেন তা নিচে বাছা পুরোনো এনকোডিংয়ে যায়। চালু থাকলে টপ বারে লেগেসি চিহ্ন দেখায়; Shift+F12 দিয়ে এটি ও ইউনিকোডের মধ্যে বদলান।",
+    "status": "needs review",
+    "bnFrom": "f272267d"
+  },
+  "app.set.legacy.encH": {
+    "en": "Encoding",
+    "bn": "এনকোডিং",
+    "status": "needs review",
+    "bnFrom": "5821fec7"
+  },
+  "app.set.legacy.warn": {
+    "en": "Legacy text only reads correctly with a matching legacy font. It can’t be searched or spell-checked like Unicode.",
+    "bn": "মানানসই লেগেসি ফন্ট ছাড়া লেখা ঠিকমতো পড়া যায় না। ইউনিকোডের মতো খোঁজা বা বানান যাচাই করা যায় না।",
+    "status": "needs review",
+    "bnFrom": "a92c47bd"
+  },
+  "app.set.legacy.convH": {
+    "en": "Convert existing text",
+    "bn": "আগের লেখা রূপান্তর",
+    "status": "needs review",
+    "bnFrom": "dbab87c4"
+  },
+  "app.set.legacy.convBtn": {
+    "en": "Open converter",
+    "bn": "রূপান্তর খুলুন",
+    "status": "needs review",
+    "bnFrom": "11d6706b"
+  },
+  "app.set.lib.sub": {
+    "en": "Layouts, themes and lists you added.",
+    "bn": "আপনার যোগ করা লেআউট, থিম ও তালিকা।",
+    "status": "needs review",
+    "bnFrom": "6823bec9"
+  },
+  "app.set.lib.none": {
+    "en": "Nothing added yet",
+    "bn": "এখনো কিছু যোগ হয়নি",
+    "status": "needs review",
+    "bnFrom": "a18d80d3"
+  },
+  "app.set.lib.noneP": {
+    "en": "Items you add from the library or from a file show here, and each one can be removed.",
+    "bn": "লাইব্রেরি বা ফাইল থেকে যা যোগ করবেন তা এখানে দেখাবে, প্রতিটি সরানোও যাবে।",
+    "status": "needs review",
+    "bnFrom": "3f9c747a"
+  },
+  "app.set.lib.findH": {
+    "en": "Find more",
+    "bn": "আরও খুঁজুন",
+    "status": "needs review",
+    "bnFrom": "118909da"
+  },
+  "app.set.lib.findP": {
+    "en": "Fetched only when you open it.",
+    "bn": "খুললেই কেবল আনা হয়।",
+    "status": "needs review",
+    "bnFrom": "faa7a9b7"
+  },
+  "app.set.lib.findBtn": {
+    "en": "Browse library",
+    "bn": "লাইব্রেরি দেখুন",
+    "status": "needs review",
+    "bnFrom": "eff9f4a3"
+  },
+  "app.set.tools.sub": {
+    "en": "Everything runs on this computer.",
+    "bn": "সবকিছু এই কম্পিউটারেই চলে।",
+    "status": "needs review",
+    "bnFrom": "44741103"
+  },
+  "app.set.tools.all": {
+    "en": "All tools",
+    "bn": "সব টুল",
+    "status": "needs review",
+    "bnFrom": "b390ab30"
+  },
+  "app.set.tools.conv": {
+    "en": "Converter",
+    "bn": "রূপান্তর",
+    "status": "needs review",
+    "bnFrom": "3615e313"
+  },
+  "app.set.tools.convP": {
+    "en": "Unicode, Bijoy and Proshika, both ways",
+    "bn": "ইউনিকোড, বিজয় ও প্রশিকা, দুই দিকেই",
+    "status": "needs review",
+    "bnFrom": "033ced34"
+  },
+  "app.set.tools.clean": {
+    "en": "Clean pasted text",
+    "bn": "পেস্ট করা লেখা পরিষ্কার",
+    "status": "needs review",
+    "bnFrom": "afb3cc13"
+  },
+  "app.set.tools.cleanP": {
+    "en": "Fix broken kars and spacing",
+    "bn": "ভাঙা কার ও ফাঁক ঠিক",
+    "status": "needs review",
+    "bnFrom": "ab2f8a1d"
+  },
+  "app.set.tools.taka": {
+    "en": "Taka in words",
+    "bn": "কথায় টাকা",
+    "status": "needs review",
+    "bnFrom": "1457f9ab"
+  },
+  "app.set.tools.takaP": {
+    "en": "১২৫০ → এক হাজার দুইশো পঞ্চাশ টাকা",
+    "bn": "১২৫০ → এক হাজার দুইশো পঞ্চাশ টাকা",
+    "status": "needs review",
+    "bnFrom": "1e3340dc"
+  },
+  "app.set.tools.num": {
+    "en": "Numbers and dates",
+    "bn": "সংখ্যা ও তারিখ",
+    "status": "needs review",
+    "bnFrom": "24556b28"
+  },
+  "app.set.tools.numP": {
+    "en": "Bangla digits, months, বঙ্গাব্দ",
+    "bn": "বাংলা সংখ্যা, মাস, বঙ্গাব্দ",
+    "status": "needs review",
+    "bnFrom": "406f3b18"
+  },
+  "app.set.tools.how": {
+    "en": "How to type a word",
+    "bn": "কীভাবে লিখবেন",
+    "status": "needs review",
+    "bnFrom": "9bb31f6b"
+  },
+  "app.set.tools.howP": {
+    "en": "Shows the keys for any word",
+    "bn": "যেকোনো শব্দের কী দেখায়",
+    "status": "needs review",
+    "bnFrom": "18b61b30"
+  },
+  "app.set.tools.sym": {
+    "en": "Symbol palette",
+    "bn": "প্রতীক",
+    "status": "needs review",
+    "bnFrom": "fabc5191"
+  },
+  "app.set.tools.symP": {
+    "en": "৳ । ½ and more",
+    "bn": "৳ । ½ ইত্যাদি",
+    "status": "needs review",
+    "bnFrom": "1d75705d"
+  },
+  "app.set.tools.osk": {
+    "en": "On-screen keyboard",
+    "bn": "অন-স্ক্রিন কিবোর্ড",
+    "status": "needs review",
+    "bnFrom": "fcc2ff05"
+  },
+  "app.set.tools.oskP": {
+    "en": "Click keys to type · Ctrl + Alt + K",
+    "bn": "ক্লিক করে লিখুন · Ctrl + Alt + K",
+    "status": "needs review",
+    "bnFrom": "8869c104"
+  },
+  "app.set.tools.viewer": {
+    "en": "Layout viewer",
+    "bn": "লেআউট দেখুন",
+    "status": "needs review",
+    "bnFrom": "9580b5c5"
+  },
+  "app.set.tools.viewerP": {
+    "en": "Print a chart",
+    "bn": "চার্ট প্রিন্ট করুন",
+    "status": "needs review",
+    "bnFrom": "0d3f9f02"
+  },
+  "app.set.priv.sub": {
+    "en": "Nothing you type leaves this computer.",
+    "bn": "আপনি যা টাইপ করেন তা কোথাও যায় না।",
+    "status": "needs review",
+    "bnFrom": "1175d199"
+  },
+  "app.set.priv.note": {
+    "en": "Likhon never sends your typing anywhere. It only goes online when you check for updates, open the library, download the dictionary or donate words.",
+    "bn": "লিখন আপনার টাইপ কোথাও পাঠায় না। শুধু আপডেট দেখলে, লাইব্রেরি খুললে, অভিধান ডাউনলোড করলে বা শব্দ দান করলে অনলাইনে যায়।",
+    "status": "needs review",
+    "bnFrom": "095da331"
+  },
+  "app.set.priv.donateH": {
+    "en": "Donate new words to the dictionary",
+    "bn": "অভিধানে নতুন শব্দ দান",
+    "status": "needs review",
+    "bnFrom": "95175a75"
+  },
+  "app.set.priv.donateP": {
+    "en": "Choose words Likhon learned and send them to the Likhon dictionary. Single words only, never sentences, with no name attached. You pick every time.",
+    "bn": "লিখনের শেখা শব্দ বেছে লিখন অভিধানে পাঠান। শুধু একক শব্দ, কখনো বাক্য নয়, কোনো নাম ছাড়া। প্রতিবার আপনিই বাছবেন।",
+    "status": "needs review",
+    "bnFrom": "5bf50554"
+  },
+  "app.set.priv.diagH": {
+    "en": "Diagnostics file",
+    "bn": "ডায়াগনস্টিক ফাইল",
+    "status": "needs review",
+    "bnFrom": "65cab5da"
+  },
+  "app.set.priv.diagP": {
+    "en": "For support. Contains no typed text. You choose whether to send it.",
+    "bn": "সহায়তার জন্য। টাইপ করা লেখা থাকে না। পাঠাবেন কি না, আপনিই ঠিক করবেন।",
+    "status": "needs review",
+    "bnFrom": "b33ce84e"
+  },
+  "app.set.priv.diagSaved": {
+    "en": "Saved in the data folder: {file}",
+    "bn": "ডেটা ফোল্ডারে রাখা হয়েছে: {file}",
+    "status": "needs review",
+    "bnFrom": "6ef73db1"
+  },
+  "app.set.priv.diagPreview": {
+    "en": "Preview",
+    "bn": "দেখুন",
+    "status": "needs review",
+    "bnFrom": "f1fbb2b4"
+  },
+  "app.set.priv.diagPreviewH": {
+    "en": "What the diagnostics file contains",
+    "bn": "ডায়াগনস্টিক ফাইলে যা থাকে",
+    "status": "needs review",
+    "bnFrom": "44cbaea6"
+  },
+  "app.set.priv.diagSave": {
+    "en": "Save file",
+    "bn": "ফাইল রাখুন",
+    "status": "needs review",
+    "bnFrom": "bedc846b"
+  },
+  "app.set.priv.forgetH": {
+    "en": "Forget learned words",
+    "bn": "শেখা শব্দ মুছুন",
+    "status": "needs review",
+    "bnFrom": "509b4278"
+  },
+  "app.set.priv.forgetBtn": {
+    "en": "Forget all",
+    "bn": "সব মুছুন",
+    "status": "needs review",
+    "bnFrom": "71350079"
+  },
+  "app.set.upd.sub": {
+    "en": "Likhon checks only when you ask.",
+    "bn": "আপনি চাইলেই কেবল দেখে।",
+    "status": "needs review",
+    "bnFrom": "2a3278c8"
+  },
+  "app.set.upd.version": {
+    "en": "Version {version}",
+    "bn": "সংস্করণ {version}",
+    "status": "needs review",
+    "bnFrom": "7a4a5b08"
+  },
+  "app.set.upd.never": {
+    "en": "Not checked yet",
+    "bn": "এখনো দেখা হয়নি",
+    "status": "needs review",
+    "bnFrom": "82bd72a3"
+  },
+  "app.set.upd.check": {
+    "en": "Check for updates",
+    "bn": "আপডেট দেখুন",
+    "status": "needs review",
+    "bnFrom": "736b9062"
+  },
+  "app.set.upd.newsH": {
+    "en": "What’s new",
+    "bn": "নতুন কী",
+    "status": "needs review",
+    "bnFrom": "36970242"
+  },
+  "app.set.upd.newsP": {
+    "en": "News on the Likhon website",
+    "bn": "লিখন ওয়েবসাইটের খবর",
+    "status": "needs review",
+    "bnFrom": "16df1fa0"
+  },
+  "app.set.upd.dictH": {
+    "en": "Get the latest dictionary",
+    "bn": "সর্বশেষ অভিধান নামান",
+    "status": "needs review",
+    "bnFrom": "f114122a"
+  },
+  "app.set.upd.dictP": {
+    "en": "Download the latest dictionary from the Likhon website into the dict folder beside likhon.exe.",
+    "bn": "লিখন ওয়েবসাইট থেকে সর্বশেষ অভিধান likhon.exe-এর পাশের dict ফোল্ডারে নামান।",
+    "status": "needs review",
+    "bnFrom": "52a464c9"
+  },
+  "app.set.upd.fontsH": {
+    "en": "Fonts",
+    "bn": "ফন্ট",
+    "status": "needs review",
+    "bnFrom": "ffe688a5"
+  },
+  "app.set.upd.fontsP": {
+    "en": "Community fonts",
+    "bn": "কমিউনিটির ফন্ট",
+    "status": "needs review",
+    "bnFrom": "e237418b"
+  },
+  "app.set.about.line": {
+    "en": "লিখন · Likhon {version}",
+    "bn": "লিখন · Likhon {version}",
+    "status": "needs review",
+    "bnFrom": "8884e5da"
+  },
+  "app.set.about.portable": {
+    "en": "Portable",
+    "bn": "বহনযোগ্য",
+    "status": "needs review",
+    "bnFrom": "1bacaf21"
+  },
+  "app.set.about.native": {
+    "en": "Full",
+    "bn": "পূর্ণ",
+    "status": "needs review",
+    "bnFrom": "10b28a8c"
+  },
+  "app.set.about.copy": {
+    "en": "Copy details",
+    "bn": "বিবরণ কপি",
+    "status": "needs review",
+    "bnFrom": "e42bc527"
+  },
+  "app.set.about.support": {
+    "en": "Support",
+    "bn": "সহায়তা",
+    "status": "needs review",
+    "bnFrom": "f32d5a3b"
+  },
+  "app.set.about.supportP": {
+    "en": "Free help, FAQ, report a problem",
+    "bn": "বিনামূল্যে সহায়তা, প্রশ্নোত্তর, সমস্যা জানান",
+    "status": "needs review",
+    "bnFrom": "4ba0b7a1"
+  },
+  "app.set.about.learn": {
+    "en": "Learn",
+    "bn": "শিখুন",
+    "status": "needs review",
+    "bnFrom": "b048378e"
+  },
+  "app.set.about.learnP": {
+    "en": "Guides and cheat sheets",
+    "bn": "গাইড ও চিটশিট",
+    "status": "needs review",
+    "bnFrom": "1bcccb7a"
+  },
+  "app.set.about.forum": {
+    "en": "Forum",
+    "bn": "ফোরাম",
+    "status": "needs review",
+    "bnFrom": "cf1d2c97"
+  },
+  "app.set.about.forumP": {
+    "en": "Ask the community",
+    "bn": "কমিউনিটিকে জিজ্ঞেস করুন",
+    "status": "needs review",
+    "bnFrom": "f3525f99"
+  },
+  "app.set.about.license": {
+    "en": "License",
+    "bn": "লাইসেন্স",
+    "status": "needs review",
+    "bnFrom": "3229609e"
+  },
+  "app.set.about.licenseP": {
+    "en": "Software license agreement",
+    "bn": "সফটওয়্যার লাইসেন্স",
+    "status": "needs review",
+    "bnFrom": "ade48c0b"
+  },
+  "app.set.about.credits": {
+    "en": "Open-source credits",
+    "bn": "ওপেন সোর্স কৃতজ্ঞতা",
+    "status": "needs review",
+    "bnFrom": "6cf67607"
+  },
+  "app.set.about.creditsP": {
+    "en": "Libraries, fonts and typing data",
+    "bn": "লাইব্রেরি, ফন্ট ও টাইপিং ডেটা",
+    "status": "needs review",
+    "bnFrom": "5dc3bf71"
+  },
+  "app.set.about.contributors": {
+    "en": "Contributors",
+    "bn": "অবদানকারী",
+    "status": "needs review",
+    "bnFrom": "a60a223c"
+  },
+  "app.set.about.contributorsP": {
+    "en": "People who made the library",
+    "bn": "লাইব্রেরির নির্মাতারা",
+    "status": "needs review",
+    "bnFrom": "895ec241"
+  },
+  "app.set.restoreWin": {
+    "en": "Restore down",
+    "bn": "আগের আকারে",
+    "status": "needs review",
+    "bnFrom": "5521d383"
+  },
+  "app.set.layouts.avro-easy": {
+    "en": "Avro Easy",
+    "bn": "অভ্র ইজি",
+    "status": "needs review",
+    "bnFrom": "e247db9d"
+  },
+  "app.set.layouts.avroEasyP": {
+    "en": "Fixed layout by OmicronLab",
+    "bn": "অমিক্রনল্যাবের নির্দিষ্ট লেআউট",
+    "status": "needs review",
+    "bnFrom": "0a4a7937"
+  },
+  "app.set.layouts.noFile": {
+    "en": "Not available yet",
+    "bn": "এখনো নেই",
+    "status": "needs review",
+    "bnFrom": "a1db9d59"
+  },
+  "app.set.nav.hotkeys": {
+    "en": "Hotkeys",
+    "bn": "শর্টকাট কী",
+    "status": "needs review",
+    "bnFrom": "fcc6c318"
+  },
+  "app.set.nav.fonts": {
+    "en": "Fonts",
+    "bn": "ফন্ট",
+    "status": "needs review",
+    "bnFrom": "ffe688a5"
+  },
+  "app.set.nav.learn": {
+    "en": "Learn",
+    "bn": "শিখুন",
+    "status": "needs review",
+    "bnFrom": "b048378e"
+  },
+  "app.set.hk.sub": {
+    "en": "Keys that work in every window while Likhon runs.",
+    "bn": "লিখন চালু থাকলে সব উইন্ডোতে যে কী কাজ করে।",
+    "status": "needs review",
+    "bnFrom": "449ac23e"
+  },
+  "app.set.hk.toggle": {
+    "en": "Switch Bangla and English",
+    "bn": "বাংলা-ইংরেজি বদল",
+    "status": "needs review",
+    "bnFrom": "2e20b058"
+  },
+  "app.set.hk.nextLayout": {
+    "en": "Next layout",
+    "bn": "পরের লেআউট",
+    "status": "needs review",
+    "bnFrom": "14a715fe"
+  },
+  "app.set.hk.convert": {
+    "en": "Convert the selected text",
+    "bn": "নির্বাচিত লেখা রূপান্তর",
+    "status": "needs review",
+    "bnFrom": "13906596"
+  },
+  "app.set.hk.undo": {
+    "en": "Undo the last conversion",
+    "bn": "শেষ রূপান্তর ফেরান",
+    "status": "needs review",
+    "bnFrom": "cfc91a3a"
+  },
+  "app.set.hk.addWord": {
+    "en": "Add the selected word to my words",
+    "bn": "নির্বাচিত শব্দ আমার শব্দে যোগ",
+    "status": "needs review",
+    "bnFrom": "eda2ca96"
+  },
+  "app.set.hk.quickTools": {
+    "en": "Quick tools on the selection",
+    "bn": "নির্বাচনে দ্রুত টুল",
+    "status": "needs review",
+    "bnFrom": "cdb2a2da"
+  },
+  "app.set.hk.howType": {
+    "en": "How do I type this?",
+    "bn": "এটা কীভাবে লিখব?",
+    "status": "needs review",
+    "bnFrom": "b670271c"
+  },
+  "app.set.hk.osk": {
+    "en": "On-screen keyboard",
+    "bn": "অন-স্ক্রিন কিবোর্ড",
+    "status": "needs review",
+    "bnFrom": "fcc2ff05"
+  },
+  "app.set.hk.symbols": {
+    "en": "Symbol palette",
+    "bn": "প্রতীক",
+    "status": "needs review",
+    "bnFrom": "fabc5191"
+  },
+  "app.set.hk.kill": {
+    "en": "Stop Likhon at once",
+    "bn": "লিখন সঙ্গে সঙ্গে বন্ধ",
+    "status": "needs review",
+    "bnFrom": "6e53baca"
+  },
+  "app.set.hk.killP": {
+    "en": "Always on, so typing can never get stuck.",
+    "bn": "সবসময় চালু, যাতে টাইপ কখনো আটকে না যায়।",
+    "status": "needs review",
+    "bnFrom": "cf526b6e"
+  },
+  "app.set.hk.presetsH": {
+    "en": "Habits from another keyboard",
+    "bn": "অন্য কিবোর্ডের অভ্যাস",
+    "status": "needs review",
+    "bnFrom": "59f1c404"
+  },
+  "app.set.hk.passNote": {
+    "en": "The switch key is left alone in the apps listed on General.",
+    "bn": "সাধারণ পাতার তালিকার অ্যাপে বদলের কী ছেড়ে দেওয়া হয়।",
+    "status": "needs review",
+    "bnFrom": "91108bd0"
+  },
+  "app.set.fonts.sub": {
+    "en": "Bangla fonts on this computer, and fonts from the library.",
+    "bn": "এই কম্পিউটারের বাংলা ফন্ট, আর লাইব্রেরির ফন্ট।",
+    "status": "needs review",
+    "bnFrom": "cf081f21"
+  },
+  "app.set.fonts.installedH": {
+    "en": "Bangla fonts on this computer",
+    "bn": "এই কম্পিউটারের বাংলা ফন্ট",
+    "status": "needs review",
+    "bnFrom": "e1927204"
+  },
+  "app.set.fonts.installedP": {
+    "en": "Every installed font that has Bangla letters. Click one to see it at several sizes.",
+    "bn": "যে সব ফন্টে বাংলা অক্ষর আছে। একটিতে ক্লিক করলে কয়েক আকারে দেখাবে।",
+    "status": "needs review",
+    "bnFrom": "8429a9a2"
+  },
+  "app.set.fonts.count": {
+    "en": "{n} fonts",
+    "bn": "{n}টি ফন্ট",
+    "status": "needs review",
+    "bnFrom": "84ac531c"
+  },
+  "app.set.fonts.none": {
+    "en": "No Bangla font found. Windows normally has Nirmala UI.",
+    "bn": "কোনো বাংলা ফন্ট পাওয়া যায়নি। উইন্ডোজে সাধারণত Nirmala UI থাকে।",
+    "status": "needs review",
+    "bnFrom": "18843698"
+  },
+  "app.set.fonts.loading": {
+    "en": "Looking for fonts…",
+    "bn": "ফন্ট খোঁজা হচ্ছে…",
+    "status": "needs review",
+    "bnFrom": "99701108"
+  },
+  "app.set.fonts.sample": {
+    "en": "আমার সোনার বাংলা, আমি তোমায় ভালোবাসি। ক্ষ্ম ন্ত্র শ্রী",
+    "bn": "আমার সোনার বাংলা, আমি তোমায় ভালোবাসি। ক্ষ্ম ন্ত্র শ্রী",
+    "status": "needs review",
+    "bnFrom": "12d1c98f"
+  },
+  "app.set.fonts.previewH": {
+    "en": "Sample in {name}",
+    "bn": "{name} ফন্টে নমুনা",
+    "status": "needs review",
+    "bnFrom": "3d436f60"
+  },
+  "app.set.fonts.size": {
+    "en": "{n} pt",
+    "bn": "{n} পয়েন্ট",
+    "status": "needs review",
+    "bnFrom": "7a8cb724"
+  },
+  "app.set.fonts.libraryH": {
+    "en": "Fonts from the library",
+    "bn": "লাইব্রেরির ফন্ট",
+    "status": "needs review",
+    "bnFrom": "c3104a6a"
+  },
+  "app.set.fonts.libraryP": {
+    "en": "Reviewed, freely licensed Bangla fonts. Add them on the Library page; they are installed for your Windows account only.",
+    "bn": "যাচাই করা, মুক্ত লাইসেন্সের বাংলা ফন্ট। লাইব্রেরি পাতায় যোগ করুন; শুধু আপনার উইন্ডোজ অ্যাকাউন্টে বসানো হয়।",
+    "status": "needs review",
+    "bnFrom": "07d33175"
+  },
+  "app.set.fonts.libraryBtn": {
+    "en": "Open the Library page",
+    "bn": "লাইব্রেরি পাতা খুলুন",
+    "status": "needs review",
+    "bnFrom": "34ae4905"
+  },
+  "app.set.fonts.defaultH": {
+    "en": "Default Bangla font",
+    "bn": "ডিফল্ট বাংলা ফন্ট",
+    "status": "needs review",
+    "bnFrom": "8b8664f3"
+  },
+  "app.set.fonts.addon": {
+    "en": "Full",
+    "bn": "পূর্ণ",
+    "status": "needs review",
+    "bnFrom": "10b28a8c"
+  },
+  "app.set.learn.sub": {
+    "en": "Start typing Bangla in a minute.",
+    "bn": "এক মিনিটে বাংলা লেখা শুরু করুন।",
+    "status": "needs review",
+    "bnFrom": "79ae76e3"
+  },
+  "app.set.learn.s1h": {
+    "en": "Switch on",
+    "bn": "চালু করুন",
+    "status": "needs review",
+    "bnFrom": "bcdb919b"
+  },
+  "app.set.learn.s1p": {
+    "en": "Press {key}. The top bar shows বাংলা.",
+    "bn": "{key} চাপুন। টপ বারে বাংলা দেখাবে।",
+    "status": "needs review",
+    "bnFrom": "5d434a08"
+  },
+  "app.set.learn.s2h": {
+    "en": "Type as it sounds",
+    "bn": "যেমন শোনায় তেমন লিখুন",
+    "status": "needs review",
+    "bnFrom": "e7575332"
+  },
+  "app.set.learn.s2p": {
+    "en": "Type {from} and get {to}.",
+    "bn": "{from} লিখলে হবে {to}।",
+    "status": "needs review",
+    "bnFrom": "296ac653"
+  },
+  "app.set.learn.s3h": {
+    "en": "Press Space",
+    "bn": "Space চাপুন",
+    "status": "needs review",
+    "bnFrom": "e8576253"
+  },
+  "app.set.learn.s3p": {
+    "en": "The word is done. Press the switch key again for English.",
+    "bn": "শব্দ শেষ। ইংরেজির জন্য আবার বদলের কী চাপুন।",
+    "status": "needs review",
+    "bnFrom": "af98b00f"
+  },
+  "app.set.learn.cheatH": {
+    "en": "Phonetic cheat sheet",
+    "bn": "ফোনেটিক চিটশিট",
+    "status": "needs review",
+    "bnFrom": "97a5ad13"
+  },
+  "app.set.learn.cheatP": {
+    "en": "What these letters give, straight from the engine.",
+    "bn": "এই অক্ষরগুলো কী দেয়, সরাসরি ইঞ্জিন থেকে।",
+    "status": "needs review",
+    "bnFrom": "f7b1bdf4"
+  },
+  "app.set.learn.practiceH": {
+    "en": "Practice",
+    "bn": "অনুশীলন",
+    "status": "needs review",
+    "bnFrom": "3e15ac78"
+  },
+  "app.set.learn.practiceP": {
+    "en": "Type the line in English letters. Green is right so far.",
+    "bn": "লাইনটি ইংরেজি অক্ষরে লিখুন। সবুজ মানে এ পর্যন্ত ঠিক।",
+    "status": "needs review",
+    "bnFrom": "c7c365ae"
+  },
+  "app.set.learn.yourTyping": {
+    "en": "Your typing",
+    "bn": "আপনার লেখা",
+    "status": "needs review",
+    "bnFrom": "ef4fe496"
+  },
+  "app.set.learn.done": {
+    "en": "Well done",
+    "bn": "চমৎকার",
+    "status": "needs review",
+    "bnFrom": "737e63d7"
+  },
+  "app.set.learn.next": {
+    "en": "Next line",
+    "bn": "পরের লাইন",
+    "status": "needs review",
+    "bnFrom": "56b52248"
+  },
+  "app.set.learn.more": {
+    "en": "More guides on the Likhon website",
+    "bn": "লিখন ওয়েবসাইটে আরও গাইড",
+    "status": "needs review",
+    "bnFrom": "1ec4c9fa"
+  },
+  "app.set.learn.fixedNote": {
+    "en": "You are using {layout}. The cheat sheet and practice are for Phonetic.",
+    "bn": "আপনি {layout} ব্যবহার করছেন। চিটশিট ও অনুশীলন ফোনেটিকের জন্য।",
+    "status": "needs review",
+    "bnFrom": "b15effdc"
+  },
+  "app.set.typing.wordsH": {
+    "en": "My words",
+    "bn": "আমার শব্দ",
+    "status": "needs review",
+    "bnFrom": "39b187b0"
+  },
+  "app.set.typing.wordsP": {
+    "en": "Words you add yourself. They come first in suggestions and stay on this computer.",
+    "bn": "আপনার নিজের যোগ করা শব্দ। প্রস্তাবে আগে আসে, এই কম্পিউটারেই থাকে।",
+    "status": "needs review",
+    "bnFrom": "e427cbc6"
+  },
+  "app.set.typing.wordsC1": {
+    "en": "Word",
+    "bn": "শব্দ",
+    "status": "needs review",
+    "bnFrom": "44363ccb"
+  },
+  "app.set.typing.wordsC2": {
+    "en": "Added",
+    "bn": "যোগের দিন",
+    "status": "needs review",
+    "bnFrom": "b68734c2"
+  },
+  "app.set.typing.wordsEmpty": {
+    "en": "No words yet.",
+    "bn": "এখনো কোনো শব্দ নেই।",
+    "status": "needs review",
+    "bnFrom": "078a8393"
+  },
+  "app.set.priv.inH": {
+    "en": "In the diagnostics file",
+    "bn": "ডায়াগনস্টিক ফাইলে থাকে",
+    "status": "needs review",
+    "bnFrom": "90649926"
+  },
+  "app.set.priv.in.0": {
+    "en": "Likhon and engine versions",
+    "bn": "লিখন ও ইঞ্জিনের সংস্করণ",
+    "status": "needs review",
+    "bnFrom": "0e1bd462"
+  },
+  "app.set.priv.in.1": {
+    "en": "Windows version and display scale",
+    "bn": "উইন্ডোজ সংস্করণ ও ডিসপ্লে স্কেল",
+    "status": "needs review",
+    "bnFrom": "0f57c56c"
+  },
+  "app.set.priv.in.2": {
+    "en": "Layout, output and theme",
+    "bn": "লেআউট, আউটপুট ও থিম",
+    "status": "needs review",
+    "bnFrom": "9d1847f4"
+  },
+  "app.set.priv.in.3": {
+    "en": "Which settings differ from the defaults",
+    "bn": "কোন সেটিং ডিফল্ট থেকে আলাদা",
+    "status": "needs review",
+    "bnFrom": "7b1c0a6c"
+  },
+  "app.set.priv.in.4": {
+    "en": "Recent errors",
+    "bn": "সাম্প্রতিক ত্রুটি",
+    "status": "needs review",
+    "bnFrom": "b0f5286e"
+  },
+  "app.set.priv.outH": {
+    "en": "Never in it",
+    "bn": "কখনো থাকে না",
+    "status": "needs review",
+    "bnFrom": "1c6cbe80"
+  },
+  "app.set.priv.out.0": {
+    "en": "Anything you typed",
+    "bn": "আপনার টাইপ করা কিছু",
+    "status": "needs review",
+    "bnFrom": "d1421a27"
+  },
+  "app.set.priv.out.1": {
+    "en": "Your words, shortcuts or autocorrect entries",
+    "bn": "আপনার শব্দ, শর্টকাট বা স্বয়ংশুদ্ধি",
+    "status": "needs review",
+    "bnFrom": "d231f1ab"
+  },
+  "app.set.priv.out.2": {
+    "en": "Names of the apps you use",
+    "bn": "আপনার ব্যবহৃত অ্যাপের নাম",
+    "status": "needs review",
+    "bnFrom": "91be8fd1"
+  },
+  "app.set.priv.out.3": {
+    "en": "Your name, account or files",
+    "bn": "আপনার নাম, অ্যাকাউন্ট বা ফাইল",
+    "status": "needs review",
+    "bnFrom": "ca89b4fa"
+  },
+  "app.set.upd.dictionaryH": {
+    "en": "Dictionary",
+    "bn": "অভিধান",
+    "status": "needs review",
+    "bnFrom": "860e1f95"
+  },
+  "app.set.upd.dictWords": {
+    "en": "{n} words, from the dict folder beside likhon.exe. Open source (MPL-2.0).",
+    "bn": "{n}টি শব্দ, likhon.exe-এর পাশের dict ফোল্ডার থেকে। ওপেন সোর্স (MPL-2.0)।",
+    "status": "needs review",
+    "bnFrom": "a4f674cc"
+  },
+  "app.set.upd.dictMissing": {
+    "en": "Not found. Keep the dict folder beside likhon.exe; without it there are no word suggestions.",
+    "bn": "পাওয়া যায়নি। dict ফোল্ডারটি likhon.exe-এর পাশে রাখুন; না থাকলে শব্দের প্রস্তাব আসবে না।",
+    "status": "needs review",
+    "bnFrom": "9a3e556c"
+  },
+  "app.set.appearance.t.default": {
+    "en": "Default",
+    "bn": "সাধারণ",
+    "status": "needs review",
+    "bnFrom": "808d7dca"
+  },
+  "app.set.appearance.t.contrast": {
+    "en": "High contrast",
+    "bn": "বেশি কনট্রাস্ট",
+    "status": "needs review",
+    "bnFrom": "5add073d"
+  },
+  "app.set.lists.err.key": {
+    "en": "Type the first part: one word, up to 60 letters, no spaces.",
+    "bn": "প্রথম অংশ লিখুন: একটি শব্দ, ৬০ অক্ষর পর্যন্ত, ফাঁক ছাড়া।",
+    "status": "needs review",
+    "bnFrom": "ab74fa6f"
+  },
+  "app.set.lists.err.value": {
+    "en": "Type the second part, up to 500 letters.",
+    "bn": "দ্বিতীয় অংশ লিখুন, ৫০০ অক্ষর পর্যন্ত।",
+    "status": "needs review",
+    "bnFrom": "379b6539"
+  },
+  "app.set.lists.err.bangla": {
+    "en": "My words are Bangla words. Switch Bangla on, or type it in Bangla.",
+    "bn": "আমার শব্দ বাংলায় হয়। বাংলা চালু করে লিখুন।",
+    "status": "needs review",
+    "bnFrom": "f6a6b6a0"
+  },
+  "app.set.lists.err.latin": {
+    "en": "Codes use English letters and signs, like ;ty.",
+    "bn": "কোডে ইংরেজি অক্ষর ও চিহ্ন হয়, যেমন ;ty।",
+    "status": "needs review",
+    "bnFrom": "01f7f8fb"
+  },
+  "app.set.lists.err.full": {
+    "en": "This list is full (50,000 entries).",
+    "bn": "তালিকাটি ভরে গেছে (৫০,০০০টি)।",
+    "status": "needs review",
+    "bnFrom": "63eb7efb"
+  },
+  "app.set.lists.err.open": {
+    "en": "Likhon could not open its data file.",
+    "bn": "লিখন তার ডেটা ফাইল খুলতে পারেনি।",
+    "status": "needs review",
+    "bnFrom": "2ea31af2"
+  },
+  "app.set.lists.today": {
+    "en": "Added today",
+    "bn": "আজ যোগ হবে",
+    "status": "needs review",
+    "bnFrom": "293a1e5f"
+  },
+  "app.set.lists.remove": {
+    "en": "Remove {key}",
+    "bn": "{key} সরান",
+    "status": "needs review",
+    "bnFrom": "6026c73c"
+  },
+  "app.set.lists.filter": {
+    "en": "Filter",
+    "bn": "ছাঁকুন",
+    "status": "needs review",
+    "bnFrom": "d7decf1a"
+  },
+  "app.set.lists.count": {
+    "en": "{n} entries",
+    "bn": "{n}টি",
+    "status": "needs review",
+    "bnFrom": "031f1648"
+  },
+  "app.set.lists.imported": {
+    "en": "Imported {added}. Skipped {skipped} lines that did not fit.",
+    "bn": "{added}টি আনা হয়েছে। মেলেনি এমন {skipped}টি লাইন বাদ।",
+    "status": "needs review",
+    "bnFrom": "e84458d5"
+  },
+  "app.set.sug.posP": {
+    "en": "Anchored, or when an app does not report its text cursor: under the top bar. The pin in the window switches it too.",
+    "bn": "আটকানো থাকলে, বা অ্যাপ কার্সরের জায়গা না জানালে: টপ বারের নিচে। উইন্ডোর পিন দিয়েও বদলানো যায়।",
+    "status": "needs review",
+    "bnFrom": "6e33788d"
+  },
+  "app.set.sug.badgeP": {
+    "en": "অ or A beside the text cursor for a moment when you switch.",
+    "bn": "বদলালে টেক্সট কার্সরের পাশে মুহূর্তের জন্য অ বা A।",
+    "status": "needs review",
+    "bnFrom": "e5d430f7"
+  },
+  "app.set.hk.nextLayoutP": {
+    "en": "Goes Phonetic → Probhat → Jatiya → Munir → Avro Easy, and round again.",
+    "bn": "ফোনেটিক → প্রভাত → জাতীয় → মুনীর → অভ্র ইজি, তারপর আবার শুরু।",
+    "status": "needs review",
+    "bnFrom": "c0647ead"
+  },
+  "app.set.hk.clear": {
+    "en": "Clear",
+    "bn": "মুছুন",
+    "status": "needs review",
+    "bnFrom": "719ea396"
+  },
+  "app.set.hk.same": {
+    "en": "{key} is already Likhon’s other key. Pick a different one.",
+    "bn": "{key} লিখনের অন্য কী হিসেবে আছে। আলাদা একটি বাছুন।",
+    "status": "needs review",
+    "bnFrom": "821eaab2"
+  },
+  "app.set.general.fadeP": {
+    "en": "After a few seconds without the mouse over it. It comes back when you point at it or switch.",
+    "bn": "কয়েক সেকেন্ড মাউস না রাখলে। মাউস রাখলে বা বদলালে ফিরে আসে।",
+    "status": "needs review",
+    "bnFrom": "d1cc73a4"
+  },
+  "app.set.tools.in": {
+    "en": "Your text",
+    "bn": "আপনার লেখা",
+    "status": "needs review",
+    "bnFrom": "c8a65d39"
+  },
+  "app.set.tools.out": {
+    "en": "Result",
+    "bn": "ফল",
+    "status": "needs review",
+    "bnFrom": "5faa59d4"
+  },
+  "app.set.tools.takaBad": {
+    "en": "Type an amount, like 1250 or ১২৫০.৫০ (up to 99 crore).",
+    "bn": "একটি অঙ্ক লিখুন, যেমন 1250 বা ১২৫০.৫০ (৯৯ কোটি পর্যন্ত)।",
+    "status": "needs review",
+    "bnFrom": "c3bd1c63"
+  },
+  "app.set.tools.takaNote": {
+    "en": "Lakh and crore, with paisa. For cheques and receipts: check the words before you sign.",
+    "bn": "লক্ষ ও কোটি, পয়সাসহ। চেক ও রসিদের জন্য: সই করার আগে কথাগুলো মিলিয়ে নিন।",
+    "status": "needs review",
+    "bnFrom": "2134f732"
+  },
+  "app.set.tools.cleanSample": {
+    "en": "আমি   ভাত খাই ।  এটা​ পেস্ট করা লেখা।",
+    "bn": "আমি   ভাত খাই ।  এটা​ পেস্ট করা লেখা।",
+    "status": "needs review",
+    "bnFrom": "05197e52"
+  },
+  "app.set.tools.cleanNote": {
+    "en": "Removes invisible characters and stray joiners, joins doubled spaces, and takes spaces out before । and punctuation.",
+    "bn": "অদৃশ্য অক্ষর ও অকারণ জোড়া-চিহ্ন সরায়, দুটো ফাঁক এক করে, আর । ও যতিচিহ্নের আগের ফাঁক তোলে।",
+    "status": "needs review",
+    "bnFrom": "94a45498"
+  },
+  "app.set.tools.howNone": {
+    "en": "no single phonetic spelling found",
+    "bn": "একক ফোনেটিক বানান পাওয়া যায়নি",
+    "status": "needs review",
+    "bnFrom": "1d42afa3"
+  },
+  "app.set.tools.howNote": {
+    "en": "Type or paste Bangla words: each shows the keys that type it in Phonetic, checked by typing them back.",
+    "bn": "বাংলা শব্দ লিখুন বা পেস্ট করুন: প্রতিটি শব্দ ফোনেটিকে কোন কী দিয়ে লেখা যায় দেখায়, লিখে মিলিয়ে দেখা।",
+    "status": "needs review",
+    "bnFrom": "9f63b828"
+  },
+  "app.set.sym.cat.bangla": {
+    "en": "Bangla",
+    "bn": "বাংলা",
+    "status": "needs review",
+    "bnFrom": "68ea04ad"
+  },
+  "app.set.sym.cat.money": {
+    "en": "Money",
+    "bn": "মুদ্রা",
+    "status": "needs review",
+    "bnFrom": "1dc043bb"
+  },
+  "app.set.sym.cat.numbers": {
+    "en": "Numbers",
+    "bn": "সংখ্যা",
+    "status": "needs review",
+    "bnFrom": "7e53821f"
+  },
+  "app.set.sym.cat.math": {
+    "en": "Maths",
+    "bn": "গণিত",
+    "status": "needs review",
+    "bnFrom": "33b87775"
+  },
+  "app.set.sym.cat.punct": {
+    "en": "Punctuation",
+    "bn": "যতিচিহ্ন",
+    "status": "needs review",
+    "bnFrom": "68fc7bd4"
+  },
+  "app.set.sym.cat.arrows": {
+    "en": "Arrows and marks",
+    "bn": "তীর ও চিহ্ন",
+    "status": "needs review",
+    "bnFrom": "3526c1ef"
+  },
+  "app.set.sym.copy": {
+    "en": "Copy {c}",
+    "bn": "{c} কপি",
+    "status": "needs review",
+    "bnFrom": "2919e974"
+  },
+  "app.set.sym.copied": {
+    "en": "{c} copied. Paste it where you are typing.",
+    "bn": "{c} কপি হয়েছে। যেখানে লিখছেন সেখানে পেস্ট করুন।",
+    "status": "needs review",
+    "bnFrom": "e5a4e6e2"
+  },
+  "app.set.sym.note": {
+    "en": "Click a symbol to copy it. A palette that types at the cursor directly comes with the native palette window.",
+    "bn": "চিহ্নে ক্লিক করলে কপি হয়। সরাসরি কার্সরে বসানোর প্যালেট আসবে নেটিভ উইন্ডোতে।",
+    "status": "needs review",
+    "bnFrom": "26d96d4d"
+  },
+  "app.set.viewer.level": {
+    "en": "Level",
+    "bn": "স্তর",
+    "status": "needs review",
+    "bnFrom": "7c7f5d04"
+  },
+  "app.set.viewer.normal": {
+    "en": "Normal",
+    "bn": "সাধারণ",
+    "status": "needs review",
+    "bnFrom": "45e118d0"
+  },
+  "app.set.viewer.print": {
+    "en": "Print or save as PDF",
+    "bn": "প্রিন্ট বা PDF",
+    "status": "needs review",
+    "bnFrom": "3ed9f194"
+  },
+  "app.set.viewer.by": {
+    "en": "Layout by {author}. Blue: with Shift.",
+    "bn": "লেআউট: {author}। নীল: Shift সহ।",
+    "status": "needs review",
+    "bnFrom": "f88d4917"
+  },
+  "app.set.side.fromFile": {
+    "en": "From a file · not reviewed",
+    "bn": "ফাইল থেকে · যাচাই হয়নি",
+    "status": "needs review",
+    "bnFrom": "3459995c"
+  },
+  "app.set.side.remove": {
+    "en": "Remove",
+    "bn": "সরান",
+    "status": "needs review",
+    "bnFrom": "e963907d"
+  },
+  "app.set.side.removeName": {
+    "en": "Remove {name}",
+    "bn": "{name} সরান",
+    "status": "needs review",
+    "bnFrom": "df7193a5"
+  },
+  "app.set.side.themesH": {
+    "en": "Themes from a file",
+    "bn": "ফাইলের থিম",
+    "status": "needs review",
+    "bnFrom": "563b5094"
+  },
+  "app.set.side.warnH": {
+    "en": "Add a file that was not reviewed?",
+    "bn": "যাচাই না করা ফাইল যোগ করবেন?",
+    "status": "needs review",
+    "bnFrom": "08dd38b7"
+  },
+  "app.set.side.warnP": {
+    "en": "Items in the library are reviewed and signed by a person before they are published. A file from somewhere else is not.\n\nLikhon checks the file strictly: it must be a Likhon layout or theme in JSON, with only the allowed parts. It cannot run anything. You can remove it at any time.",
+    "bn": "লাইব্রেরির জিনিস প্রকাশের আগে একজন মানুষ যাচাই করে সই করেন। অন্য কোথাও থেকে আসা ফাইল তা নয়।\n\nলিখন ফাইলটি কড়াভাবে যাচাই করে: এটিকে JSON-এ লিখন লেআউট বা থিম হতে হবে, শুধু অনুমোদিত অংশসহ। এটি কিছু চালাতে পারে না। যেকোনো সময় সরানো যায়।",
+    "status": "needs review",
+    "bnFrom": "0ed391c7"
+  },
+  "app.set.side.choose": {
+    "en": "Choose a file…",
+    "bn": "ফাইল বাছুন…",
+    "status": "needs review",
+    "bnFrom": "09a6281c"
+  },
+  "app.set.side.added": {
+    "en": "Added {name}.",
+    "bn": "{name} যোগ হয়েছে।",
+    "status": "needs review",
+    "bnFrom": "203af635"
+  },
+  "app.set.side.refused": {
+    "en": "Not added: {why}",
+    "bn": "যোগ হয়নি: {why}",
+    "status": "needs review",
+    "bnFrom": "017e03c8"
+  },
+  "app.set.look.fileP": {
+    "en": ".json theme files with a light and a dark version.",
+    "bn": "হালকা ও গাঢ় রূপসহ .json থিম ফাইল।",
+    "status": "needs review",
+    "bnFrom": "6c36f339"
+  },
+  "app.set.preset.default": {
+    "en": "Likhon default (F12, Phonetic)",
+    "bn": "লিখন ডিফল্ট (F12, ফোনেটিক)",
+    "status": "needs review",
+    "bnFrom": "bded31fa"
+  },
+  "app.set.preset.ctrlspace": {
+    "en": "Switch with Ctrl + Space",
+    "bn": "Ctrl + Space দিয়ে বদল",
+    "status": "needs review",
+    "bnFrom": "ae0db972"
+  },
+  "app.set.preset.fixed": {
+    "en": "Fixed keyboard (Jatiya), switch with Ctrl + Alt + B",
+    "bn": "নির্দিষ্ট কিবোর্ড (জাতীয়), Ctrl + Alt + B দিয়ে বদল",
+    "status": "needs review",
+    "bnFrom": "5eb0350a"
+  },
+  "app.set.preset.digits": {
+    "en": "Always Bangla digits",
+    "bn": "সবসময় বাংলা সংখ্যা",
+    "status": "needs review",
+    "bnFrom": "475d2bad"
+  },
+  "app.set.preset.custom": {
+    "en": "My own settings",
+    "bn": "আমার নিজের সেটিং",
+    "status": "needs review",
+    "bnFrom": "009487ce"
+  },
+  "app.set.sug.choicesH": {
+    "en": "Word choices",
+    "bn": "শব্দ বাছাই",
+    "status": "needs review",
+    "bnFrom": "5113e72d"
+  },
+  "app.set.sug.choicesP": {
+    "en": "The suggestion picked first for what you type. Import a list (one per line: the Latin letters, a space, the word), for example the one another keyboard kept for you. Likhon never adds to it by watching you type.",
+    "bn": "যা টাইপ করেন তার জন্য প্রথমে বাছা পরামর্শ। একটি তালিকা আনুন (প্রতি লাইনে একটি: ইংরেজি অক্ষর, একটি ফাঁকা, তারপর শব্দ), যেমন অন্য কোনো কিবোর্ড আপনার জন্য যেটি রেখেছিল। আপনার টাইপ দেখে লিখন এতে কিছু যোগ করে না।",
+    "status": "needs review",
+    "bnFrom": "bddefbc5"
+  },
+  "app.set.sug.choicesC1": {
+    "en": "Typed",
+    "bn": "টাইপ",
+    "status": "needs review",
+    "bnFrom": "60e5c23b"
+  },
+  "app.set.sug.choicesC2": {
+    "en": "Picked first",
+    "bn": "প্রথমে বাছা",
+    "status": "needs review",
+    "bnFrom": "28945fd8"
+  },
+  "app.set.sug.choicesEmpty": {
+    "en": "No word choices yet. Import a list, or add one above.",
+    "bn": "এখনো কোনো শব্দ বাছাই নেই। একটি তালিকা আনুন, বা ওপরে যোগ করুন।",
+    "status": "needs review",
+    "bnFrom": "aefde792"
+  },
+  "app.set.appearance.t.aero": {
+    "en": "Aero",
+    "bn": "এরো",
+    "status": "needs review",
+    "bnFrom": "75646a56"
+  },
+  "app.set.appearance.t.classic": {
+    "en": "Classic",
+    "bn": "ক্লাসিক",
+    "status": "needs review",
+    "bnFrom": "130cd7fe"
+  },
+  "app.set.appearance.t.flat-cyan": {
+    "en": "Flat cyan",
+    "bn": "ফ্ল্যাট সায়ান",
+    "status": "needs review",
+    "bnFrom": "77435a84"
+  },
+  "app.set.appearance.t.flat-mint": {
+    "en": "Flat mint",
+    "bn": "ফ্ল্যাট মিন্ট",
+    "status": "needs review",
+    "bnFrom": "a70ffc75"
+  },
+  "app.set.appearance.t.flat-red": {
+    "en": "Flat red",
+    "bn": "ফ্ল্যাট লাল",
+    "status": "needs review",
+    "bnFrom": "69c0fc50"
+  },
+  "app.set.appearance.t.flat-yellow": {
+    "en": "Flat yellow",
+    "bn": "ফ্ল্যাট হলুদ",
+    "status": "needs review",
+    "bnFrom": "75b5d70c"
+  },
+  "app.set.appearance.t.maroon": {
+    "en": "Maroon",
+    "bn": "মেরুন",
+    "status": "needs review",
+    "bnFrom": "ca6ebdf4"
+  },
+  "app.set.appearance.t.luna": {
+    "en": "Luna",
+    "bn": "লুনা",
+    "status": "needs review",
+    "bnFrom": "baaf10f1"
+  },
+  "app.set.appearance.t.royal": {
+    "en": "Royal",
+    "bn": "রয়্যাল",
+    "status": "needs review",
+    "bnFrom": "2c16ea11"
+  },
+  "app.set.appearance.t.vista": {
+    "en": "Vista",
+    "bn": "ভিস্তা",
+    "status": "needs review",
+    "bnFrom": "462d2dd3"
+  },
+  "app.set.appearance.t.vista-2": {
+    "en": "Vista 2",
+    "bn": "ভিস্তা ২",
+    "status": "needs review",
+    "bnFrom": "9d5f47f7"
+  },
+  "app.set.legacy.encBijoy": {
+    "en": "Bijoy",
+    "bn": "বিজয়",
+    "status": "needs review",
+    "bnFrom": "e8644b87"
+  },
+  "app.set.legacy.convP": {
+    "en": "Turn Unicode text into Bijoy, or old Bijoy text back into Unicode.",
+    "bn": "ইউনিকোড লেখা বিজয়ে, বা পুরোনো বিজয় লেখা আবার ইউনিকোডে বদলান।",
+    "status": "needs review",
+    "bnFrom": "85b33897"
+  },
+  "app.set.tools.convDir": {
+    "en": "Direction",
+    "bn": "দিক",
+    "status": "needs review",
+    "bnFrom": "fd8e45ba"
+  },
+  "app.set.tools.convTo": {
+    "en": "Unicode → Bijoy",
+    "bn": "ইউনিকোড → বিজয়",
+    "status": "needs review",
+    "bnFrom": "9f87e0a2"
+  },
+  "app.set.tools.convFrom": {
+    "en": "Bijoy → Unicode",
+    "bn": "বিজয় → ইউনিকোড",
+    "status": "needs review",
+    "bnFrom": "661eb6c7"
+  },
+  "app.set.tools.convNote": {
+    "en": "Bijoy and Proshika text read correctly only in their own fonts (SutonnyMJ, Lipi); here they show as Latin letters. Nothing leaves this computer.",
+    "bn": "বিজয় ও প্রশিকা লেখা শুধু নিজ নিজ ফন্টে (সুতন্বীএমজে, লিপি) ঠিক পড়া যায়; এখানে লাতিন অক্ষরে দেখায়। কিছুই এই কম্পিউটারের বাইরে যায় না।",
+    "status": "needs review",
+    "bnFrom": "fd19cf2c"
+  },
+  "app.set.upd.siteNote": {
+    "en": "Likhon goes online only when you click a button on this page, the Library page or Donate words, and only to {site}.",
+    "bn": "এই পাতা, লাইব্রেরি পাতা বা শব্দ দানে আপনি বোতাম চাপলে তবেই লিখন অনলাইনে যায়, আর শুধু {site}-এ।",
+    "status": "needs review",
+    "bnFrom": "ac49b909"
+  },
+  "app.set.upd.checking": {
+    "en": "Checking…",
+    "bn": "দেখা হচ্ছে…",
+    "status": "needs review",
+    "bnFrom": "820d6004"
+  },
+  "app.set.upd.checked": {
+    "en": "Checked just now",
+    "bn": "এইমাত্র দেখা হলো",
+    "status": "needs review",
+    "bnFrom": "9a776379"
+  },
+  "app.set.upd.latest": {
+    "en": "You have the latest version.",
+    "bn": "আপনার কাছে সর্বশেষ সংস্করণই আছে।",
+    "status": "needs review",
+    "bnFrom": "eaed5f0c"
+  },
+  "app.set.upd.noRelease": {
+    "en": "No release is published yet.",
+    "bn": "এখনো কোনো সংস্করণ প্রকাশ হয়নি।",
+    "status": "needs review",
+    "bnFrom": "9fbcddb1"
+  },
+  "app.set.upd.newer": {
+    "en": "Version {version} is available.",
+    "bn": "সংস্করণ {version} এসেছে।",
+    "status": "needs review",
+    "bnFrom": "623053e0"
+  },
+  "app.set.upd.getIt": {
+    "en": "Open the download page",
+    "bn": "ডাউনলোড পাতা খুলুন",
+    "status": "needs review",
+    "bnFrom": "92dfd133"
+  },
+  "app.set.upd.failed": {
+    "en": "Could not check: {error}",
+    "bn": "দেখা গেল না: {error}",
+    "status": "needs review",
+    "bnFrom": "711f7cb9"
+  },
+  "app.set.upd.dictGet": {
+    "en": "Download",
+    "bn": "নামান",
+    "status": "needs review",
+    "bnFrom": "a479c9c3"
+  },
+  "app.set.upd.dictDone": {
+    "en": "Downloaded: {n} words. Suggestions use it now.",
+    "bn": "নামানো হয়েছে: {n}টি শব্দ। প্রস্তাব এখন এটি দিয়েই আসবে।",
+    "status": "needs review",
+    "bnFrom": "05d05c07"
+  },
+  "app.set.upd.dictFailed": {
+    "en": "Download failed: {error}",
+    "bn": "নামানো গেল না: {error}",
+    "status": "needs review",
+    "bnFrom": "ee4ff5b4"
+  },
+  "app.set.lib.browseH": {
+    "en": "From the library",
+    "bn": "লাইব্রেরি থেকে",
+    "status": "needs review",
+    "bnFrom": "b4edc286"
+  },
+  "app.set.lib.browseP": {
+    "en": "Layouts, themes, word lists and fonts published on the Likhon website. Nothing downloads until you click Add.",
+    "bn": "লিখন ওয়েবসাইটে প্রকাশিত লেআউট, থিম, শব্দতালিকা ও ফন্ট। যোগ করুন না চাপা পর্যন্ত কিছুই নামে না।",
+    "status": "needs review",
+    "bnFrom": "205e3734"
+  },
+  "app.set.lib.load": {
+    "en": "Show the library",
+    "bn": "লাইব্রেরি দেখান",
+    "status": "needs review",
+    "bnFrom": "7cb6544e"
+  },
+  "app.set.lib.loading": {
+    "en": "Loading…",
+    "bn": "আনা হচ্ছে…",
+    "status": "needs review",
+    "bnFrom": "33ce4174"
+  },
+  "app.set.lib.add": {
+    "en": "Add",
+    "bn": "যোগ করুন",
+    "status": "needs review",
+    "bnFrom": "61cc55aa"
+  },
+  "app.set.lib.remove": {
+    "en": "Remove",
+    "bn": "সরান",
+    "status": "needs review",
+    "bnFrom": "e963907d"
+  },
+  "app.set.lib.added": {
+    "en": "Added",
+    "bn": "যোগ হয়েছে",
+    "status": "needs review",
+    "bnFrom": "b68734c2"
+  },
+  "app.set.lib.unsigned": {
+    "en": "Not signed",
+    "bn": "স্বাক্ষর নেই",
+    "status": "needs review",
+    "bnFrom": "f0582a9d"
+  },
+  "app.set.lib.unsignedWarn": {
+    "en": "Items from the development site are not signed yet. Add only what you trust.",
+    "bn": "ডেভেলপমেন্ট সাইটের জিনিসে এখনো স্বাক্ষর নেই। ভরসা করেন শুধু তাই যোগ করুন।",
+    "status": "needs review",
+    "bnFrom": "88c3eac6"
+  },
+  "app.set.lib.onSite": {
+    "en": "On the website",
+    "bn": "ওয়েবসাইটে",
+    "status": "needs review",
+    "bnFrom": "56095437"
+  },
+  "app.set.lib.failed": {
+    "en": "Could not load the library: {error}",
+    "bn": "লাইব্রেরি আনা গেল না: {error}",
+    "status": "needs review",
+    "bnFrom": "9b884127"
+  },
+  "app.set.lib.addFailed": {
+    "en": "Could not add it: {error}",
+    "bn": "যোগ করা গেল না: {error}",
+    "status": "needs review",
+    "bnFrom": "6444f6f4"
+  },
+  "app.set.lib.empty": {
+    "en": "The library is empty for now.",
+    "bn": "লাইব্রেরি আপাতত খালি।",
+    "status": "needs review",
+    "bnFrom": "e814fb5f"
+  },
+  "app.set.lib.type.layout": {
+    "en": "Layout",
+    "bn": "লেআউট",
+    "status": "needs review",
+    "bnFrom": "972ad8d8"
+  },
+  "app.set.lib.type.theme": {
+    "en": "Theme",
+    "bn": "থিম",
+    "status": "needs review",
+    "bnFrom": "a797e309"
+  },
+  "app.set.lib.type.wordlist": {
+    "en": "Word list",
+    "bn": "শব্দতালিকা",
+    "status": "needs review",
+    "bnFrom": "e5aaa5b5"
+  },
+  "app.set.lib.type.autocorrect": {
+    "en": "Autocorrect list",
+    "bn": "অটোকারেক্ট তালিকা",
+    "status": "needs review",
+    "bnFrom": "96853de6"
+  },
+  "app.set.lib.type.shortcuts": {
+    "en": "Shortcuts",
+    "bn": "শর্টকাট",
+    "status": "needs review",
+    "bnFrom": "90c93523"
+  },
+  "app.set.lib.type.font": {
+    "en": "Font",
+    "bn": "ফন্ট",
+    "status": "needs review",
+    "bnFrom": "b97c4d4c"
+  },
+  "app.set.priv.donateBtn": {
+    "en": "Choose words…",
+    "bn": "শব্দ বাছুন…",
+    "status": "needs review",
+    "bnFrom": "7625cdb8"
+  },
+  "app.set.priv.donateDlg": {
+    "en": "Tick the words to send. Only these words go to {site}, nothing else.",
+    "bn": "যে শব্দগুলো পাঠাবেন সেগুলোতে টিক দিন। শুধু এগুলোই {site}-এ যাবে, আর কিছু নয়।",
+    "status": "needs review",
+    "bnFrom": "8585e0d3"
+  },
+  "app.set.priv.donateNone": {
+    "en": "No new words to donate: every word Likhon learned is already in the dictionary.",
+    "bn": "দান করার মতো নতুন শব্দ নেই: লিখনের শেখা সব শব্দ আগে থেকেই অভিধানে আছে।",
+    "status": "needs review",
+    "bnFrom": "7c736a95"
+  },
+  "app.set.priv.donateSend": {
+    "en": "Send",
+    "bn": "পাঠান",
+    "status": "needs review",
+    "bnFrom": "9bc2575c"
+  },
+  "app.set.priv.donateDone": {
+    "en": "Thank you. {n} words sent.",
+    "bn": "ধন্যবাদ। {n}টি শব্দ পাঠানো হয়েছে।",
+    "status": "needs review",
+    "bnFrom": "d7a49d41"
+  },
+  "app.set.priv.donateFailed": {
+    "en": "Could not send: {error}",
+    "bn": "পাঠানো গেল না: {error}",
+    "status": "needs review",
+    "bnFrom": "27f917c2"
+  },
+  "app.set.priv.learnedN": {
+    "en": "{n} words learned. My words, autocorrect and shortcuts stay.",
+    "bn": "{n}টি শব্দ শেখা হয়েছে। আমার শব্দ, অটোকারেক্ট ও শর্টকাট থেকে যাবে।",
+    "status": "needs review",
+    "bnFrom": "a5fbf961"
+  },
+  "app.set.priv.forgotten": {
+    "en": "Learned words forgotten.",
+    "bn": "শেখা শব্দ মুছে ফেলা হয়েছে।",
+    "status": "needs review",
+    "bnFrom": "3a4c465d"
+  },
+  "app.set.hk.convertP": {
+    "en": "Converts the selected text: Bangla Unicode to Bijoy, or Bijoy to Unicode.",
+    "bn": "বাছাই করা লেখা বদলায়: ইউনিকোড বাংলা থেকে বিজয়, বা বিজয় থেকে ইউনিকোড।",
+    "status": "needs review",
+    "bnFrom": "58618942"
+  },
+  "app.set.hk.undoP": {
+    "en": "Undoes the last conversion, within a minute.",
+    "bn": "শেষ রূপান্তর ফেরায়, এক মিনিটের মধ্যে।",
+    "status": "needs review",
+    "bnFrom": "72a035fd"
+  },
+  "app.set.hk.addWordP": {
+    "en": "Adds the selected Bangla words to My words.",
+    "bn": "বাছাই করা বাংলা শব্দ আমার শব্দে যোগ করে।",
+    "status": "needs review",
+    "bnFrom": "f1a8e08d"
+  },
+  "app.set.hk.quickToolsP": {
+    "en": "Opens the Tools page.",
+    "bn": "টুলস পাতা খোলে।",
+    "status": "needs review",
+    "bnFrom": "cfdf4cfd"
+  },
+  "app.set.hk.howTypeP": {
+    "en": "Opens How do I type this?",
+    "bn": "এটা কীভাবে লিখব? খোলে।",
+    "status": "needs review",
+    "bnFrom": "372a89f5"
+  },
+  "app.set.hk.symbolsP": {
+    "en": "Opens the symbol palette.",
+    "bn": "চিহ্ন প্যালেট খোলে।",
+    "status": "needs review",
+    "bnFrom": "0b858e49"
+  },
+  "app.set.lib.type.symbols": {
+    "en": "Symbols",
+    "bn": "চিহ্ন",
+    "status": "needs review",
+    "bnFrom": "22ad664e"
+  },
+  "app.set.lib.type.emoji": {
+    "en": "Emoji names",
+    "bn": "ইমোজির নাম",
+    "status": "needs review",
+    "bnFrom": "3b371ba4"
+  },
+  "app.set.lib.type.translation": {
+    "en": "Translation",
+    "bn": "অনুবাদ",
+    "status": "needs review",
+    "bnFrom": "ac26a7a9"
+  },
+  "app.set.lib.type.domain": {
+    "en": "Subject words",
+    "bn": "বিষয়ভিত্তিক শব্দ",
+    "status": "needs review",
+    "bnFrom": "4342be40"
+  },
+  "app.set.lib.type.legacy": {
+    "en": "Legacy encoding",
+    "bn": "পুরোনো এনকোডিং",
+    "status": "needs review",
+    "bnFrom": "477f5ccc"
+  },
+  "app.set.fonts.restoreBtn": {
+    "en": "Restore Windows default",
+    "bn": "উইন্ডোজের ডিফল্ট ফেরান",
+    "status": "needs review",
+    "bnFrom": "c2f7450e"
+  },
+  "app.set.fonts.restored": {
+    "en": "Windows' own Bangla font is back. Sign out and back in to see it everywhere.",
+    "bn": "উইন্ডোজের নিজের বাংলা ফন্ট ফিরেছে। সবখানে দেখতে একবার সাইন আউট করে আবার সাইন ইন করুন।",
+    "status": "needs review",
+    "bnFrom": "aee05c92"
+  },
+  "app.set.fonts.cancelled": {
+    "en": "Nothing changed: Windows did not get permission.",
+    "bn": "কিছু বদলায়নি: উইন্ডোজ অনুমতি পায়নি।",
+    "status": "needs review",
+    "bnFrom": "aa9121d7"
+  },
+  "app.set.fonts.defaultFailed": {
+    "en": "It did not work (code {code}). Nothing was lost: the old setting is saved.",
+    "bn": "কাজ হয়নি (কোড {code})। কিছু হারায়নি: আগের সেটিং সংরক্ষিত আছে।",
+    "status": "needs review",
+    "bnFrom": "05bf7567"
+  },
+  "app.set.general.winKbH": {
+    "en": "In Windows' keyboard list",
+    "bn": "উইন্ডোজের কিবোর্ড তালিকায়",
+    "status": "needs review",
+    "bnFrom": "81177c05"
+  },
+  "app.set.general.winKbOn": {
+    "en": "Likhon is a Windows keyboard: pick it with Win+Space. It always types Bangla, with your layout and suggestions; pick another keyboard for English.",
+    "bn": "লিখন উইন্ডোজের একটি কিবোর্ড: Win+Space দিয়ে বাছুন। এটি সবসময় বাংলা লেখে, আপনার লেআউট আর প্রস্তাবসহ; ইংরেজির জন্য অন্য কিবোর্ড বাছুন।",
+    "status": "needs review",
+    "bnFrom": "c2543ece"
+  },
+  "app.set.general.winKbOff": {
+    "en": "Not added yet. Adding it asks Windows for administrator permission once.",
+    "bn": "এখনো যোগ হয়নি। যোগ করতে উইন্ডোজ একবার অ্যাডমিনিস্ট্রেটরের অনুমতি চাইবে।",
+    "status": "needs review",
+    "bnFrom": "439c3e98"
+  },
+  "app.set.general.winKbChipOn": {
+    "en": "Added",
+    "bn": "যোগ হয়েছে",
+    "status": "needs review",
+    "bnFrom": "b68734c2"
+  },
+  "app.set.general.winKbChipOff": {
+    "en": "Not added",
+    "bn": "যোগ হয়নি",
+    "status": "needs review",
+    "bnFrom": "a5651658"
+  },
+  "app.set.general.winKbBtn": {
+    "en": "Windows keyboard settings",
+    "bn": "উইন্ডোজের কিবোর্ড সেটিংস",
+    "status": "needs review",
+    "bnFrom": "91c10349"
+  },
+  "app.set.general.winKbBusy": {
+    "en": "Waiting for Windows…",
+    "bn": "উইন্ডোজের অপেক্ষায়…",
+    "status": "needs review",
+    "bnFrom": "e91232c3"
+  },
+  "app.set.general.winKbAdded": {
+    "en": "Done. Press Win+Space and pick লিখন (Likhon). Apps that were already open use the new keyboard after you restart them (or sign out and back in).",
+    "bn": "হয়ে গেছে। Win+Space চেপে লিখন (Likhon) বাছুন। আগে থেকে খোলা অ্যাপগুলো আবার চালু করলে (বা সাইন আউট করে আবার ঢুকলে) নতুন কিবোর্ড পাবে।",
+    "status": "needs review",
+    "bnFrom": "d0b897b7"
+  },
+  "app.set.general.winKbRemoved": {
+    "en": "Removed. If an app still shows it, sign out and back in.",
+    "bn": "সরানো হয়েছে। কোনো অ্যাপে এখনো দেখালে সাইন আউট করে আবার ঢুকুন।",
+    "status": "needs review",
+    "bnFrom": "d648cd66"
+  },
+  "app.set.general.winKbFailed": {
+    "en": "It did not work (code {code}).",
+    "bn": "কাজ হয়নি (কোড {code})।",
+    "status": "needs review",
+    "bnFrom": "cd87bc5a"
+  },
+  "app.set.general.winKbNoFiles": {
+    "en": "This copy of Likhon was built without the keyboard files.",
+    "bn": "লিখনের এই কপিতে কিবোর্ডের ফাইল নেই।",
+    "status": "needs review",
+    "bnFrom": "cd4fced7"
+  },
+  "app.set.legacy.encProshika": {
+    "en": "Proshika",
+    "bn": "প্রশিকা",
+    "status": "needs review",
+    "bnFrom": "374e79c1"
+  },
+  "app.set.legacy.proshikaNote": {
+    "en": "Proshika output is new and has not been checked against real Proshika documents yet. Some joined letters may come out as separate letters with a hasanta.",
+    "bn": "প্রশিকা আউটপুট নতুন, আসল প্রশিকা লেখার সঙ্গে এখনো মিলিয়ে দেখা হয়নি। কিছু যুক্তবর্ণ হসন্তসহ আলাদা অক্ষরে আসতে পারে।",
+    "status": "needs review",
+    "bnFrom": "8ec3461f"
+  },
+  "app.set.lib.tabsAria": {
+    "en": "Kinds of library items",
+    "bn": "লাইব্রেরির জিনিসের ধরন",
+    "status": "needs review",
+    "bnFrom": "442691c8"
+  },
+  "app.set.lib.tab.layouts": {
+    "en": "Layouts",
+    "bn": "লেআউট",
+    "status": "needs review",
+    "bnFrom": "28e6f54e"
+  },
+  "app.set.lib.tab.themes": {
+    "en": "Themes",
+    "bn": "থিম",
+    "status": "needs review",
+    "bnFrom": "94d5186b"
+  },
+  "app.set.lib.tab.fonts": {
+    "en": "Fonts",
+    "bn": "ফন্ট",
+    "status": "needs review",
+    "bnFrom": "ffe688a5"
+  },
+  "app.set.lib.tab.other": {
+    "en": "Other",
+    "bn": "অন্যান্য",
+    "status": "needs review",
+    "bnFrom": "6e6a6f20"
+  },
+  "app.set.lib.tabEmpty": {
+    "en": "Nothing of this kind yet.",
+    "bn": "এই ধরনের কিছু এখনো নেই।",
+    "status": "needs review",
+    "bnFrom": "7dabf021"
+  },
+  "app.set.priv.voteBtn": {
+    "en": "Vote on new words",
+    "bn": "নতুন শব্দে ভোট দিন",
+    "status": "needs review",
+    "bnFrom": "1e9d8676"
+  },
+  "app.set.upd.dictNewer": {
+    "en": "A newer dictionary ({version}, {n} words) is on the Likhon site, with new words people donated and reviewers approved.",
+    "bn": "লিখন সাইটে নতুন অভিধান ({version}, {n}টি শব্দ) আছে, যাতে মানুষের দান করা ও পর্যালোচকদের অনুমোদিত নতুন শব্দ আছে।",
+    "status": "needs review",
+    "bnFrom": "878a4c04"
+  },
+  "app.set.look.fontDefault": {
+    "en": "Hind Siliguri (Likhon's font)",
+    "bn": "হিন্দ শিলিগুড়ি (লিখনের ফন্ট)",
+    "status": "needs review",
+    "bnFrom": "65f1c998"
+  },
+  "app.set.fonts.restoreP": {
+    "en": "An earlier Likhon made {font} Windows' default Bangla font. Likhon no longer changes this; Restore puts Windows' own setting back (Windows asks for administrator permission once).",
+    "bn": "আগের একটি লিখন {font}-কে উইন্ডোজের ডিফল্ট বাংলা ফন্ট করেছিল। লিখন এখন আর এটি বদলায় না; ফেরান চাপলে উইন্ডোজের নিজের সেটিং ফিরবে (উইন্ডোজ একবার অ্যাডমিনিস্ট্রেটরের অনুমতি চাইবে)।",
+    "status": "needs review",
+    "bnFrom": "a11879d1"
+  },
+  "app.set.look.fontP": {
+    "en": "Every Likhon window uses it: Settings, the top bar and its menus, the tray menu, the on-screen keyboard and the suggestion window. A wide font can make them crowded.",
+    "bn": "লিখনের সব জানালায় এটি ব্যবহার হয়: সেটিংস, টপ বার ও এর মেনু, ট্রে মেনু, অন-স্ক্রিন কিবোর্ড আর প্রস্তাবের জানালা। চওড়া ফন্টে এগুলো ঘিঞ্জি দেখাতে পারে।",
+    "status": "needs review",
+    "bnFrom": "2e5ed582"
+  },
+  "app.set.general.layoutH": {
+    "en": "Layout",
+    "bn": "লেআউট",
+    "status": "needs review",
+    "bnFrom": "972ad8d8"
+  },
+  "app.set.general.layoutP": {
+    "en": "The same as the top bar, the on-screen keyboard and Layouts. The Likhon keyboard in Win+Space types with it too.",
+    "bn": "টপ বার, অন-স্ক্রিন কিবোর্ড আর লেআউট পাতার মতোই। Win+Space-এর লিখন কিবোর্ডও এটি দিয়েই লেখে।",
+    "status": "needs review",
+    "bnFrom": "e4429aa4"
+  },
+  "app.set.general.winKbUpdate": {
+    "en": "Update",
+    "bn": "হালনাগাদ করুন",
+    "status": "needs review",
+    "bnFrom": "fb91e24f"
+  },
+  "app.set.general.winKbStale": {
+    "en": "This copy of Likhon has a newer Likhon keyboard than the one Windows uses. Updating asks Windows for administrator permission once.",
+    "bn": "উইন্ডোজ যে লিখন কিবোর্ড ব্যবহার করছে, লিখনের এই কপিতে তার চেয়ে নতুনটি আছে। হালনাগাদ করতে উইন্ডোজ একবার অ্যাডমিনিস্ট্রেটরের অনুমতি চাইবে।",
+    "status": "needs review",
+    "bnFrom": "e1aa5ad3"
+  },
+  "app.set.tools.convToProshika": {
+    "en": "Unicode → Proshika",
+    "bn": "ইউনিকোড → প্রশিকা",
+    "status": "needs review",
+    "bnFrom": "944c23d8"
+  },
+  "app.set.tools.convFromProshika": {
+    "en": "Proshika → Unicode",
+    "bn": "প্রশিকা → ইউনিকোড",
+    "status": "needs review",
+    "bnFrom": "3c3b52ca"
+  }
+}

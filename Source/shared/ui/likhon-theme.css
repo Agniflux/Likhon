@@ -1,0 +1,92 @@
+/* The component library in Likhon (owner decision 2026-10-23: it is the component system of the admin, the website
+   and the desktop Settings window, and is never named on screen; colours, icons and type stay the v2 design). Its
+   semantic colours are pointed at the v2 tokens (Reference/design-tokens.json, the
+   --c-* variables each surface already defines for light and dark, and the desktop themes), so its components
+   draw in the Likhon palette and follow light, dark and the chosen theme. Imported by each surface's Tailwind entry
+   after the library's own theme: Web/Laravel/resources/css/ui-*.css and Desktop/Source/settings-ui/src/ui.css.
+   No colour values here. */
+
+@theme {
+    --font-sans: var(--font-ui, 'Hind Siliguri'), 'Nirmala UI', system-ui, sans-serif;
+    --font-body: var(--font-ui, 'Hind Siliguri'), 'Nirmala UI', system-ui, sans-serif;
+}
+
+/* Stronger than the library's own `.dark { … }` block, so the tokens decide in both modes. */
+:root:root, :root.dark, .dark.dark {
+    /* Text */
+    --color-heading: var(--c-ink);
+    --color-body: var(--c-ink);
+    --color-body-subtle: var(--c-muted);
+    --color-fg-brand: var(--c-accent);
+    --color-fg-brand-strong: var(--c-accent);
+    --color-fg-brand-subtle: var(--c-sel);
+    --color-fg-success: var(--c-green);
+    --color-fg-success-strong: var(--c-green);
+    --color-fg-danger: var(--c-red);
+    --color-fg-danger-strong: var(--c-red);
+    --color-fg-warning: var(--c-amber);
+    --color-fg-warning-subtle: var(--c-amber);
+    --color-fg-disabled: var(--c-muted);
+
+    /* Surfaces: cards, modals and inputs on the surface; table heads and hovers on surface2; the page on bg. */
+    --color-neutral-primary-soft: var(--c-surface);
+    --color-neutral-primary: var(--c-surface);
+    --color-neutral-primary-medium: var(--c-surface);
+    --color-neutral-primary-strong: var(--c-surface2);
+    --color-neutral-secondary-soft: var(--c-surface2);
+    --color-neutral-secondary: var(--c-bg);
+    --color-neutral-secondary-medium: var(--c-surface);
+    --color-neutral-secondary-strong: var(--c-surface2);
+    --color-neutral-secondary-strongest: var(--c-line);
+    --color-neutral-tertiary-soft: var(--c-surface2);
+    --color-neutral-tertiary: var(--c-surface2);
+    --color-neutral-tertiary-medium: var(--c-surface2);
+    --color-neutral-quaternary: var(--c-line);
+    --color-neutral-quaternary-medium: var(--c-line);
+    --color-gray: var(--c-line);
+    --color-muted: var(--c-surface2);
+    --color-disabled: var(--c-surface2);
+
+    /* Brand: the accent, its hover shade, and the selection tint for soft grounds and focus rings. */
+    --color-brand: var(--c-accent);
+    --color-brand-strong: var(--c-accentHi);
+    --color-brand-light: var(--c-accentHi);
+    --color-brand-medium: var(--c-sel);
+    --color-brand-soft: var(--c-sel);
+    --color-brand-softer: var(--c-sel);
+    --color-brand-subtle: var(--c-sel);
+
+    /* Status */
+    --color-success: var(--c-green);
+    --color-success-strong: var(--c-green);
+    --color-success-soft: var(--c-greenSoft);
+    --color-success-medium: var(--c-greenSoft);
+    --color-success-subtle: var(--c-greenSoft);
+    --color-danger: var(--c-red);
+    --color-danger-strong: var(--c-red);
+    --color-danger-soft: var(--c-redSoft);
+    --color-danger-medium: var(--c-redSoft);
+    --color-danger-subtle: var(--c-redSoft);
+    --color-warning: var(--c-amber);
+    --color-warning-strong: var(--c-amber);
+    --color-warning-soft: var(--c-amberSoft);
+    --color-warning-medium: var(--c-amberSoft);
+    --color-warning-subtle: var(--c-amberSoft);
+    --color-dark-soft: var(--c-ink);
+    --color-dark: var(--c-ink);
+    --color-dark-strong: var(--c-ink);
+    --color-dark-subtle: var(--c-ink);
+    --color-dark-backdrop: rgb(0 0 0 / 0.5);
+
+    /* Borders */
+    --color-buffer: var(--c-surface);
+    --color-buffer-medium: var(--c-surface);
+    --color-buffer-strong: var(--c-surface);
+    --color-light-subtle: var(--c-line);
+    --color-light: var(--c-line);
+    --color-light-medium: var(--c-line);
+    --color-default-subtle: var(--c-line);
+    --color-default: var(--c-line);
+    --color-default-medium: var(--c-line);
+    --color-default-strong: var(--c-line);
+}

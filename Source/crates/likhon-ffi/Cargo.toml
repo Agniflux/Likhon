@@ -1,0 +1,15 @@
+[package]
+name = "likhon-ffi"
+description = "C interface to the typing engine for the macOS input method and the Linux IBus engine: one session per text field, preedit and commit text out."
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[dependencies]
+likhon-engine = { path = "../likhon-engine", default-features = false }
+likhon-store = { path = "../likhon-store" }
+serde_json = "1.0.154"

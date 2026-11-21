@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "green",
+  "name": {
+    "en": "Green",
+    "bn": "সবুজ"
+  },
+  "author": "Likhon",
+  "light": {
+    "desk": "#DCE6DF",
+    "surface": "#FFFFFF",
+    "surface2": "#EEF2EE",
+    "line": "#D6DDD5",
+    "ink": "#18201A",
+    "muted": "#55605A",
+    "accent": "#1C6B47",
+    "on": "#FFFFFF",
+    "sel": "#E1F1E8"
+  },
+  "dark": {
+    "desk": "#0F1512",
+    "surface": "#1E2320",
+    "surface2": "#262C28",
+    "line": "#36403A",
+    "ink": "#E9EEEA",
+    "muted": "#A2ACA5",
+    "accent": "#6FD3A0",
+    "on": "#0F1512",
+    "sel": "#1F3D2E"
+  }
+}

@@ -1,0 +1,21 @@
+# Likhon desktop workspace (Desktop/CLAUDE.md, section 3).
+# tsf/ is the text-service DLL (likhon_tsf.dll); settings-ui/ is built by npm, not cargo.
+[workspace]
+resolver = "2"
+members = ["app", "tsf", "crates/likhon-engine", "crates/likhon-ffi", "crates/likhon-packs", "crates/likhon-store", "crates/likhon-text"]
+exclude = ["crates/likhon-wasm"]
+
+[workspace.package]
+version = "0.2.1"
+edition = "2021"
+publish = false
+# Likhon's own code: Mozilla Public License 2.0 (owner decision 2026-10-24; LICENSING.md section 1).
+license = "MPL-2.0"
+
+# Starting point from Desktop/CLAUDE.md section 4. Measure every change and log it in SIZE.md.
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

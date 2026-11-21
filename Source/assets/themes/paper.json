@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "paper",
+  "name": {
+    "en": "Paper",
+    "bn": "কাগজ"
+  },
+  "author": "Likhon",
+  "light": {
+    "desk": "#E8E4DA",
+    "surface": "#FBF8F1",
+    "surface2": "#F3EEE3",
+    "line": "#E2DACB",
+    "ink": "#2B2116",
+    "muted": "#6E5F4C",
+    "accent": "#8A4B12",
+    "on": "#FFFFFF",
+    "sel": "#F3E6D2"
+  },
+  "dark": {
+    "desk": "#16130E",
+    "surface": "#221E18",
+    "surface2": "#2B261F",
+    "line": "#3D362C",
+    "ink": "#EFE6D8",
+    "muted": "#B5A893",
+    "accent": "#E3A766",
+    "on": "#221E18",
+    "sel": "#4A3826"
+  }
+}

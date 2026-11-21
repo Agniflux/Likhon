@@ -1,0 +1,8 @@
+{
+  "name": "likhon-icon-build",
+  "private": true,
+  "description": "Build-time only: rasterizes the v2 icon pack and the quill mark into the exe's .ico files. Nothing here ships.",
+  "type": "module",
+  "scripts": { "build": "node make-icons.mjs" },
+  "devDependencies": { "@resvg/resvg-js": "2.6.2" }
+}

@@ -1,0 +1,53 @@
+# ---- build output ----
+target/
+target-*/
+dist/
+node_modules/
+vendor/
+Product/Portable/*
+Product/Setup/*
+Product/Linux/*
+Product/Mac/*
+!Product/Portable/.gitkeep
+!Product/Setup/.gitkeep
+Linux/out/
+Mac/build/
+Source/shared/icons/svg/
+
+# ---- secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.pfx
+*.key
+*.pem
+signing/
+
+# ---- local ----
+*.log
+.DS_Store
+Thumbs.db
+
+# ======================================================================================================
+# Kept on the maintainer's disk but NOT in the public repository (github.com/Agniflux/Likhon).
+# The repository is the app: source, installer, Linux, Mac, the build workflow, and the design tokens and artwork the
+# builds read. Nothing internal, personal or of unclear licence.
+# ======================================================================================================
+
+# Internal: signing tools and key notes, the maintainer's brief
+/Signer/
+# Every CLAUDE.md, at any depth (and agent instruction files): the maintainer's working briefs stay local
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.claude/
+
+# The website's own text (web, admin, member area, emails) lives with the website
+/Source/shared/text/phrases/web/
+/Source/shared/text/phrases/admin/
+/Source/shared/text/phrases/up/
+/Source/shared/text/phrases/mail/
+
+# No clear licence or source recorded: not published
+/Source/assets/layouts/unijoy/
+/Source/assets/dict/mpl/words.full.sqlite

@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "flat-red",
+  "name": {
+    "en": "Flat red",
+    "bn": "ফ্ল্যাট লাল"
+  },
+  "author": "Tanbin Islam Siyam",
+  "light": {
+    "desk": "#EBEBEB",
+    "surface": "#FFFFFF",
+    "surface2": "#F2F2F2",
+    "line": "#D4D4D4",
+    "ink": "#252525",
+    "muted": "#5C5C5C",
+    "accent": "#B00C22",
+    "on": "#FFFFFF",
+    "sel": "#F6D4D9"
+  },
+  "dark": {
+    "desk": "#1B1B1B",
+    "surface": "#252525",
+    "surface2": "#333333",
+    "line": "#3B3A3A",
+    "ink": "#FFFFFF",
+    "muted": "#BDBDBD",
+    "accent": "#D2283E",
+    "on": "#FFFFFF",
+    "sel": "#4A1A21"
+  }
+}

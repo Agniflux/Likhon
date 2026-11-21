@@ -1,0 +1,22 @@
+{
+  "term.library": { "en": "Library", "bn": { "plain": "লাইব্রেরি", "forms": {} }, "where": ["Settings page", "website page"], "avoid": "Do not call it Store or Market.", "status": "draft" },
+  "term.layout": { "en": "Layout", "bn": { "plain": "লেআউট", "forms": {} }, "where": ["Top bar", "Settings", "designers"], "avoid": "Means keyboard layout.", "status": "draft" },
+  "term.theme": { "en": "Theme", "bn": { "plain": "থিম", "forms": {} }, "where": ["Settings", "designers"], "avoid": "Colors and fonts of the suggestion window and top bar.", "status": "draft" },
+  "term.pack": { "en": "Pack", "bn": { "plain": "", "forms": {} }, "where": ["Library", "updates"], "avoid": "One word for any downloadable bundle. Do not mix with package.", "status": "draft" },
+  "term.topbar": { "en": "Top bar", "bn": { "plain": "টপ বার", "forms": {} }, "where": ["Tray menu", "Settings"], "avoid": "The small floating bar.", "status": "draft" },
+  "term.suggestion_window": { "en": "Suggestion window", "bn": { "plain": "", "forms": {} }, "where": ["Settings", "help"], "avoid": "The list of candidate words.", "status": "draft" },
+  "term.portable": { "en": "Portable edition", "bn": { "plain": "", "forms": {} }, "where": ["Download page", "About"], "avoid": "", "status": "draft" },
+  "term.native_addon": { "en": "Full", "bn": { "plain": "পূর্ণ", "forms": {} }, "where": ["Download page", "installer"], "avoid": "The installed edition (was \"Native add-on\"). Same features as Portable; never call it Native add-on.", "status": "draft" },
+  "term.legacy_encoding": { "en": "Legacy encoding", "bn": { "plain": "", "forms": {} }, "where": ["Output page", "toasts"], "avoid": "Describe in plain words as older Bangla fonts. Encoding names are labels, not translated.", "status": "draft" },
+  "term.phonetic": { "en": "Phonetic typing", "bn": { "plain": "", "forms": {} }, "where": ["Typing page", "help"], "avoid": "Typing Bangla with English letters.", "status": "draft" },
+  "term.autocorrect": { "en": "Autocorrect", "bn": { "plain": "", "forms": {} }, "where": ["Typing page", "library"], "avoid": "", "status": "draft" },
+  "term.text_shortcut": { "en": "Text shortcut", "bn": { "plain": "", "forms": {} }, "where": ["Words page", "library"], "avoid": "A short abbreviation that expands to a phrase.", "status": "draft" },
+  "term.personal_words": { "en": "Personal words", "bn": { "plain": "", "forms": {} }, "where": ["Words page"], "avoid": "", "status": "draft" },
+  "term.donate_words": { "en": "Donate words", "bn": { "plain": "", "forms": {} }, "where": ["Community page"], "avoid": "Opt-in, always asks all or selected.", "status": "draft" },
+  "term.add_from_file": { "en": "Add from file", "bn": { "plain": "", "forms": {} }, "where": ["Layouts", "themes"], "avoid": "Sideloading, for layouts and themes only.", "status": "draft" },
+  "term.restore_default": { "en": "Restore default", "bn": { "plain": "", "forms": {} }, "where": ["Layouts", "themes", "settings"], "avoid": "", "status": "draft" },
+  "term.app_rules": { "en": "App rules", "bn": { "plain": "", "forms": {} }, "where": ["Settings"], "avoid": "Apps where F12 passes through.", "status": "draft" },
+  "term.default_font_changer": { "en": "Default Bangla font changer", "bn": { "plain": "", "forms": {} }, "where": ["Fonts page", "installer"], "avoid": "Removed 2026-10-24: only Restore remains. Do not offer it.", "status": "draft" },
+  "term.license_agreement": { "en": "License agreement", "bn": { "plain": "লাইসেন্স চুক্তি", "forms": {} }, "where": ["Installer", "website"], "avoid": "Text written by a lawyer.", "status": "draft" },
+  "term.report": { "en": "Report", "bn": { "plain": "", "forms": {} }, "where": ["Library items"], "avoid": "", "status": "draft" }
+}

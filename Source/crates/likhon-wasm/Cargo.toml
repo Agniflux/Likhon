@@ -1,0 +1,22 @@
+# The typing engine for the website's tools (root CLAUDE.md 5a): built with scripts/build-wasm.ps1 into
+# Web/Laravel/public/engine/. Outside the desktop workspace so the exe build never compiles it.
+[package]
+name = "likhon-wasm"
+version = "0.2.1"
+edition = "2021"
+publish = false
+license = "MPL-2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+likhon-engine = { path = "../likhon-engine" }
+wasm-bindgen = "=0.2.129"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+[workspace]

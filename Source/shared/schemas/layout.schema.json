@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://likhon.app/schemas/layout-1.json",
+  "title": "Likhon keyboard layout",
+  "description": "A fixed keyboard layout: what each key types at each level. Layouts are JSON files only (owner decision 2026-10-22). Plain data: no scripts, no links followed, size capped by the reader.",
+  "type": "object",
+  "required": ["format", "version", "id", "name", "kind", "license", "keys"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "likhon-layout" },
+    "version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,39}$" },
+    "name": { "$ref": "#/$defs/names" },
+    "kind": { "enum": ["fixed"], "description": "Phonetic typing is built into the engine; files describe fixed layouts." },
+    "author": { "type": "string", "maxLength": 120 },
+    "description": { "type": "string", "maxLength": 1000 },
+    "layoutVersion": { "type": "string", "maxLength": 20 },
+    "license": { "enum": ["MPL-2.0", "MIT", "CC0-1.0", "CC-BY-4.0", "OFL-1.1", "Apache-2.0", "LicenseRef-owner-approved"], "description": "LicenseRef-owner-approved: a built-in layout the owner chose to ship although its file names no licence (UniJoy)." },
+    "source": { "type": "string", "format": "uri", "maxLength": 300 },
+    "preBaseVowels": { "type": "boolean", "default": false, "description": "Vowel signs are typed before the consonant and the engine reorders them." },
+    "keys": {
+      "type": "object",
+      "description": "Keyed by the character the key types on a US keyboard, unshifted (a to z, 0 to 9, and ` - = [ ] \ ; ' , . /).",
+      "propertyNames": { "pattern": "^([a-z0-9]|[`\-=\[\]\\;',./])$" },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "minProperties": 1,
+        "properties": {
+          "normal": { "$ref": "#/$defs/output" },
+          "shift": { "$ref": "#/$defs/output" },
+          "altgr": { "$ref": "#/$defs/output" },
+          "shiftAltgr": { "$ref": "#/$defs/output" }
+        }
+      }
+    },
+    "numpad": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[0-9+\-*/.]$" },
+      "additionalProperties": { "$ref": "#/$defs/output" }
+    }
+  },
+  "$defs": {
+    "names": {
+      "type": "object",
+      "required": ["en"],
+      "additionalProperties": false,
+      "properties": { "en": { "type": "string", "minLength": 1, "maxLength": 60 }, "bn": { "type": "string", "maxLength": 60 } }
+    },
+    "output": { "type": "string", "minLength": 1, "maxLength": 8 }
+  }
+}

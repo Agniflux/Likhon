@@ -1,0 +1,38 @@
+// likhon.exe resources: icons (assets/icons, made by scripts/icons/make-icons.mjs from the v2 design) and version information.
+#include <winver.h>
+
+// 1 is also the exe's own icon (the lowest ID is what Explorer shows): the quill on an accent tile.
+1 ICON "../assets/icons/likhon.ico"
+// Tray states (v2 §2), each for a light and a dark taskbar. IDs match TRAY_ICONS in app/src/agent.rs.
+10 ICON "../assets/icons/tray-bn-light.ico"
+11 ICON "../assets/icons/tray-bn-dark.ico"
+12 ICON "../assets/icons/tray-en-light.ico"
+13 ICON "../assets/icons/tray-en-dark.ico"
+14 ICON "../assets/icons/tray-paused-light.ico"
+15 ICON "../assets/icons/tray-paused-dark.ico"
+16 ICON "../assets/icons/tray-error-light.ico"
+17 ICON "../assets/icons/tray-error-dark.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 0,2,1,0
+PRODUCTVERSION 0,2,1,0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Likhon Bangla typing"
+            VALUE "ProductName", "Likhon"
+            VALUE "FileVersion", "0.2.1"
+            VALUE "ProductVersion", "0.2.1"
+            VALUE "OriginalFilename", "likhon.exe"
+            VALUE "InternalName", "likhon"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

@@ -1,0 +1,27 @@
+# Line endings: scripts, C, Swift and workflows must stay LF (a CRLF shebang breaks them on Linux and macOS).
+* text=auto
+*.sh text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.swift text eol=lf
+*.in text eol=lf
+*.yml text eol=lf
+*.rs text eol=lf
+*.toml text eol=lf
+*.py text eol=lf
+*.mjs text eol=lf
+*.txt text
+# Windows-side files stay CRLF
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+*.rc text eol=crlf
+# Binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.bmp binary
+*.ttf binary
+*.woff2 binary
+*.sqlite binary
+*.dmg binary
+*.deb binary

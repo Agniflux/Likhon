@@ -1,0 +1,292 @@
+{
+  "_note": "v2 tokens (owner decision 2026-10-21), from Reference/briefs/implementation-v2.md section 2 and the design-v2 files. The same values apply to the desktop app, the website and admin. Light/dark follow the OS by default, and the user can override. Entries with an 'alias' field keep the old (design-archive) names working until every consumer uses the v2 names; their values equal the token they alias. Don't use alias names in new code.",
+  "fontFamily": {
+    "ui": "Hind Siliguri",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "license": "OFL-1.1 (embed in the exe; keep the license text in credits)",
+    "fallback": "Nirmala UI, sans-serif",
+    "preview": [
+      "Noto Serif Bengali",
+      "Tiro Bangla",
+      "Baloo Da 2"
+    ],
+    "previewUse": "Bangla long-form and sample text in font previews only",
+    "mono": "ui-monospace, Consolas, monospace"
+  },
+  "lineHeight": {
+    "body": 1.6,
+    "headingMin": 1.3,
+    "_note": "Bangla needs generous line-height"
+  },
+  "shape": {
+    "control": "6-8 px radius",
+    "card": "10-14 px radius",
+    "chip": "pill"
+  },
+  "color": {
+    "bg": {
+      "use": "Page and window ground",
+      "light": "#FBF9F4",
+      "dark": "#151922"
+    },
+    "surface": {
+      "use": "Cards, bars, popups, toasts",
+      "light": "#FFFFFF",
+      "dark": "#1C212C"
+    },
+    "surface2": {
+      "use": "Hover, inset fields, keys, grey pill ground",
+      "light": "#F4F1EA",
+      "dark": "#232937"
+    },
+    "ink": {
+      "use": "Primary text",
+      "light": "#1B2230",
+      "dark": "#E8EBF2"
+    },
+    "muted": {
+      "use": "Secondary text, hints, grey pill ink, muted icons (primary)",
+      "light": "#5B6474",
+      "dark": "#A3ABBA"
+    },
+    "line": {
+      "use": "Outlines, dividers, muted icons (secondary)",
+      "light": "#E3DED3",
+      "dark": "#2E3544"
+    },
+    "accent": {
+      "use": "Bangla on, links, primary buttons, icon primary",
+      "light": "#2747C4",
+      "dark": "#8FA6FF"
+    },
+    "accentHi": {
+      "use": "Accent hover",
+      "light": "#1F3AA6",
+      "dark": "#B0C0FF"
+    },
+    "on": {
+      "use": "Text and icons on accent",
+      "light": "#FFFFFF",
+      "dark": "#0E1430"
+    },
+    "sel": {
+      "use": "Selection, soft accent, blue pill ground, icon secondary",
+      "light": "#E6EBFB",
+      "dark": "#263063"
+    },
+    "amber": {
+      "use": "Warnings, paused, legacy output",
+      "light": "#8A5200",
+      "dark": "#F2B24A"
+    },
+    "amberSoft": {
+      "use": "Amber pill and notice ground",
+      "light": "#FFF1D6",
+      "dark": "#3A2C12"
+    },
+    "red": {
+      "use": "Errors, failures, conflicts",
+      "light": "#C2362B",
+      "dark": "#FF8A80"
+    },
+    "redSoft": {
+      "use": "Red pill and notice ground",
+      "light": "#FBE3E0",
+      "dark": "#3A1A18"
+    },
+    "green": {
+      "use": "Done, verified, signed",
+      "light": "#1F7A4D",
+      "dark": "#6FD39C"
+    },
+    "greenSoft": {
+      "use": "Green pill and notice ground",
+      "light": "#DDF1E6",
+      "dark": "#163A27"
+    },
+    "shadow": {
+      "use": "Popup and card shadow (a box-shadow value, not a color)",
+      "light": "0 8px 24px rgba(27,34,48,.12), 0 1px 3px rgba(27,34,48,.08)",
+      "dark": "0 8px 24px rgba(0,0,0,.5)"
+    },
+    "surface-2": {
+      "alias": "surface2",
+      "light": "#F4F1EA",
+      "dark": "#232937"
+    },
+    "border": {
+      "alias": "line",
+      "light": "#E3DED3",
+      "dark": "#2E3544"
+    },
+    "text": {
+      "alias": "ink",
+      "light": "#1B2230",
+      "dark": "#E8EBF2"
+    },
+    "text-2": {
+      "alias": "muted",
+      "light": "#5B6474",
+      "dark": "#A3ABBA"
+    },
+    "on-accent": {
+      "alias": "on",
+      "light": "#FFFFFF",
+      "dark": "#0E1430"
+    },
+    "accent-soft": {
+      "alias": "sel",
+      "light": "#E6EBFB",
+      "dark": "#263063"
+    },
+    "success": {
+      "alias": "green",
+      "light": "#1F7A4D",
+      "dark": "#6FD39C"
+    },
+    "warning": {
+      "alias": "amber",
+      "light": "#8A5200",
+      "dark": "#F2B24A"
+    },
+    "error": {
+      "alias": "red",
+      "light": "#C2362B",
+      "dark": "#FF8A80"
+    }
+  },
+  "statusPills": {
+    "_note": "Soft ground with ink of the same tone",
+    "blue": [
+      "sel",
+      "accent"
+    ],
+    "amber": [
+      "amberSoft",
+      "amber"
+    ],
+    "red": [
+      "redSoft",
+      "red"
+    ],
+    "green": [
+      "greenSoft",
+      "green"
+    ],
+    "grey": [
+      "surface2",
+      "muted"
+    ]
+  },
+  "typeScale": {
+    "_format": "size/line-height in px; bn = Bangla interface, en = English interface. Carried over from the archive for native windows; the v2 web guidance is body 15-16 px, meta 12-13 px.",
+    "candidate": {
+      "bn": "17/28",
+      "en": "16/24",
+      "weight": 400
+    },
+    "page-title": {
+      "bn": "21/32",
+      "en": "20/28",
+      "weight": 600
+    },
+    "section": {
+      "bn": "16/26",
+      "en": "15/22",
+      "weight": 600
+    },
+    "body": {
+      "bn": "14/22",
+      "en": "13/20",
+      "weight": 400
+    },
+    "caption": {
+      "bn": "13/20",
+      "en": "12/18",
+      "weight": 400
+    },
+    "key-legend": {
+      "bn": "12/18",
+      "en": "11/16",
+      "weight": 500
+    }
+  },
+  "themeTokens": {
+    "_note": "The only values a user theme may change (suggestion window and top bar). Defaults follow the v2 tokens.",
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#1C212C",
+      "token": "surface"
+    },
+    "text": {
+      "light": "#1B2230",
+      "dark": "#E8EBF2",
+      "token": "ink"
+    },
+    "text-secondary": {
+      "light": "#5B6474",
+      "dark": "#A3ABBA",
+      "token": "muted",
+      "note": "derived if absent"
+    },
+    "accent": {
+      "light": "#2747C4",
+      "dark": "#8FA6FF",
+      "token": "accent"
+    },
+    "selected-row-bg": {
+      "light": "#E6EBFB",
+      "dark": "#263063",
+      "token": "sel"
+    },
+    "border": {
+      "light": "#E3DED3",
+      "dark": "#2E3544",
+      "token": "line"
+    },
+    "radius": {
+      "default": 8,
+      "range": "0 to 12 px"
+    },
+    "font-family": {
+      "default": "Hind Siliguri"
+    },
+    "font-size": {
+      "default": 17,
+      "range": "13 to 24 px"
+    },
+    "row-height": {
+      "default": 30,
+      "range": "24 to 44 px"
+    },
+    "padding": {
+      "default": 4
+    }
+  },
+  "icons": {
+    "set": "Duotone pack, Reference/design-v2/icons.js (IconSet.toSVG(name, { size, primary, secondary, style, mono })). Exported to SVG at build time; the generator never ships.",
+    "grid": "24 x 24",
+    "colors": {
+      "default": {
+        "primary": "accent",
+        "secondary": "sel"
+      },
+      "muted": {
+        "primary": "muted",
+        "secondary": "line"
+      },
+      "status": "tone pair, e.g. amber with amberSoft"
+    },
+    "unknownName": "falls back to 'circle' in the pack: treat as a build error",
+    "provisional": [
+      "list",
+      "quote",
+      "image"
+    ]
+  }
+}

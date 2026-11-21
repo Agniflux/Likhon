@@ -1,0 +1,18 @@
+Likhon for Mac: how to install
+==============================
+
+Likhon is a free Bangla phonetic keyboard (ami -> আমি). It needs macOS 13 (Ventura) or later, on Apple Silicon
+or Intel. Nothing you type is stored or sent anywhere.
+
+1. Open "Install Likhon.pkg".
+   This copy is not signed with an Apple Developer ID yet, so macOS may say it cannot be opened. Then:
+   Control-click (right-click) the file, choose Open, and choose Open again. Or: System Settings > Privacy &
+   Security > scroll down > "Open Anyway".
+2. Click Continue and Install, and type your Mac password when asked.
+3. Log out and log back in (macOS finds new keyboards at login).
+4. System Settings > Keyboard > Input Sources > Edit... > + > Bangla > Likhon > Add.
+5. Switch with the Input menu in the menu bar, or Control+Space.
+
+To remove it: delete "Likhon.app" from /Library/Input Methods, remove Likhon from Input Sources, and log out.
+
+Help: https://likhon.app/support

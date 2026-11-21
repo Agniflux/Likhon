@@ -1,0 +1,222 @@
+{
+  "format": "likhon-layout",
+  "version": 1,
+  "id": "bornona",
+  "name": {
+    "en": "Bornona",
+    "bn": "বর্ণনা"
+  },
+  "kind": "fixed",
+  "author": "The Safeworks",
+  "description": "The original layout was designed by 'The Safeworks', in 1996-1998.\n\nOmicronLab redesigned this layout a bit to enable UNICODE support.",
+  "layoutVersion": "1",
+  "license": "MPL-2.0",
+  "source": "https://github.com/mugli/Avro-Keyboard/blob/6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1/assets/keyboard-layouts/Bornona.avrolayout",
+  "keys": {
+    "0": {
+      "normal": "০",
+      "shift": ")"
+    },
+    "1": {
+      "normal": "১",
+      "shift": "!"
+    },
+    "2": {
+      "normal": "২",
+      "shift": "ঁ"
+    },
+    "3": {
+      "normal": "৩",
+      "shift": "#"
+    },
+    "4": {
+      "normal": "৪",
+      "shift": "৳"
+    },
+    "5": {
+      "normal": "৫",
+      "shift": "%"
+    },
+    "6": {
+      "normal": "৬",
+      "shift": "ঃ"
+    },
+    "7": {
+      "normal": "৭",
+      "shift": "ৎ"
+    },
+    "8": {
+      "normal": "৮",
+      "shift": "*"
+    },
+    "9": {
+      "normal": "৯",
+      "shift": "("
+    },
+    "`": {
+      "normal": "‌",
+      "shift": "~"
+    },
+    "-": {
+      "normal": "-",
+      "shift": "_"
+    },
+    "=": {
+      "normal": "=",
+      "shift": "+"
+    },
+    "q": {
+      "normal": "ং",
+      "shift": "ঙ"
+    },
+    "w": {
+      "normal": "ঢ",
+      "shift": "ঠ"
+    },
+    "e": {
+      "normal": "ে",
+      "shift": "ৈ"
+    },
+    "r": {
+      "normal": "র",
+      "shift": "ৃ"
+    },
+    "t": {
+      "normal": "ত",
+      "shift": "ট"
+    },
+    "y": {
+      "normal": "ধ",
+      "shift": "থ"
+    },
+    "u": {
+      "normal": "ু",
+      "shift": "ূ"
+    },
+    "i": {
+      "normal": "ি",
+      "shift": "ী"
+    },
+    "o": {
+      "normal": "ো",
+      "shift": "ৌ"
+    },
+    "p": {
+      "normal": "প",
+      "shift": "্র"
+    },
+    "[": {
+      "normal": "[",
+      "shift": "{"
+    },
+    "]": {
+      "normal": "]",
+      "shift": "}"
+    },
+    "\\": {
+      "normal": "ৱ",
+      "shift": "ৰ"
+    },
+    "a": {
+      "normal": "া",
+      "shift": "অ"
+    },
+    "s": {
+      "normal": "স",
+      "shift": "শ"
+    },
+    "d": {
+      "normal": "দ",
+      "shift": "ড"
+    },
+    "f": {
+      "normal": "ফ",
+      "shift": "র্"
+    },
+    "g": {
+      "normal": "গ",
+      "shift": "ঘ"
+    },
+    "h": {
+      "normal": "্",
+      "shift": "হ"
+    },
+    "j": {
+      "normal": "জ",
+      "shift": "ঝ"
+    },
+    "k": {
+      "normal": "ক",
+      "shift": "খ"
+    },
+    "l": {
+      "normal": "ল",
+      "shift": "।"
+    },
+    ";": {
+      "normal": ";",
+      "shift": ":"
+    },
+    "'": {
+      "normal": "'",
+      "shift": "\""
+    },
+    "z": {
+      "normal": "য",
+      "shift": "ড়"
+    },
+    "x": {
+      "normal": "ষ",
+      "shift": "ঢ়"
+    },
+    "c": {
+      "normal": "চ",
+      "shift": "ছ"
+    },
+    "v": {
+      "normal": "ভ",
+      "shift": "্য"
+    },
+    "b": {
+      "normal": "ব",
+      "shift": "য়"
+    },
+    "n": {
+      "normal": "ন",
+      "shift": "ণ"
+    },
+    "m": {
+      "normal": "ম",
+      "shift": "ঞ"
+    },
+    ",": {
+      "normal": ",",
+      "shift": "<"
+    },
+    ".": {
+      "normal": ".",
+      "shift": ">"
+    },
+    "/": {
+      "normal": "/",
+      "shift": "?"
+    }
+  },
+  "numpad": {
+    "0": "০",
+    "1": "১",
+    "2": "২",
+    "3": "৩",
+    "4": "৪",
+    "5": "৫",
+    "6": "৬",
+    "7": "৭",
+    "8": "৮",
+    "9": "৯",
+    "+": "+",
+    ".": ".",
+    "/": "/",
+    "*": "*",
+    "-": "-"
+  }
+}

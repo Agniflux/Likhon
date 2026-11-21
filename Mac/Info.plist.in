@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- @VERSION@ is filled in by build-mac.sh from Desktop/Source/Cargo.toml. -->
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>LikhonInputMethod</string>
+    <key>CFBundleIdentifier</key>
+    <string>app.likhon.inputmethod.Likhon</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Likhon</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>@VERSION@</string>
+    <key>CFBundleVersion</key>
+    <string>@VERSION@</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSBackgroundOnly</key>
+    <true/>
+    <key>NSHumanReadableCopyright</key>
+    <string>Agniflux Enterprise. Mozilla Public License 2.0.</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- InputMethodKit -->
+    <key>InputMethodConnectionName</key>
+    <string>app.likhon.inputmethod.Likhon_Connection</string>
+    <key>InputMethodServerControllerClass</key>
+    <string>LikhonInputController</string>
+    <key>InputMethodServerDelegateClass</key>
+    <string>LikhonInputController</string>
+    <key>tsInputMethodCharacterRepertoireKey</key>
+    <array>
+        <string>Beng</string>
+    </array>
+    <key>ComponentInputModeDict</key>
+    <dict>
+        <key>tsInputModeListKey</key>
+        <dict>
+            <key>app.likhon.inputmethod.Likhon.Phonetic</key>
+            <dict>
+                <key>TISInputSourceID</key>
+                <string>app.likhon.inputmethod.Likhon.Phonetic</string>
+                <key>TISIntendedLanguage</key>
+                <string>bn</string>
+                <key>tsInputModeScriptKey</key>
+                <string>smBengali</string>
+                <key>tsInputModeIsVisibleKey</key>
+                <true/>
+                <key>tsInputModeDefaultStateKey</key>
+                <true/>
+                <key>tsInputModePrimaryInScriptKey</key>
+                <true/>
+                <key>tsInputModeKeyEquivalentModifiersKey</key>
+                <integer>0</integer>
+                <key>tsInputModeCharacterRepertoireKey</key>
+                <array>
+                    <string>Beng</string>
+                </array>
+            </dict>
+        </dict>
+        <key>tsVisibleInputModeOrderedArrayKey</key>
+        <array>
+            <string>app.likhon.inputmethod.Likhon.Phonetic</string>
+        </array>
+    </dict>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IBus component for Likhon. @LIBEXEC@ and @VERSION@ are filled in by the build. -->
+<component>
+  <name>app.likhon.IBus</name>
+  <description>Likhon Bangla</description>
+  <exec>@LIBEXEC@/ibus-engine-likhon --ibus</exec>
+  <version>@VERSION@</version>
+  <author>Agniflux Enterprise</author>
+  <license>MPL-2.0</license>
+  <homepage>https://likhon.app</homepage>
+  <textdomain>ibus-likhon</textdomain>
+  <engines>
+    <engine>
+      <name>likhon</name>
+      <language>bn</language>
+      <license>MPL-2.0</license>
+      <author>Agniflux Enterprise</author>
+      <layout>us</layout>
+      <longname>Likhon (Bangla phonetic)</longname>
+      <description>Free Bangla phonetic typing</description>
+      <rank>1</rank>
+      <symbol>অ</symbol>
+    </engine>
+  </engines>
+</component>

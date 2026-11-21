@@ -1,0 +1,51 @@
+Likhon is free to download and use. Unless a file or component states otherwise, Likhon's own code is licensed
+under the Mozilla Public License 2.0 (MPL-2.0). Its full text is in the Mozilla Public License section, and
+https://likhon.app/en/legal/licensing explains what it lets you do. The parts below were made by others and keep
+their own licenses. Their full license texts follow, in the sections listed above.
+
+"Built in" means the part is inside likhon.exe. "Library" means Likhon offers it as an item you add from
+Settings > Library.
+
+AVRO KEYBOARD
+  Copyright OmicronLab. Mozilla Public License 2.0 (MPL-2.0).
+  Source: https://github.com/mugli/Avro-Keyboard, commit 6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1
+  Converted to Likhon's formats:
+    Built in   the Jatiya (National) and Probhat layouts; the word database and phonetic autocorrect list, the
+               start of Likhon's dictionary (which also holds words added by the Likhon team); the Unicode to
+               Bijoy converter, ported to Rust (the Bijoy to Unicode direction is Likhon's own, in the same file
+               and under the same license)
+    Library    the Munir and Avro Easy layouts; eleven color themes made from Avro Keyboard's skins
+  These files stay under MPL-2.0, with OmicronLab's copyright. Their source, in the form Likhon edits them,
+  is published with Likhon's source code: see https://likhon.app/en/legal#source
+
+KHIPRO
+  Copyright (c) 2024 rank_coder and Copyright (c) 2026 KhiproTeam. MIT.
+  Source: https://github.com/rank-coder/khipro-m17n (commit f4ef2771e3913a4994ffabdb589a65d3ec592623) and
+  https://github.com/KhiproTeam/khipro-library (commit db4ce027c7dda39ab066674e2d564f547285f75d)
+    Built in   the Khipro typing engine, ported to Rust
+    Library    the Khipro Classic scheme file
+
+OKKHOR
+  Copyright (c) 2021 Gulshanur Rahman. MIT. Source: https://github.com/gulshan/okkhor
+    Built in   the base of phonetic typing (its license is in the Rust libraries section)
+
+HIND SILIGURI
+  Copyright (c) 2015 Indian Type Foundry. SIL Open Font License 1.1.
+    Built in   the interface font, as its Bengali and Latin web-font subsets. The font has no Reserved Font Name.
+
+UNICODE CLDR
+  Copyright Unicode, Inc. Unicode License v3.
+    Built in   the English and Bangla emoji names, for typing emoji by name
+
+UNIJOY
+  From Ekushey (www.ekushey.org), "(c) 2007 Altruists International". The layout file states no license.
+    Library    the UniJoy layout, converted from Ekushey's Windows layout file
+
+RUST LIBRARIES
+  Dozens of small open-source libraries, mostly under the MIT license, are compiled into Likhon. The Rust
+  libraries section lists each one with the license Likhon uses it under.
+
+NAMES
+  Avro Keyboard, Bijoy, Proshika, UniJoy, Khipro, Windows and the other product names here belong to their owners.
+  They are used only to say where a part came from or what Likhon works with. Likhon is not made or endorsed by
+  them.

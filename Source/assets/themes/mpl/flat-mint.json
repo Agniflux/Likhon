@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "flat-mint",
+  "name": {
+    "en": "Flat mint",
+    "bn": "ফ্ল্যাট মিন্ট"
+  },
+  "author": "Tanbin Islam Siyam",
+  "light": {
+    "desk": "#EBEBEB",
+    "surface": "#FFFFFF",
+    "surface2": "#F2F2F2",
+    "line": "#D4D4D4",
+    "ink": "#252525",
+    "muted": "#5C5C5C",
+    "accent": "#5E9300",
+    "on": "#000000",
+    "sel": "#E4F1CC"
+  },
+  "dark": {
+    "desk": "#1B1B1B",
+    "surface": "#252525",
+    "surface2": "#333333",
+    "line": "#3B3A3A",
+    "ink": "#FFFFFF",
+    "muted": "#BDBDBD",
+    "accent": "#78BA00",
+    "on": "#000000",
+    "sel": "#34460F"
+  }
+}

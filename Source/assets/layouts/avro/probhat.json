@@ -1,0 +1,239 @@
+{
+  "format": "likhon-layout",
+  "version": 1,
+  "id": "probhat",
+  "name": {
+    "en": "Probhat",
+    "bn": "প্রভাত"
+  },
+  "kind": "fixed",
+  "author": "Shabab Mustafa",
+  "description": "One of the popular keyboard layouts.",
+  "layoutVersion": "1.0",
+  "license": "MPL-2.0",
+  "source": "https://github.com/mugli/Avro-Keyboard/blob/6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1/assets/keyboard-layouts/Probhat.avrolayout",
+  "keys": {
+    "0": {
+      "normal": "০",
+      "shift": ")",
+      "altgr": "৸",
+      "shiftAltgr": "৹"
+    },
+    "1": {
+      "normal": "১",
+      "shift": "!",
+      "altgr": "৴"
+    },
+    "2": {
+      "normal": "২",
+      "shift": "@",
+      "altgr": "৵"
+    },
+    "3": {
+      "normal": "৩",
+      "shift": "#",
+      "altgr": "৶"
+    },
+    "4": {
+      "normal": "৪",
+      "shift": "৳",
+      "altgr": "৷",
+      "shiftAltgr": "৲"
+    },
+    "5": {
+      "normal": "৫",
+      "shift": "%"
+    },
+    "6": {
+      "normal": "৬",
+      "shift": "^"
+    },
+    "7": {
+      "normal": "৭",
+      "shift": "ঞ",
+      "shiftAltgr": "৺"
+    },
+    "8": {
+      "normal": "৮",
+      "shift": "ৎ"
+    },
+    "9": {
+      "normal": "৯",
+      "shift": "("
+    },
+    "`": {
+      "normal": "‍",
+      "shift": "~"
+    },
+    "-": {
+      "normal": "-",
+      "shift": "_"
+    },
+    "=": {
+      "normal": "=",
+      "shift": "+"
+    },
+    "q": {
+      "normal": "দ",
+      "shift": "ধ"
+    },
+    "w": {
+      "normal": "ূ",
+      "shift": "ঊ"
+    },
+    "e": {
+      "normal": "ী",
+      "shift": "ঈ"
+    },
+    "r": {
+      "normal": "র",
+      "shift": "ড়"
+    },
+    "t": {
+      "normal": "ট",
+      "shift": "ঠ"
+    },
+    "y": {
+      "normal": "এ",
+      "shift": "ঐ"
+    },
+    "u": {
+      "normal": "ু",
+      "shift": "উ"
+    },
+    "i": {
+      "normal": "ি",
+      "shift": "ই"
+    },
+    "o": {
+      "normal": "ও",
+      "shift": "ঔ"
+    },
+    "p": {
+      "normal": "প",
+      "shift": "ফ"
+    },
+    "[": {
+      "normal": "ে",
+      "shift": "ৈ"
+    },
+    "]": {
+      "normal": "ো",
+      "shift": "ৌ",
+      "altgr": "ৗ"
+    },
+    "\\": {
+      "normal": "‌",
+      "shift": "॥"
+    },
+    "a": {
+      "normal": "া",
+      "shift": "অ",
+      "altgr": "ঌ",
+      "shiftAltgr": "ৠ"
+    },
+    "s": {
+      "normal": "স",
+      "shift": "ষ",
+      "altgr": "ৡ",
+      "shiftAltgr": "ৣ"
+    },
+    "d": {
+      "normal": "ড",
+      "shift": "ঢ",
+      "altgr": "ৄ",
+      "shiftAltgr": "ৢ"
+    },
+    "f": {
+      "normal": "ত",
+      "shift": "থ"
+    },
+    "g": {
+      "normal": "গ",
+      "shift": "ঘ"
+    },
+    "h": {
+      "normal": "হ",
+      "shift": "ঃ",
+      "altgr": "ঽ"
+    },
+    "j": {
+      "normal": "জ",
+      "shift": "ঝ"
+    },
+    "k": {
+      "normal": "ক",
+      "shift": "খ"
+    },
+    "l": {
+      "normal": "ল",
+      "shift": "ং"
+    },
+    ";": {
+      "normal": ";",
+      "shift": ":"
+    },
+    "'": {
+      "normal": "'",
+      "shift": "\""
+    },
+    "z": {
+      "normal": "য়",
+      "shift": "য"
+    },
+    "x": {
+      "normal": "শ",
+      "shift": "ঢ়"
+    },
+    "c": {
+      "normal": "চ",
+      "shift": "ছ"
+    },
+    "v": {
+      "normal": "আ",
+      "shift": "ঋ"
+    },
+    "b": {
+      "normal": "ব",
+      "shift": "ভ"
+    },
+    "n": {
+      "normal": "ন",
+      "shift": "ণ"
+    },
+    "m": {
+      "normal": "ম",
+      "shift": "ঙ"
+    },
+    ",": {
+      "normal": ",",
+      "shift": "ৃ"
+    },
+    ".": {
+      "normal": "।",
+      "shift": "ঁ",
+      "altgr": "়"
+    },
+    "/": {
+      "normal": "্",
+      "shift": "?"
+    }
+  },
+  "numpad": {
+    "0": "০",
+    "1": "১",
+    "2": "২",
+    "3": "৩",
+    "4": "৪",
+    "5": "৫",
+    "6": "৬",
+    "7": "৭",
+    "8": "৮",
+    "9": "৯",
+    "+": "+",
+    ".": ".",
+    "/": "/",
+    "*": "*",
+    "-": "-"
+  }
+}

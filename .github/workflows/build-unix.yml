@@ -1,0 +1,56 @@
+# Builds Likhon for Linux (.deb) and macOS (.dmg, universal, unsigned). Run by hand, or on a v* tag.
+# Needs the repository on GitHub (it is not yet). Windows signing stays in sign-release.yml.
+name: Build Linux and macOS
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+jobs:
+  engine-tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, macos-14]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test -p likhon-engine -p likhon-ffi
+        working-directory: Source
+
+  linux-deb:
+    needs: engine-tests
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Packages
+        run: sudo apt-get update && sudo apt-get install -y build-essential pkg-config libibus-1.0-dev ibus ibus-gtk3 xvfb xdotool dbus-x11 python3-gi gir1.2-gtk-3.0 dpkg-dev
+      - name: Build the engine
+        run: ./build.sh
+        working-directory: Linux
+      - name: Typing test through a real ibus-daemon
+        run: ./tests/headless-typing.sh
+        working-directory: Linux
+      - name: Build the .deb
+        run: ./build-deb.sh
+        working-directory: Linux
+      - uses: actions/upload-artifact@v4
+        with:
+          name: likhon-linux
+          path: Product/Linux/
+
+  macos-dmg:
+    needs: engine-tests
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build the universal app, package and disk image
+        run: ./build-mac.sh
+        working-directory: Mac
+      - uses: actions/upload-artifact@v4
+        with:
+          name: likhon-macos
+          path: Product/Mac/

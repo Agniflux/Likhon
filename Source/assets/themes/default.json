@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "default",
+  "name": {
+    "en": "Default",
+    "bn": "সাধারণ"
+  },
+  "author": "Likhon",
+  "light": {
+    "desk": "#DCE2E8",
+    "surface": "@surface",
+    "surface2": "@surface2",
+    "line": "@line",
+    "ink": "@ink",
+    "muted": "@muted",
+    "accent": "@accent",
+    "on": "@on",
+    "sel": "@sel"
+  },
+  "dark": {
+    "desk": "#10141A",
+    "surface": "@surface",
+    "surface2": "@surface2",
+    "line": "@line",
+    "ink": "@ink",
+    "muted": "@muted",
+    "accent": "@accent",
+    "on": "@on",
+    "sel": "@sel"
+  }
+}

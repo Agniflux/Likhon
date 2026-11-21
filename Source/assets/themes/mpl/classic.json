@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "classic",
+  "name": {
+    "en": "Classic",
+    "bn": "ক্লাসিক"
+  },
+  "author": "Md. Tanbin Islam Siyam",
+  "light": {
+    "desk": "#C4C0B8",
+    "surface": "#D4D0C8",
+    "surface2": "#E3E0DA",
+    "line": "#808080",
+    "ink": "#000000",
+    "muted": "#3A3A3A",
+    "accent": "#A12828",
+    "on": "#FFFFFF",
+    "sel": "#B7C3DD"
+  },
+  "dark": {
+    "desk": "#1D1C1A",
+    "surface": "#2B2A27",
+    "surface2": "#37352F",
+    "line": "#5A564E",
+    "ink": "#F2F0EB",
+    "muted": "#BDB8AE",
+    "accent": "#E46A5C",
+    "on": "#000000",
+    "sel": "#4D3330"
+  }
+}

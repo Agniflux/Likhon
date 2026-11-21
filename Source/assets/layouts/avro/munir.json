@@ -1,0 +1,241 @@
+{
+  "format": "likhon-layout",
+  "version": 1,
+  "id": "munir",
+  "name": {
+    "en": "Munir Optima",
+    "bn": "মুনীর অপটিমা"
+  },
+  "kind": "fixed",
+  "author": "Shabab Mustafa",
+  "description": "A version of Munir Optima Keyboard for Unicode. Suggested by Ekhushey.Org",
+  "layoutVersion": "1.0",
+  "license": "MPL-2.0",
+  "source": "https://github.com/mugli/Avro-Keyboard/blob/6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1/assets/keyboard-layouts/Munir_Optima__uni_.avrolayout",
+  "keys": {
+    "0": {
+      "normal": "ষ",
+      "shift": "৮",
+      "altgr": "৹"
+    },
+    "1": {
+      "normal": "_",
+      "shift": "ঁ",
+      "altgr": "ৱ"
+    },
+    "2": {
+      "normal": "ই",
+      "shift": "ঐ"
+    },
+    "3": {
+      "normal": "ও",
+      "shift": "১",
+      "altgr": "৲"
+    },
+    "4": {
+      "normal": "ড",
+      "shift": "২",
+      "altgr": "৴"
+    },
+    "5": {
+      "normal": "?",
+      "shift": "৩",
+      "altgr": "৵"
+    },
+    "6": {
+      "normal": "গ",
+      "shift": "৪",
+      "altgr": "৶"
+    },
+    "7": {
+      "normal": "চ",
+      "shift": "৫",
+      "altgr": "৷"
+    },
+    "8": {
+      "normal": "ং",
+      "shift": "০",
+      "altgr": "৸"
+    },
+    "9": {
+      "normal": "'",
+      "shift": "৯",
+      "altgr": "৺"
+    },
+    "`": {
+      "normal": "৳",
+      "shift": "‍",
+      "altgr": "ৰ"
+    },
+    "-": {
+      "normal": "(",
+      "shift": "৭"
+    },
+    "=": {
+      "normal": ")",
+      "shift": "৬"
+    },
+    "q": {
+      "normal": "ু",
+      "shift": "ূ"
+    },
+    "w": {
+      "normal": "ৌ",
+      "shift": "র্",
+      "altgr": "ৗ"
+    },
+    "e": {
+      "normal": "ট",
+      "shift": ""
+    },
+    "r": {
+      "normal": "দ",
+      "shift": "ক্ষ"
+    },
+    "t": {
+      "normal": "ছ",
+      "shift": "ঝ"
+    },
+    "y": {
+      "normal": "ঢ",
+      "shift": "ঘ"
+    },
+    "u": {
+      "normal": "অ",
+      "shift": "ভ"
+    },
+    "i": {
+      "normal": "য",
+      "shift": "ঠ"
+    },
+    "o": {
+      "normal": "হ",
+      "shift": "খ"
+    },
+    "p": {
+      "normal": "ম",
+      "shift": "ধ"
+    },
+    "[": {
+      "normal": "/",
+      "shift": "+"
+    },
+    "]": {
+      "normal": "-",
+      "shift": "%"
+    },
+    "\\": {
+      "normal": "‌",
+      "shift": "@"
+    },
+    "a": {
+      "normal": "্র",
+      "shift": "ৃ",
+      "altgr": "ৄ"
+    },
+    "s": {
+      "normal": ".",
+      "shift": "ড়",
+      "altgr": "়"
+    },
+    "d": {
+      "normal": "স",
+      "shift": "ঢ়",
+      "altgr": "ৠ"
+    },
+    "f": {
+      "normal": "ন",
+      "shift": "ঞ",
+      "altgr": "ৡ"
+    },
+    "g": {
+      "normal": "ে",
+      "shift": "ৎ",
+      "altgr": "ৢ"
+    },
+    "h": {
+      "normal": "া",
+      "shift": "্য",
+      "altgr": "ৣ"
+    },
+    "j": {
+      "normal": "ত",
+      "shift": "ঈ"
+    },
+    "k": {
+      "normal": "র",
+      "shift": "ণ"
+    },
+    "l": {
+      "normal": "ি",
+      "shift": "ী"
+    },
+    ";": {
+      "normal": "ব",
+      "shift": "উ"
+    },
+    "'": {
+      "normal": "ক",
+      "shift": "ঋ",
+      "altgr": "ঌ"
+    },
+    "z": {
+      "normal": "আ",
+      "shift": "ঊ"
+    },
+    "x": {
+      "normal": "্",
+      "shift": "ঔ"
+    },
+    "c": {
+      "normal": "ো",
+      "shift": "য়"
+    },
+    "v": {
+      "normal": ",",
+      "shift": "ৈ"
+    },
+    "b": {
+      "normal": "প",
+      "shift": "ফ"
+    },
+    "n": {
+      "normal": "এ",
+      "shift": ";"
+    },
+    "m": {
+      "normal": "জ",
+      "shift": "ঙ"
+    },
+    ",": {
+      "normal": "শ",
+      "shift": "-"
+    },
+    ".": {
+      "normal": "ল",
+      "shift": "থ"
+    },
+    "/": {
+      "normal": "।",
+      "shift": "ঃ",
+      "altgr": "॥"
+    }
+  },
+  "numpad": {
+    "0": "০",
+    "1": "১",
+    "2": "২",
+    "3": "৩",
+    "4": "৪",
+    "5": "৫",
+    "6": "৬",
+    "7": "৭",
+    "8": "৮",
+    "9": "৯",
+    "+": "+",
+    ".": ".",
+    "/": "/",
+    "*": "*",
+    "-": "-"
+  }
+}

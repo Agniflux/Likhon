@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "aero",
+  "name": {
+    "en": "Aero",
+    "bn": "এরো"
+  },
+  "author": "Tanbin Islam Siyam",
+  "light": {
+    "desk": "#E3E6E7",
+    "surface": "#F7F8F8",
+    "surface2": "#E8ECED",
+    "line": "#C2CBCE",
+    "ink": "#1E2427",
+    "muted": "#4F5D63",
+    "accent": "#5A737B",
+    "on": "#FFFFFF",
+    "sel": "#D4E0E4"
+  },
+  "dark": {
+    "desk": "#2E2E2E",
+    "surface": "#4A4A4A",
+    "surface2": "#5A5A5A",
+    "line": "#6E6E6E",
+    "ink": "#FFFFFF",
+    "muted": "#CFCFCF",
+    "accent": "#F7B516",
+    "on": "#1A1A1A",
+    "sel": "#5A737B"
+  }
+}

@@ -1,0 +1,3 @@
+The UniJoy layout file (source.klc, published by Ekushey in ek_unijoy_07-05_bd.zip) says
+COPYRIGHT "(c) 2007 Altruists International" and COMPANY "www.ekushey.org". Neither the file nor its installer notes
+state a license, so no license text can be given here. Likhon offers its conversion of the file as a library item.

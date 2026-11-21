@@ -1,0 +1,170 @@
+{
+  "app.name": {
+    "en": "Likhon",
+    "bn": "লিখন",
+    "status": "draft",
+    "bnFrom": "e3e3854c"
+  },
+  "app.tray.tipBangla": {
+    "en": "Likhon: Bangla typing is on ({key} to switch)",
+    "bn": "লিখন: বাংলা লেখা চালু (বদলাতে {key})",
+    "status": "draft",
+    "bnFrom": "5dc7ad49"
+  },
+  "app.tray.tipEnglish": {
+    "en": "Likhon: English ({key} for Bangla)",
+    "bn": "লিখন: ইংরেজি (বাংলার জন্য {key})",
+    "status": "draft",
+    "bnFrom": "cd645b6f"
+  },
+  "app.tray.topbar": {
+    "en": "Open top bar",
+    "bn": "টপ বার খুলুন",
+    "status": "draft",
+    "bnFrom": "7e1884e9"
+  },
+  "app.tray.settings": {
+    "en": "Open settings",
+    "bn": "সেটিংস খুলুন",
+    "status": "draft",
+    "bnFrom": "fd7108f8"
+  },
+  "app.tray.exit": {
+    "en": "Exit",
+    "bn": "বন্ধ করুন",
+    "status": "draft",
+    "bnFrom": "f83b6fe3"
+  },
+  "app.hint.title": {
+    "en": "Likhon is running",
+    "bn": "লিখন চালু আছে",
+    "status": "draft",
+    "bnFrom": "d050c24d"
+  },
+  "app.hint.body": {
+    "en": "Press {key} to type Bangla. If you do not see the icon, open the ^ arrow in the taskbar and drag the Likhon icon out to keep it visible.",
+    "bn": "বাংলা লিখতে {key} চাপুন। আইকন দেখা না গেলে টাস্কবারের ^ তীর খুলে লিখনের আইকন টেনে বাইরে রাখুন।",
+    "status": "draft",
+    "bnFrom": "6af2885f"
+  },
+  "app.tray.tipPaused": {
+    "en": "Likhon: paused here (this window runs as administrator)",
+    "bn": "লিখন: এখানে থেমে আছে (এই উইন্ডো অ্যাডমিন হিসেবে চলছে)",
+    "status": "needs review",
+    "bnFrom": "c0082d2d"
+  },
+  "app.tray.tipError": {
+    "en": "Likhon: typing is not working. Restart Likhon.",
+    "bn": "লিখন: লেখা কাজ করছে না। লিখন আবার চালু করুন।",
+    "status": "needs review",
+    "bnFrom": "9a6a964a"
+  },
+  "app.splash.name": {
+    "en": "লিখন",
+    "bn": "লিখন",
+    "status": "needs review",
+    "bnFrom": "aa58f36e"
+  },
+  "app.splash.tagline": {
+    "en": "লিখি ইচ্ছেমতো",
+    "bn": "লিখি ইচ্ছেমতো",
+    "status": "needs review",
+    "bnFrom": "3e1441ae"
+  },
+  "app.splash.version": {
+    "en": "Version {version}",
+    "bn": "সংস্করণ {version}",
+    "status": "needs review",
+    "bnFrom": "7a4a5b08"
+  },
+  "app.suggest.auto": {
+    "en": "auto",
+    "bn": "স্বয়ং",
+    "status": "needs review",
+    "bnFrom": "0d612c12"
+  },
+  "app.suggest.mine": {
+    "en": "mine",
+    "bn": "আমার",
+    "status": "needs review",
+    "bnFrom": "8034c43d"
+  },
+  "app.osk.title": {
+    "en": "On-screen keyboard",
+    "bn": "অন-স্ক্রিন কিবোর্ড",
+    "status": "needs review",
+    "bnFrom": "fcc2ff05"
+  },
+  "app.osk.normal": {
+    "en": "Normal",
+    "bn": "সাধারণ",
+    "status": "needs review",
+    "bnFrom": "45e118d0"
+  },
+  "app.osk.letters": {
+    "en": "Letters",
+    "bn": "বর্ণ",
+    "status": "needs review",
+    "bnFrom": "6a37a681"
+  },
+  "app.osk.cons": {
+    "en": "Consonants",
+    "bn": "ব্যঞ্জন",
+    "status": "needs review",
+    "bnFrom": "c1e690b3"
+  },
+  "app.osk.vow": {
+    "en": "Vowels",
+    "bn": "স্বর",
+    "status": "needs review",
+    "bnFrom": "d74fbf15"
+  },
+  "app.osk.kar": {
+    "en": "Vowel signs",
+    "bn": "কার",
+    "status": "needs review",
+    "bnFrom": "129ff842"
+  },
+  "app.osk.sign": {
+    "en": "Signs",
+    "bn": "চিহ্ন",
+    "status": "needs review",
+    "bnFrom": "a05433a3"
+  },
+  "app.osk.conj": {
+    "en": "Conjuncts",
+    "bn": "যুক্তবর্ণ",
+    "status": "needs review",
+    "bnFrom": "9a849bd3"
+  },
+  "app.osk.dig": {
+    "en": "Digits",
+    "bn": "সংখ্যা",
+    "status": "needs review",
+    "bnFrom": "2260ce49"
+  },
+  "app.quick.selectH": {
+    "en": "Select some text first",
+    "bn": "আগে কিছু লেখা বাছুন",
+    "status": "needs review",
+    "bnFrom": "2c024b6a"
+  },
+  "app.quick.selectP": {
+    "en": "Select the text in the app, then press {key}.",
+    "bn": "অ্যাপে লেখাটি বেছে নিয়ে {key} চাপুন।",
+    "status": "needs review",
+    "bnFrom": "68769001"
+  },
+  "app.quick.addedH": {
+    "en": "Added to My words",
+    "bn": "আমার শব্দে যোগ হয়েছে",
+    "status": "needs review",
+    "bnFrom": "ea9727aa"
+  },
+  "app.quick.addedP": {
+    "en": "{words}",
+    "bn": "{words}",
+    "status": "needs review",
+    "bnFrom": "53846240"
+  }
+}

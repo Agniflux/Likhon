@@ -1,0 +1,176 @@
+{
+  "app.topbar.bangla": {
+    "en": "Bangla",
+    "bn": "বাংলা",
+    "status": "needs review",
+    "bnFrom": "68ea04ad"
+  },
+  "app.topbar.english": {
+    "en": "English",
+    "bn": "ইংরেজি",
+    "status": "needs review",
+    "bnFrom": "649df08a"
+  },
+  "app.topbar.banglaOn": {
+    "en": "Bangla on",
+    "bn": "বাংলা চালু",
+    "status": "needs review",
+    "bnFrom": "121319ad"
+  },
+  "app.topbar.unicode": {
+    "en": "Unicode",
+    "bn": "ইউনিকোড",
+    "status": "needs review",
+    "bnFrom": "9ab0bd9a"
+  },
+  "app.topbar.legacy": {
+    "en": "Legacy",
+    "bn": "লিগ্যাসি",
+    "status": "needs review",
+    "bnFrom": "fb74bcaf"
+  },
+  "app.topbar.settings": {
+    "en": "Settings",
+    "bn": "সেটিংস",
+    "status": "needs review",
+    "bnFrom": "c7f73bb5"
+  },
+  "app.topbar.hide": {
+    "en": "Hide to tray",
+    "bn": "ট্রেতে লুকান",
+    "status": "needs review",
+    "bnFrom": "aeff5499"
+  },
+  "app.topbar.expand": {
+    "en": "Expand",
+    "bn": "বড় করুন",
+    "status": "needs review",
+    "bnFrom": "9869e506"
+  },
+  "app.topbar.paused": {
+    "en": "Paused",
+    "bn": "থেমে আছে",
+    "status": "needs review",
+    "bnFrom": "c7dfb6f1"
+  },
+  "app.topbar.move": {
+    "en": "Drag to move",
+    "bn": "সরাতে টেনে নিন",
+    "status": "draft",
+    "bnFrom": "0d84b3e5"
+  },
+  "app.topbar.layoutMenu": {
+    "en": "Layout",
+    "bn": "লেআউট",
+    "status": "needs review",
+    "bnFrom": "972ad8d8"
+  },
+  "app.topbar.viewLayout": {
+    "en": "View layout",
+    "bn": "লেআউট দেখুন",
+    "status": "needs review",
+    "bnFrom": "cc6bf848"
+  },
+  "app.topbar.moreLayouts": {
+    "en": "More layouts…",
+    "bn": "আরও লেআউট…",
+    "status": "needs review",
+    "bnFrom": "4082e040"
+  },
+  "app.topbar.outputMenu": {
+    "en": "Output",
+    "bn": "আউটপুট",
+    "status": "needs review",
+    "bnFrom": "4bed3361"
+  },
+  "app.topbar.unicodeP": {
+    "en": "Works everywhere. Recommended.",
+    "bn": "সব জায়গায় চলে। প্রস্তাবিত।",
+    "status": "draft",
+    "bnFrom": "08f7f5ce"
+  },
+  "app.topbar.legacyItem": {
+    "en": "Legacy (ASCII)",
+    "bn": "লিগ্যাসি (ASCII)",
+    "status": "needs review",
+    "bnFrom": "cb7529f6"
+  },
+  "app.topbar.legacyP": {
+    "en": "For old documents. Needs a matching font to look right.",
+    "bn": "পুরোনো নথির জন্য। ঠিকমতো দেখাতে মিলিয়ে ফন্ট লাগে।",
+    "status": "draft",
+    "bnFrom": "b23e7d72"
+  },
+  "app.topbar.chooseEncoding": {
+    "en": "Choose encoding…",
+    "bn": "এনকোডিং বেছে নিন…",
+    "status": "draft",
+    "bnFrom": "646d5043"
+  },
+  "app.topbar.trayTitle": {
+    "en": "Still running in the tray",
+    "bn": "ট্রেতে চলছে",
+    "status": "draft",
+    "bnFrom": "8c62aaf3"
+  },
+  "app.topbar.trayBody": {
+    "en": "Typing keeps working. Double-click the Likhon icon to open the top bar again.",
+    "bn": "লেখা চলতেই থাকবে। টপ বার আবার খুলতে লিখনের আইকনে দুবার ক্লিক করুন।",
+    "status": "draft",
+    "bnFrom": "66816257"
+  },
+  "app.topbar.pausedTip": {
+    "en": "Can't type in this window",
+    "bn": "এই উইন্ডোতে লেখা যায় না",
+    "status": "needs review",
+    "bnFrom": "57b57827"
+  },
+  "app.topbar.error": {
+    "en": "Error",
+    "bn": "সমস্যা",
+    "status": "needs review",
+    "bnFrom": "7f2f6a15"
+  },
+  "app.topbar.errorTip": {
+    "en": "Typing engine stopped. Click to restart.",
+    "bn": "লেখার ইঞ্জিন থেমে গেছে। আবার চালু করতে ক্লিক করুন।",
+    "status": "needs review",
+    "bnFrom": "308bf282"
+  },
+  "app.topbar.legacyTip": {
+    "en": "Legacy output is on",
+    "bn": "লেগেসি আউটপুট চালু",
+    "status": "needs review",
+    "bnFrom": "292162a1"
+  },
+  "app.topbar.close": {
+    "en": "Close",
+    "bn": "বন্ধ",
+    "status": "needs review",
+    "bnFrom": "bbfa773e"
+  },
+  "app.topbar.minimize": {
+    "en": "Minimize to tray",
+    "bn": "ট্রেতে ছোট করুন",
+    "status": "needs review",
+    "bnFrom": "c3dcd945"
+  },
+  "app.topbar.exit": {
+    "en": "Exit",
+    "bn": "বের হোন",
+    "status": "needs review",
+    "bnFrom": "f83b6fe3"
+  },
+  "app.topbar.bijoyPill": {
+    "en": "Bijoy",
+    "bn": "বিজয়",
+    "status": "needs review",
+    "bnFrom": "e8644b87"
+  },
+  "app.topbar.proshikaPill": {
+    "en": "Proshika",
+    "bn": "প্রশিকা",
+    "status": "needs review",
+    "bnFrom": "374e79c1"
+  }
+}

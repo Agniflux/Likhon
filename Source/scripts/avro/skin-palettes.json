@@ -1,0 +1,278 @@
+{
+  "_note": "Curated palettes for the themes made from Avro Keyboard's skins (owner, 2026-10-23: match the originals as closely as possible). Read off each skin's own pictures at the pinned commit (scripts/avro/convert-skins.py measures them): the bar background, the Bangla button, the Avro icon and, for the Flat skins, the coloured block. The version that matches the skin's tone uses the skin's colours; the other keeps the skin's accent and hue on a ground of the same hue. convert-skins.py uses these instead of its automatic guess and checks contrast. MPL-2.0 like the skins.",
+  "aero": {
+    "_from": "bar #4A4A4A glass, buttons blue-grey #5A737B, icon amber #F7B516",
+    "dark": {
+      "desk": "#2E2E2E",
+      "surface": "#4A4A4A",
+      "surface2": "#5A5A5A",
+      "line": "#6E6E6E",
+      "ink": "#FFFFFF",
+      "muted": "#CFCFCF",
+      "accent": "#F7B516",
+      "on": "#1A1A1A",
+      "sel": "#5A737B"
+    },
+    "light": {
+      "desk": "#E3E6E7",
+      "surface": "#F7F8F8",
+      "surface2": "#E8ECED",
+      "line": "#C2CBCE",
+      "ink": "#1E2427",
+      "muted": "#4F5D63",
+      "accent": "#5A737B",
+      "on": "#FFFFFF",
+      "sel": "#D4E0E4"
+    }
+  },
+  "classic": {
+    "_from": "Windows classic grey #D4D0C8, black text, Bangla button red #A12828",
+    "light": {
+      "desk": "#C4C0B8",
+      "surface": "#D4D0C8",
+      "surface2": "#E3E0DA",
+      "line": "#808080",
+      "ink": "#000000",
+      "muted": "#3A3A3A",
+      "accent": "#A12828",
+      "on": "#FFFFFF",
+      "sel": "#B7C3DD"
+    },
+    "dark": {
+      "desk": "#1D1C1A",
+      "surface": "#2B2A27",
+      "surface2": "#37352F",
+      "line": "#5A564E",
+      "ink": "#F2F0EB",
+      "muted": "#BDB8AE",
+      "accent": "#E46A5C",
+      "on": "#000000",
+      "sel": "#4D3330"
+    }
+  },
+  "flat-cyan": {
+    "_from": "bar #252525, white icons, block #2773ED",
+    "dark": {
+      "desk": "#1B1B1B",
+      "surface": "#252525",
+      "surface2": "#333333",
+      "line": "#3B3A3A",
+      "ink": "#FFFFFF",
+      "muted": "#BDBDBD",
+      "accent": "#2671E8",
+      "on": "#FFFFFF",
+      "sel": "#1F3A63"
+    },
+    "light": {
+      "desk": "#EBEBEB",
+      "surface": "#FFFFFF",
+      "surface2": "#F2F2F2",
+      "line": "#D4D4D4",
+      "ink": "#252525",
+      "muted": "#5C5C5C",
+      "accent": "#2268DB",
+      "on": "#FFFFFF",
+      "sel": "#D7E5FC"
+    }
+  },
+  "flat-mint": {
+    "_from": "bar #252525, white icons, block #78BA00",
+    "dark": {
+      "desk": "#1B1B1B",
+      "surface": "#252525",
+      "surface2": "#333333",
+      "line": "#3B3A3A",
+      "ink": "#FFFFFF",
+      "muted": "#BDBDBD",
+      "accent": "#78BA00",
+      "on": "#000000",
+      "sel": "#34460F"
+    },
+    "light": {
+      "desk": "#EBEBEB",
+      "surface": "#FFFFFF",
+      "surface2": "#F2F2F2",
+      "line": "#D4D4D4",
+      "ink": "#252525",
+      "muted": "#5C5C5C",
+      "accent": "#5E9300",
+      "on": "#000000",
+      "sel": "#E4F1CC"
+    }
+  },
+  "flat-red": {
+    "_from": "bar #252525, white icons, block #B00C22",
+    "dark": {
+      "desk": "#1B1B1B",
+      "surface": "#252525",
+      "surface2": "#333333",
+      "line": "#3B3A3A",
+      "ink": "#FFFFFF",
+      "muted": "#BDBDBD",
+      "accent": "#D2283E",
+      "on": "#FFFFFF",
+      "sel": "#4A1A21"
+    },
+    "light": {
+      "desk": "#EBEBEB",
+      "surface": "#FFFFFF",
+      "surface2": "#F2F2F2",
+      "line": "#D4D4D4",
+      "ink": "#252525",
+      "muted": "#5C5C5C",
+      "accent": "#B00C22",
+      "on": "#FFFFFF",
+      "sel": "#F6D4D9"
+    }
+  },
+  "flat-yellow": {
+    "_from": "bar #252525, white icons, block #F4B300",
+    "dark": {
+      "desk": "#1B1B1B",
+      "surface": "#252525",
+      "surface2": "#333333",
+      "line": "#3B3A3A",
+      "ink": "#FFFFFF",
+      "muted": "#BDBDBD",
+      "accent": "#F4B300",
+      "on": "#000000",
+      "sel": "#4A3D14"
+    },
+    "light": {
+      "desk": "#EBEBEB",
+      "surface": "#FFFFFF",
+      "surface2": "#F2F2F2",
+      "line": "#D4D4D4",
+      "ink": "#252525",
+      "muted": "#5C5C5C",
+      "accent": "#B37F00",
+      "on": "#000000",
+      "sel": "#FDF0C7"
+    }
+  },
+  "luna": {
+    "_from": "bar blue #235BD9, buttons #3980F4, white text, green Avro icon #287828",
+    "dark": {
+      "desk": "#1941A5",
+      "surface": "#235BD9",
+      "surface2": "#2C66C6",
+      "line": "#1941A5",
+      "ink": "#FFFFFF",
+      "muted": "#DCE7FB",
+      "accent": "#6CD06C",
+      "on": "#000000",
+      "sel": "#1C4AB5"
+    },
+    "light": {
+      "desk": "#DCE7FB",
+      "surface": "#FFFFFF",
+      "surface2": "#EAF1FD",
+      "line": "#A9C4F2",
+      "ink": "#10306F",
+      "muted": "#425B8A",
+      "accent": "#235BD9",
+      "on": "#FFFFFF",
+      "sel": "#CFE0FB"
+    }
+  },
+  "royal": {
+    "_from": "bar #2C55B1 to #5896E0, light buttons #83C2ED, white text",
+    "dark": {
+      "desk": "#254394",
+      "surface": "#2C55B1",
+      "surface2": "#3A66C2",
+      "line": "#5F9DE6",
+      "ink": "#FFFFFF",
+      "muted": "#D6E7FB",
+      "accent": "#83C2ED",
+      "on": "#0E2550",
+      "sel": "#3F6DC2"
+    },
+    "light": {
+      "desk": "#DCEAF8",
+      "surface": "#FFFFFF",
+      "surface2": "#EAF3FC",
+      "line": "#99C6F1",
+      "ink": "#1A2F5E",
+      "muted": "#455E8C",
+      "accent": "#2C55B1",
+      "on": "#FFFFFF",
+      "sel": "#D3E6FA"
+    }
+  },
+  "vista-2": {
+    "_from": "black glass #131416 to #545454, amber Avro icon #C18710, Bangla button teal #1D6984",
+    "dark": {
+      "desk": "#0E0F10",
+      "surface": "#1B1C1E",
+      "surface2": "#2A2B2D",
+      "line": "#545454",
+      "ink": "#FFFFFF",
+      "muted": "#BABABA",
+      "accent": "#E0A020",
+      "on": "#000000",
+      "sel": "#1D6984"
+    },
+    "light": {
+      "desk": "#E5E6E7",
+      "surface": "#FAFAFA",
+      "surface2": "#EEEFF0",
+      "line": "#C4C6C8",
+      "ink": "#131416",
+      "muted": "#4D5156",
+      "accent": "#1D6984",
+      "on": "#FFFFFF",
+      "sel": "#D1E5EC"
+    }
+  },
+  "vista": {
+    "_from": "black glass #1A1C1D, Bangla button amber #E7A810, tools blue #0096FE",
+    "dark": {
+      "desk": "#111213",
+      "surface": "#1A1C1D",
+      "surface2": "#2A2C2D",
+      "line": "#575858",
+      "ink": "#FFFFFF",
+      "muted": "#B4B5B5",
+      "accent": "#E7A810",
+      "on": "#000000",
+      "sel": "#4A3B12"
+    },
+    "light": {
+      "desk": "#E8E9E9",
+      "surface": "#FFFFFF",
+      "surface2": "#F1F2F2",
+      "line": "#C8CACA",
+      "ink": "#1A1C1D",
+      "muted": "#4E5253",
+      "accent": "#0078D4",
+      "on": "#FFFFFF",
+      "sel": "#FCEBC2"
+    }
+  },
+  "maroon": {
+    "_from": "silver #C5C5C4 bar, dark buttons #424141, red close #B42724",
+    "light": {
+      "desk": "#B8B7B6",
+      "surface": "#D9D9D8",
+      "surface2": "#E8E8E7",
+      "line": "#8E8D8C",
+      "ink": "#1E1E1E",
+      "muted": "#3D3C3C",
+      "accent": "#8E1F1C",
+      "on": "#FFFFFF",
+      "sel": "#F1D9D7"
+    },
+    "dark": {
+      "desk": "#1F1F1F",
+      "surface": "#2E2E2E",
+      "surface2": "#3A3A3A",
+      "line": "#4A4A4A",
+      "ink": "#F2F2F2",
+      "muted": "#C5C5C4",
+      "accent": "#D0544B",
+      "on": "#000000",
+      "sel": "#4A2A28"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "luna",
+  "name": {
+    "en": "Luna",
+    "bn": "লুনা"
+  },
+  "author": "Md. Tanbin Islam Siyam",
+  "light": {
+    "desk": "#DCE7FB",
+    "surface": "#FFFFFF",
+    "surface2": "#EAF1FD",
+    "line": "#A9C4F2",
+    "ink": "#10306F",
+    "muted": "#425B8A",
+    "accent": "#235BD9",
+    "on": "#FFFFFF",
+    "sel": "#CFE0FB"
+  },
+  "dark": {
+    "desk": "#1941A5",
+    "surface": "#235BD9",
+    "surface2": "#2C66C6",
+    "line": "#1941A5",
+    "ink": "#FFFFFF",
+    "muted": "#DCE7FB",
+    "accent": "#6CD06C",
+    "on": "#000000",
+    "sel": "#1C4AB5"
+  }
+}

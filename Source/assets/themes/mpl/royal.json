@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "royal",
+  "name": {
+    "en": "Royal",
+    "bn": "রয়্যাল"
+  },
+  "author": "M. M. Rifat-Un-Nabi",
+  "light": {
+    "desk": "#DCEAF8",
+    "surface": "#FFFFFF",
+    "surface2": "#EAF3FC",
+    "line": "#99C6F1",
+    "ink": "#1A2F5E",
+    "muted": "#455E8C",
+    "accent": "#2C55B1",
+    "on": "#FFFFFF",
+    "sel": "#D3E6FA"
+  },
+  "dark": {
+    "desk": "#254394",
+    "surface": "#2C55B1",
+    "surface2": "#3A66C2",
+    "line": "#5F9DE6",
+    "ink": "#FFFFFF",
+    "muted": "#D6E7FB",
+    "accent": "#83C2ED",
+    "on": "#0E2550",
+    "sel": "#3F6DC2"
+  }
+}

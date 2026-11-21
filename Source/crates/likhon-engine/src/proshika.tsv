@@ -1,0 +1,169 @@
+# Unicode Bangla to Proshika (the legacy encoding of Proshika Computer Systems' Lipi fonts, 1995), read by Likhon from
+# the glyphs of LIPI_NO.TTF and other Lipi fonts of Proshika Shabda 2007 (owner's copies, 2026-10-24). No Proshika
+# documents were available to check it against, so
+# rows marked "unsure" are a best reading of the glyph and need checking with real Proshika text.
+#
+# Columns: what (Unicode text, or a piece: "reph", "-X" for the phala form of X), bytes (hex, space-separated),
+# sure | unsure, note.
+# Bytes are typed as their Windows-1252 characters, which the fonts map to the same glyphs.
+#
+# Independent vowels
+অ	41	sure
+আ	42	sure
+ই	43	sure
+ঈ	44	sure
+উ	45	sure
+ঊ	46	sure
+ঋ	47	sure
+এ	48	sure
+ঐ	49	sure
+ও	4A	sure
+ঔ	4B	sure
+# Consonants
+ক	4C	sure
+খ	4D	sure
+গ	4E	sure
+ঘ	4F	sure
+ঙ	50	sure
+চ	51	sure
+ছ	52	sure
+জ	53	sure
+ঝ	54	sure
+ঞ	55	sure
+ট	56	sure
+ঠ	57	sure
+ড	58	sure
+ঢ	59	sure
+ণ	5A	sure
+ত	61	sure
+থ	62	sure
+দ	63	sure
+ধ	64	sure
+ন	65	sure
+প	66	sure
+ফ	67	sure
+ব	68	sure
+ভ	69	sure
+ম	6A	sure
+য	6B	sure
+র	6C	sure
+ল	6D	sure
+শ	6E	sure
+ষ	6F	sure
+স	70	sure
+হ	71	sure
+ড়	73	sure
+ঢ়	74	sure
+য়	75	sure
+ৎ	76	sure
+# Signs and digits
+ং	77	sure
+ঃ	78	sure
+ঁ	79	sure
+।	7A	sure
+৳	24	unsure	looks like the taka sign
+০	30	sure
+১	31	sure
+২	32	sure
+৩	33	sure
+৪	34	sure
+৫	35	sure
+৬	36	sure
+৭	37	sure
+৮	38	sure
+৯	39	sure
+# Vowel signs (ি ে ৈ are typed before the consonant, as in Bijoy; ো is ে + া and ৌ is ে + ৗ)
+া	A1	sure
+ি	A2	sure
+ী	A3	sure
+ু	A4	unsure	a second width at A5; which consonants take which is not known
+ূ	A7	unsure	a second width at A8
+ৃ	AA	unsure	a second width at AB
+ে	AD	unsure	a second width at AE
+ৈ	AF	unsure	a second width at B0
+ৗ	B1	sure
+# Consonant with vowel sign, drawn as one glyph
+গু	85	sure
+শু	F6	sure
+হু	FD	sure
+রু	6C A6	unsure	A6 is a small mark that sits beside র, read as the রু form
+রূ	6C A9	unsure	A9 read as the mark of the রূ form
+# Pieces: hasanta, reph (typed after the consonant group, as in Bijoy), and phala forms
+্	DA	sure
+reph	D1	unsure	glyph is clear; its place after the consonant group is assumed from Bijoy
+-য	C9	sure
+-র	CA	unsure	other widths at CB, CC, D0
+-ব	C4	unsure	other widths at C5, C6
+-ল	D3	unsure
+-ন	C0	unsure	another form at C1
+-ম	C8	unsure
+# Conjuncts drawn as one glyph
+ক্ষ	72	sure
+ক্ক	82	sure
+ক্ট	83	sure
+ক্স	84	unsure	read as ক্স in five Lipi designs (first reading was ক্ম)
+গ্ধ	87	sure
+ঙ্ক	88	sure
+ঙ্গ	89	sure
+জ্জ	8B	sure
+জ্ঝ	8C	sure
+জ্ঞ	91	sure
+ঞ্চ	92	sure
+ঞ্ছ	93	sure
+ঞ্জ	94	sure
+ঞ্ঝ	95	sure
+ট্ট	96	sure
+ড্ড	97	sure
+ণ্ঠ	98	unsure
+ণ্ড	99	sure
+ত্ত	9A	sure
+ত্থ	9B	sure
+ত্র	9C	sure
+দ্দ	9F	sure
+দ্ধ	DC	sure
+দ্ব	E0	sure
+দ্ভ	E1	sure
+দ্র	E2	sure
+ন্ঠ	E3	unsure
+ন্ড	E4	sure
+ন্ধ	E5	sure
+ন্ন	E6	sure
+প্ত	E7	sure
+প্প	E8	sure
+ফ্র	E9	sure
+ব্জ	EA	sure
+ব্দ	EB	sure
+ব্ধ	EC	sure
+ব্ব	EE	sure
+ভ্র	EF	sure
+ম্ব	F0	unsure
+ম্ভ	F1	sure
+ল্ক	F3	sure
+ল্ড	F4	sure
+ল্ল	F5	sure
+ষ্ট	F8	sure
+ষ্ঠ	F9	sure
+স্ক	FA	sure
+স্ক্র	FB	sure
+স্ব	FC	sure
+ক্ষ্ম	FE	sure
+স্ত্র	F2	unsure	clear in Lipi Normal; Lipi Ekushey draws it differently
+# Conjuncts built from half forms, read by drawing them in five Lipi designs (Normal, Ekushey, Jui, Tagor, Padmo):
+# D8 is a first-half স, D6 a first-half ষ, B9 a second-half ত, BB a second-half ত্র, BC a second-half দ.
+ক্ত	4C B9	sure
+ক্ত্র	4C BB	sure
+ন্ত	65 B9	sure
+ন্ত্র	65 BB	unsure	by analogy with ক্ত্র
+ন্দ	65 BC	sure
+স্ত	70 B9	sure
+স্থ	D8 62	sure
+স্প	D8 66	sure
+স্ফ	D8 67	unsure	by analogy with স্প
+স্ম	D8 6A	sure
+স্খ	D8 4D	unsure	by analogy with স্থ
+ষ্ক	D6 4C	sure
+ষ্প	D6 66	sure
+ষ্ফ	D6 67	unsure	by analogy with ষ্প
+ষ্ম	D6 6A	unsure	by analogy with স্ম
+# Not read yet (shape unclear without real text): 40, 7E, 86, 8A, A0, B2-B8, BA, BD-BF, C2, C3, C7, D2, D4, D5, D7, D9,
+# DB, DE, F7. All Lipi fonts of Proshika Shabda 2007 (about 75) use this same encoding.

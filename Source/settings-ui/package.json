@@ -1,0 +1,15 @@
+{
+  "name": "likhon-settings-ui",
+  "private": true,
+  "description": "The Settings window (likhon.exe --settings): pages S01 to S16. Plain TypeScript, no framework (Desktop/CLAUDE.md section 4).",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "flowbite": "^4.0.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://likhon.app/schemas/theme-1.json",
+  "title": "Likhon theme",
+  "description": "Colours for the top bar and the suggestion window. Themes are JSON files only (owner decision 2026-10-22): colours, no images, no fonts, no scripts. Every theme has a light and a dark version (owner decision 2026-10-22); Windows' light or dark mode, or Light or dark in Settings, picks one. A colour is #RRGGBB, or @name for a design token (Reference/design-tokens.json) in that version's set.",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "id",
+    "name",
+    "light",
+    "dark"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "format": {
+      "const": "likhon-theme"
+    },
+    "version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,39}$"
+    },
+    "name": {
+      "type": "object",
+      "required": [
+        "en"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "bn": {
+          "type": "string",
+          "maxLength": 60
+        }
+      }
+    },
+    "author": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "license": {
+      "enum": [
+        "MPL-2.0",
+        "MIT",
+        "CC0-1.0",
+        "CC-BY-4.0",
+        "Apache-2.0"
+      ]
+    },
+    "light": {
+      "type": "object",
+      "required": [
+        "desk",
+        "surface",
+        "surface2",
+        "line",
+        "ink",
+        "muted",
+        "accent",
+        "on",
+        "sel"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "desk": {
+          "$ref": "#/$defs/color",
+          "description": "Desktop behind the preview in Settings"
+        },
+        "surface": {
+          "$ref": "#/$defs/color",
+          "description": "Bar and window ground"
+        },
+        "surface2": {
+          "$ref": "#/$defs/color",
+          "description": "Hover and inset ground"
+        },
+        "line": {
+          "$ref": "#/$defs/color",
+          "description": "Outline"
+        },
+        "ink": {
+          "$ref": "#/$defs/color",
+          "description": "Text"
+        },
+        "muted": {
+          "$ref": "#/$defs/color",
+          "description": "Secondary text and icons"
+        },
+        "accent": {
+          "$ref": "#/$defs/color",
+          "description": "Bangla on, selection mark"
+        },
+        "on": {
+          "$ref": "#/$defs/color",
+          "description": "Text on the accent colour"
+        },
+        "sel": {
+          "$ref": "#/$defs/color",
+          "description": "Selected suggestion row"
+        }
+      },
+      "description": "The light version"
+    },
+    "dark": {
+      "type": "object",
+      "required": [
+        "desk",
+        "surface",
+        "surface2",
+        "line",
+        "ink",
+        "muted",
+        "accent",
+        "on",
+        "sel"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "desk": {
+          "$ref": "#/$defs/color",
+          "description": "Desktop behind the preview in Settings"
+        },
+        "surface": {
+          "$ref": "#/$defs/color",
+          "description": "Bar and window ground"
+        },
+        "surface2": {
+          "$ref": "#/$defs/color",
+          "description": "Hover and inset ground"
+        },
+        "line": {
+          "$ref": "#/$defs/color",
+          "description": "Outline"
+        },
+        "ink": {
+          "$ref": "#/$defs/color",
+          "description": "Text"
+        },
+        "muted": {
+          "$ref": "#/$defs/color",
+          "description": "Secondary text and icons"
+        },
+        "accent": {
+          "$ref": "#/$defs/color",
+          "description": "Bangla on, selection mark"
+        },
+        "on": {
+          "$ref": "#/$defs/color",
+          "description": "Text on the accent colour"
+        },
+        "sel": {
+          "$ref": "#/$defs/color",
+          "description": "Selected suggestion row"
+        }
+      },
+      "description": "The dark version"
+    }
+  },
+  "$defs": {
+    "color": {
+      "type": "string",
+      "pattern": "^(#[0-9A-Fa-f]{6}|@[a-zA-Z0-9]+)$"
+    }
+  }
+}

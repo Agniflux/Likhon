@@ -1,0 +1,37 @@
+{
+  "_comment": "The notices shipped with Likhon, in this order: the About page's Open-source credits (settings-ui/build.mjs) and the website's /legal/third-party-licenses.txt (Web/Laravel/scripts/assets.mjs) both read this list through scripts/licenses/notices.mjs. A .txt file in this folder that is not listed here is an error, so nothing is shipped or dropped by accident. See LICENSING.md at the root.",
+  "files": [
+    {
+      "file": "NOTICE.txt",
+      "title": "About these notices"
+    },
+    {
+      "file": "avro-keyboard-MPL-2.0.txt",
+      "title": "Mozilla Public License 2.0 (Likhon's own code and the Avro Keyboard files)"
+    },
+    {
+      "file": "khipro-MIT.txt",
+      "title": "Khipro: MIT License"
+    },
+    {
+      "file": "HindSiliguri-OFL.txt",
+      "title": "Hind Siliguri: SIL Open Font License 1.1"
+    },
+    {
+      "file": "unicode-cldr.txt",
+      "title": "Unicode CLDR: Unicode License v3"
+    },
+    {
+      "file": "unijoy.txt",
+      "title": "UniJoy: no license stated"
+    },
+    {
+      "file": "rust-crates.txt",
+      "title": "Rust libraries"
+    }
+  ],
+  "retired": {
+    "okkhor-MIT.txt": "now in rust-crates.txt (generated); delete the file",
+    "wry-tao-MIT.txt": "wrong for tao, which is Apache-2.0 only; both are now in rust-crates.txt; delete the file"
+  }
+}

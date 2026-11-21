@@ -1,0 +1,253 @@
+{
+  "format": "likhon-layout",
+  "version": 1,
+  "id": "jatiya",
+  "name": {
+    "en": "Jatiya",
+    "bn": "জাতীয়"
+  },
+  "kind": "fixed",
+  "author": "Bangladesh Computer Council (BCC)",
+  "description": "www.bccbd.org",
+  "layoutVersion": "1",
+  "license": "MPL-2.0",
+  "source": "https://github.com/mugli/Avro-Keyboard/blob/6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1/assets/keyboard-layouts/National%20(Jatiya).avrolayout",
+  "keys": {
+    "0": {
+      "normal": "০",
+      "shift": ")"
+    },
+    "1": {
+      "normal": "১",
+      "shift": "!",
+      "altgr": "৴"
+    },
+    "2": {
+      "normal": "২",
+      "shift": "@",
+      "altgr": "৵"
+    },
+    "3": {
+      "normal": "৩",
+      "shift": "#",
+      "altgr": "৶"
+    },
+    "4": {
+      "normal": "৪",
+      "shift": "$",
+      "altgr": "৳",
+      "shiftAltgr": "৲"
+    },
+    "5": {
+      "normal": "৫",
+      "shift": "%",
+      "altgr": "৷"
+    },
+    "6": {
+      "normal": "৬",
+      "shift": "^",
+      "altgr": "৸",
+      "shiftAltgr": "ৎ"
+    },
+    "7": {
+      "normal": "৭",
+      "shift": "&"
+    },
+    "8": {
+      "normal": "৮",
+      "shift": "*"
+    },
+    "9": {
+      "normal": "৯",
+      "shift": "("
+    },
+    "`": {
+      "normal": "‌",
+      "shift": "‍",
+      "altgr": "‌",
+      "shiftAltgr": "‍"
+    },
+    "-": {
+      "normal": "-",
+      "shift": "_"
+    },
+    "=": {
+      "normal": "=",
+      "shift": "+"
+    },
+    "q": {
+      "normal": "ঙ",
+      "shift": "ং",
+      "altgr": "ৢ",
+      "shiftAltgr": "ৣ"
+    },
+    "w": {
+      "normal": "য",
+      "shift": "য়"
+    },
+    "e": {
+      "normal": "ড",
+      "shift": "ঢ",
+      "altgr": "ৄ"
+    },
+    "r": {
+      "normal": "প",
+      "shift": "ফ"
+    },
+    "t": {
+      "normal": "ট",
+      "shift": "ঠ"
+    },
+    "y": {
+      "normal": "চ",
+      "shift": "ছ"
+    },
+    "u": {
+      "normal": "জ",
+      "shift": "ঝ"
+    },
+    "i": {
+      "normal": "হ",
+      "shift": "ঞ",
+      "altgr": "ঽ"
+    },
+    "o": {
+      "normal": "গ",
+      "shift": "ঘ"
+    },
+    "p": {
+      "normal": "ড়",
+      "shift": "ঢ়"
+    },
+    "[": {
+      "normal": "[",
+      "shift": "{"
+    },
+    "]": {
+      "normal": "]",
+      "shift": "}"
+    },
+    "\\": {
+      "normal": "\\",
+      "shift": "|"
+    },
+    "a": {
+      "normal": "ৃ",
+      "shift": "ৗ",
+      "altgr": "ঋ",
+      "shiftAltgr": "ৠ"
+    },
+    "s": {
+      "normal": "ু",
+      "shift": "ূ",
+      "altgr": "উ",
+      "shiftAltgr": "ঊ"
+    },
+    "d": {
+      "normal": "ি",
+      "shift": "ী",
+      "altgr": "ই",
+      "shiftAltgr": "ঈ"
+    },
+    "f": {
+      "normal": "ব",
+      "shift": "ভ",
+      "altgr": "ৰ",
+      "shiftAltgr": "ৱ"
+    },
+    "g": {
+      "normal": "্",
+      "shift": "।",
+      "altgr": "॥"
+    },
+    "h": {
+      "normal": "া",
+      "shift": "অ",
+      "altgr": "আ"
+    },
+    "j": {
+      "normal": "ক",
+      "shift": "খ"
+    },
+    "k": {
+      "normal": "ত",
+      "shift": "থ"
+    },
+    "l": {
+      "normal": "দ",
+      "shift": "ধ",
+      "altgr": "ঌ",
+      "shiftAltgr": "ৡ"
+    },
+    ";": {
+      "normal": ";",
+      "shift": ":"
+    },
+    "'": {
+      "normal": "'",
+      "shift": "\""
+    },
+    "z": {
+      "normal": "ঁ",
+      "shift": "ঃ",
+      "altgr": "৺"
+    },
+    "x": {
+      "normal": "ো",
+      "shift": "ৌ",
+      "altgr": "ও",
+      "shiftAltgr": "ঔ"
+    },
+    "c": {
+      "normal": "ে",
+      "shift": "ৈ",
+      "altgr": "এ",
+      "shiftAltgr": "ঐ"
+    },
+    "v": {
+      "normal": "র",
+      "shift": "ল"
+    },
+    "b": {
+      "normal": "ন",
+      "shift": "ণ"
+    },
+    "n": {
+      "normal": "স",
+      "shift": "ষ"
+    },
+    "m": {
+      "normal": "ম",
+      "shift": "শ"
+    },
+    ",": {
+      "normal": ",",
+      "shift": "<"
+    },
+    ".": {
+      "normal": ".",
+      "shift": ">"
+    },
+    "/": {
+      "normal": "/",
+      "shift": "?"
+    }
+  },
+  "numpad": {
+    "0": "০",
+    "1": "১",
+    "2": "২",
+    "3": "৩",
+    "4": "৪",
+    "5": "৫",
+    "6": "৬",
+    "7": "৭",
+    "8": "৮",
+    "9": "৯",
+    "+": "+",
+    ".": ".",
+    "/": "/",
+    "*": "*",
+    "-": "-"
+  }
+}

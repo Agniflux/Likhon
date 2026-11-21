@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "maroon",
+  "name": {
+    "en": "Maroon",
+    "bn": "মেরুন"
+  },
+  "author": "Tanbin Islam Siyam",
+  "light": {
+    "desk": "#B8B7B6",
+    "surface": "#D9D9D8",
+    "surface2": "#E8E8E7",
+    "line": "#8E8D8C",
+    "ink": "#1E1E1E",
+    "muted": "#3D3C3C",
+    "accent": "#8E1F1C",
+    "on": "#FFFFFF",
+    "sel": "#F1D9D7"
+  },
+  "dark": {
+    "desk": "#1F1F1F",
+    "surface": "#2E2E2E",
+    "surface2": "#3A3A3A",
+    "line": "#4A4A4A",
+    "ink": "#F2F2F2",
+    "muted": "#C5C5C4",
+    "accent": "#D0544B",
+    "on": "#000000",
+    "sel": "#4A2A28"
+  }
+}

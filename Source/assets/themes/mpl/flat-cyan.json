@@ -1,0 +1,32 @@
+{
+  "format": "likhon-theme",
+  "version": 1,
+  "id": "flat-cyan",
+  "name": {
+    "en": "Flat cyan",
+    "bn": "ফ্ল্যাট সায়ান"
+  },
+  "author": "Tanbin Islam Siyam",
+  "light": {
+    "desk": "#EBEBEB",
+    "surface": "#FFFFFF",
+    "surface2": "#F2F2F2",
+    "line": "#D4D4D4",
+    "ink": "#252525",
+    "muted": "#5C5C5C",
+    "accent": "#2268DB",
+    "on": "#FFFFFF",
+    "sel": "#D7E5FC"
+  },
+  "dark": {
+    "desk": "#1B1B1B",
+    "surface": "#252525",
+    "surface2": "#333333",
+    "line": "#3B3A3A",
+    "ink": "#FFFFFF",
+    "muted": "#BDBDBD",
+    "accent": "#2671E8",
+    "on": "#FFFFFF",
+    "sel": "#1F3A63"
+  }
+}
