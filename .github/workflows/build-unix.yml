@@ -17,6 +17,8 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo test -p likhon-engine -p likhon-store -p likhon-ffi
         working-directory: Source
+      - name: UniJoy must not be in the source or the library
+        run: node Source/scripts/check-unijoy-excluded.mjs
 
   test-macos:
     runs-on: macos-15-intel
@@ -43,6 +45,8 @@ jobs:
       - name: Build the .deb
         run: bash ./build-deb.sh
         working-directory: Linux
+      - name: UniJoy must not be in the package
+        run: "! dpkg-deb -c Product/Linux/*.deb | grep -i unijoy"
       - uses: actions/upload-artifact@v4
         with:
           name: likhon-linux

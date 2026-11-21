@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Legacy output (owner decision 2026-10-22: Bijoy *output* is allowed; a Bijoy keyboard layout is not offered).
 //!
 //! Typing stays the same; what reaches the app is Bijoy-encoded text for SutonnyMJ-family fonts. Bijoy writes some

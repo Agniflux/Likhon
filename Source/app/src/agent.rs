@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Agent mode: Portable typing through a low-level keyboard hook (Desktop/CLAUDE.md, section 5), the tray
 //! icon, and the top bar (topbar.rs).
 //!

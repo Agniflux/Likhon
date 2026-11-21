@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Stops every running likhon.exe. Use it if a development build ever swallows keys or breaks typing
 # (root CLAUDE.md, "Dev safety"). Needs no admin rights for your own processes.
 #

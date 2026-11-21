@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The on-screen keyboard and its Letters panel (Reference/design-v2/Likhon Desktop.dc.html §8).
 //!
 //! A native window that never takes focus (WS_EX_NOACTIVATE, MA_NOACTIVATE): clicking a key types its character into

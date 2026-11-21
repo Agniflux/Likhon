@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Adds or replaces phrases in one phrases file, from a JSON map { "id": ["English", "Bangla"] }.
 // Bangla is marked "needs review" and bnFrom is set from the English text. Use null to delete an id.
 //

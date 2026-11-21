@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Likhon in Windows' keyboard list (Win+Space) from any copy, Portable included (owner decision 2026-10-24).
 //!
 //! Windows reads text-service profiles only from HKLM (SPIKES.md M3: per-user registration was tried and refused), so

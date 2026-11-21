@@ -1,4 +1,6 @@
-﻿; Likhon offline installer (Inno Setup 7). Milestone M8, Desktop/CLAUDE.md section 9.
+﻿; This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+; not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+; Likhon offline installer (Inno Setup 7). Milestone M8, Desktop/CLAUDE.md section 9.
 ;
 ; Build:  powershell -File Desktop\Installer\build-installer.ps1        (see that script for the options)
 ; Needs:  likhon.exe already built and signed (the exe carries the text-service DLLs inside it).
@@ -131,7 +133,7 @@ en.TitleFinish=Likhon is ready
 en.DescFinish=Press F12 in any app to switch between Bangla and English. Likhon lives in the tray: double-click its icon to open the top bar.
 en.HelpLink=Help
 en.TaskKeyboard=Show Likhon in the Windows keyboard list (Win+Space)
-en.TaskKeyboardHint=Needs administrator permission, so it is only offered when installing for everyone.
+en.TaskKeyboardHint=Needs administrator permission, so it is only offered when installing for everyone. The text service reads your keystrokes only to turn them into Bangla.
 en.TaskStartup=Start Likhon when I sign in to Windows
 en.GroupExtras=Extras
 en.FinishGuide=Open the Likhon first-run guide
@@ -149,7 +151,7 @@ bn.TitleFinish=লিখন তৈরি
 bn.DescFinish=যেকোনো অ্যাপে F12 চাপলে বাংলা ও English বদলাবে। লিখন ট্রেতে থাকে: টপ বার খুলতে এর আইকনে ডাবল-ক্লিক করুন।
 bn.HelpLink=সাহায্য
 bn.TaskKeyboard=উইন্ডোজের কিবোর্ড তালিকায় লিখন দেখান (Win+Space)
-bn.TaskKeyboardHint=প্রশাসকের অনুমতি লাগে, তাই শুধু সবার জন্য ইনস্টল করলে দেওয়া হয়।
+bn.TaskKeyboardHint=প্রশাসকের অনুমতি লাগে, তাই শুধু সবার জন্য ইনস্টল করলে দেওয়া হয়। টেক্সট সার্ভিস আপনার কিস্ট্রোক শুধু বাংলায় রূপান্তরের জন্য পড়ে।
 bn.TaskStartup=উইন্ডোজে সাইন ইন করলে লিখন চালু করুন
 bn.GroupExtras=অতিরিক্ত
 bn.FinishGuide=লিখনের প্রথম ব্যবহারের গাইড খুলুন
@@ -164,6 +166,10 @@ Name: "startup"; Description: "{cm:TaskStartup}"; GroupDescription: "{cm:GroupEx
 Source: "{#ExePath}"; DestDir: "{app}"; DestName: "likhon.exe"; Flags: ignoreversion
 ; The system dictionary (read-only SQLite, MPL-2.0) with its licence and source note, beside the exe like Portable.
 Source: "{#DictDir}\*"; DestDir: "{app}\dict"; Flags: ignoreversion
+; The MPL-2.0 notices and the source offer, beside the exe (License notices, 2026-11-21).
+Source: "..\NOTICE"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\NOTICES.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\SOURCE-OFFER.txt"; DestDir: "{app}"; Flags: ignoreversion
 ; Installer window only (never installed): the brand mark, and Hind Siliguri (OFL 1.1) loaded privately for this window.
 Source: "art\mark-44.bmp"; Flags: dontcopy
 Source: "art\mark-66.bmp"; Flags: dontcopy
@@ -184,6 +190,8 @@ Root: HKA; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: s
 [Run]
 ; Windows keyboard list: the exe carries both text-service DLLs and registers them (machine-wide, so admin install only).
 Filename: "{app}\likhon.exe"; Parameters: "--keyboard-add ""{localappdata}\Likhon"""; Tasks: keyboard; Flags: runhidden waituntilterminated
+; The installer showed the agreement and it was accepted: record that for this user, so the first start does not ask again.
+Filename: "{app}\likhon.exe"; Parameters: "--accept-agreement"; Flags: runhidden waituntilterminated runasoriginaluser
 ; Finish page: start Likhon, and offer the first-run guide (the Settings window's guide page).
 Filename: "{app}\likhon.exe"; Description: "{cm:LaunchProgram,Likhon}"; Flags: nowait postinstall skipifsilent
 Filename: "{app}\likhon.exe"; Parameters: "--settings general"; Description: "{cm:FinishGuide}"; Flags: nowait postinstall skipifsilent unchecked

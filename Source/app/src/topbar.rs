@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The top bar (Reference/design-v2/Likhon Desktop.dc.html §3) and its two menus (layout list, close menu).
 //!
 //! Native windows drawn with Direct2D and DirectWrite (Desktop/CLAUDE.md section 4). They never take

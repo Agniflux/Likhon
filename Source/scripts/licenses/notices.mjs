@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // The open-source notices Likhon ships, as one text: assets/licenses/index.json lists the files and their order.
 // Used by settings-ui/build.mjs (About › Open-source credits, embedded in likhon.exe) and by
 // Web/Laravel/scripts/assets.mjs (public/legal/third-party-licenses.txt), so the app and the site show the same text.

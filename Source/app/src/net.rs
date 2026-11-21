@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The only network code in likhon.exe (root CLAUDE.md: no telemetry, no background calls). Every request starts from
 //! something the person clicked in Settings (check for updates, the library, the dictionary, donating words), and goes
 //! only to the Likhon site (settings::site(), likhon.agniflux.com unless a build or settings.json names another), over https. WinHTTP is Windows'

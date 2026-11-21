@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Adds Likhon to Windows' keyboards (Settings > Time & language > Bangla (Bangladesh) > Keyboards, and Win+Space):
 # copies likhon_tsf.dll (64-bit and 32-bit builds) to Program Files\Likhon, registers both with regsvr32, and adds
 # the keyboard to this user's Bangla (Bangladesh) language. Undo: unregister-tsf.ps1. Run in an elevated PowerShell:

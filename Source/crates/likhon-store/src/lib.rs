@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Likhon's data in SQLite (Desktop/CLAUDE.md, section 7).
 //!
 //! The dictionary (owner decision 2026-10-22): a read-only SQLite file in the `dict` folder beside likhon.exe,
@@ -365,8 +367,27 @@ impl UserData {
     }
 }
 
+/// May this word be offered in the donation review list? Bangla letters and signs only, 1 to 40 characters, no digits
+/// (so no phone, identity or account number) and nothing email-like (Privacy notice: a donation is a word and nothing
+/// else). The site checks the same rules again; this keeps such words out of the list the person sees.
+pub fn donatable(word: &str) -> bool {
+    let n = word.chars().count();
+    (1..=40).contains(&n) && word.chars().all(|c| matches!(c, '\u{0980}'..='\u{09FF}' | '\u{200C}' | '\u{200D}') && !matches!(c, '\u{09E6}'..='\u{09EF}'))
+}
+
 #[cfg(test)]
 mod tests {
+    #[test]
+    fn donation_list_keeps_only_plain_bangla_words() {
+        assert!(super::donatable("ঝালমুড়ি"));
+        assert!(!super::donatable("ফোন০১৭১২"));
+        assert!(!super::donatable("a@b.com"));
+        assert!(!super::donatable("hello"));
+        assert!(!super::donatable(""));
+        assert!(!super::donatable(&"ক".repeat(41)));
+        assert!(super::donatable(&"ক".repeat(40)));
+    }
+
     use super::*;
 
     fn dict() -> Dictionary {

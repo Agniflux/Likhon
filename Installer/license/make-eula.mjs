@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Makes the installer's licence pages (eula.en.txt, eula.bn.txt) from the website's agreement, so the installer shows
 // the same text as https://likhon.agniflux.com/en/legal/license (the site's own words: "The installer shows the same text").
 //
@@ -18,6 +20,10 @@ const titles = {
   bn: (v) => `লিখন সফটওয়্যার লাইসেন্স চুক্তি\nসংস্করণ ${v}`,
 };
 
+// Relative links in the legal pages (licensing, privacy#app, ../licenses) become full addresses on the public site.
+const SITE = 'https://likhon.agniflux.com';
+const abs = (href, lang) => (/^https?:|^mailto:/.test(href) ? href : `${SITE}/${lang}/legal/${href.replace(/^\.\.\//, '')}`.replace('/legal/../', '/').replace(/\/legal\/(licenses|business)/, '/$1'));
+
 function plain(md, lang, version) {
   const m = md.replace(/^﻿/, '').match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!m) throw new Error('no front matter');
@@ -32,7 +38,7 @@ function plain(md, lang, version) {
     let line = raw
       .replace(/^#{1,6}\s+/, '')               // headings: keep the words
       .replace(/\s*\{#[a-z-]+\}\s*$/, '')       // heading anchors
-      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')  // links: keep the text
+      .replace(/\[([^\]]+)\]\(([^)]*)\)/g, (_, text, href) => `${text} (${abs(href, lang)})`) // links: the text and the plain address
       .replace(/<([^>@\s]+@[^>\s]+)>/g, '$1')   // <mail@example.com>
       .replace(/\*\*([^*]+)\*\*/g, '$1')        // bold
       .replace(/`([^`]+)`/g, '$1');             // code

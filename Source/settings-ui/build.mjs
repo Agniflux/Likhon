@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Builds the Settings window into dist/, which app/build.rs embeds in likhon.exe.
 //
 //   npm install && npm run build      (run again after editing src/, the phrases, or the tokens)

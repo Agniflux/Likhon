@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The suggestion window and the caret badge (Reference/design-v2/Likhon Desktop.dc.html §4).
 //!
 //! Suggestion window: 220 DIPs wide, a header with the typed letters and a pin (follow the cursor, or stay anchored),

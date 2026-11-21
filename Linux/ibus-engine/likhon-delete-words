@@ -1,0 +1,11 @@
+#!/bin/sh
+# Deletes the words Likhon learned on this computer: ~/.local/share/likhon/user.sqlite (Privacy notice: view, export
+# and delete). Run it any time; it asks first unless you pass --yes. Nothing is sent anywhere.
+DB="${XDG_DATA_HOME:-$HOME/.local/share}/likhon/user.sqlite"
+if [ ! -e "$DB" ]; then echo "No learned words are stored (no $DB)."; exit 0; fi
+if [ "$1" != "--yes" ]; then
+  printf 'Delete all learned words in %s? [y/N] ' "$DB"; read -r a
+  [ "$a" = y ] || [ "$a" = Y ] || { echo "Nothing deleted."; exit 1; }
+fi
+rm -f "$DB" "$DB-wal" "$DB-shm" "$DB-journal"
+echo "Deleted. Likhon starts learning again from nothing."

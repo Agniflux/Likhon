@@ -1,0 +1,21 @@
+Likhon
+Copyright Agniflux Enterprise, 1/39, East Basabo, Sabujbagh, Dhaka 1214, Bangladesh. info@agniflux.com
+
+Likhon's own source code is licensed under the Mozilla Public License, v. 2.0 (see LICENSE). Each source file carries
+the standard MPL-2.0 header. The MPL applies file by file: it covers these files and does not change the license of
+anything else in this repository.
+
+Parts made by others keep their own licenses:
+- Files made from Avro Keyboard (Copyright OmicronLab, MPL-2.0): the layouts under Source/assets/layouts/avro, the
+  themes under Source/assets/themes/mpl, the dictionary data under Source/assets/dict/mpl, and the converters in
+  Source/scripts/avro. Each folder holds its own LICENSE and a SOURCE.md that names the exact upstream commit.
+  Files changed from Avro's originals are changed here and say so in the folder's SOURCE.md.
+- okkhor (MIT) and riti (MPL-2.0): the typing engine's base; each file keeps its own notice.
+- Hind Siliguri (SIL OFL 1.1), Unicode CLDR emoji names (Unicode License v3), and the Rust crates linked into the
+  app (listed with their licenses in Source/assets/licenses/rust-crates.txt and in the app, Settings > About >
+  Open-source credits).
+
+The full license texts, the source of the MPL files and the product-name notes are in NOTICES.md (License notices) and
+at https://likhon.agniflux.com/en/legal/notices. Product names (Avro Keyboard, Bijoy, Proshika, UniJoy, Khipro,
+Windows) are used only to say where something comes from or what it works with, never to suggest that their owners
+made or endorse Likhon.

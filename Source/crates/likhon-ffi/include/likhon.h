@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 /* C interface to the Likhon typing engine (Desktop/Source/crates/likhon-ffi/src/lib.rs). MPL-2.0.
  *
  * One session per text field. Strings come back in `commit` and `preedit` (UTF-8, possibly empty) and stay valid

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds ibus-likhon_<version>_<arch>.deb from the engine built by ./build.sh.
 #   ./build-deb.sh            output: Desktop/Product/Linux/
 # Needs: dpkg-deb (dpkg-dev), strip. Run ./build.sh first. The package installs only system files under /usr
@@ -15,9 +17,13 @@ trap 'rm -rf "$root"' EXIT
 
 [ -x "$out/ibus-engine-likhon" ] || { echo "run ./build.sh first" >&2; exit 1; }
 
-install -d "$root/usr/lib/ibus-likhon" "$root/usr/share/ibus-likhon" "$root/usr/share/ibus/component" "$root/usr/share/doc/$pkg" "$root/DEBIAN"
+install -d "$root/usr/bin" "$root/usr/lib/ibus-likhon" "$root/usr/share/ibus-likhon" "$root/usr/share/ibus/component" "$root/usr/share/doc/$pkg" "$root/DEBIAN"
 install -m 0755 "$out/ibus-engine-likhon" "$root/usr/lib/ibus-likhon/ibus-engine-likhon"
 strip --strip-unneeded "$root/usr/lib/ibus-likhon/ibus-engine-likhon"
+# The first-run agreement (shown once, by the engine), its text, and the command that deletes learned words.
+install -m 0755 "$here/ibus-engine/likhon-agreement" "$root/usr/lib/ibus-likhon/likhon-agreement"
+install -m 0755 "$here/ibus-engine/likhon-delete-words" "$root/usr/bin/likhon-delete-words"
+for l in en bn; do sed -e '1s/^\xEF\xBB\xBF//' -e 's/\r$//' "$here/../Installer/license/eula.$l.txt" > "$root/usr/share/ibus-likhon/agreement.$l.txt"; chmod 0644 "$root/usr/share/ibus-likhon/agreement.$l.txt"; done
 # The dictionary (read-only SQLite, MPL-2.0, from Avro Keyboard's word list and ours) with its licence and source note.
 dict="$src/assets/dict/mpl"
 # words.full.sqlite (the owner's enlarged list, never in git) wins over the public Avro-derived words.sqlite when it exists.
@@ -43,6 +49,7 @@ License: MPL-2.0
  https://likhon.agniflux.com/licenses.
 EOF
 chmod 0644 "$root/usr/share/doc/$pkg/copyright"
+for f in NOTICE NOTICES.md SOURCE-OFFER.txt; do install -m 0644 "$here/../$f" "$root/usr/share/doc/$pkg/$f"; done
 
 size_kb="$(du -sk "$root/usr" | cut -f1)"
 cat > "$root/DEBIAN/control" <<EOF
@@ -52,7 +59,7 @@ Section: utils
 Priority: optional
 Architecture: $arch
 Depends: ibus (>= 1.5), libc6 (>= 2.31), libglib2.0-0
-Recommends: fonts-noto-core
+Recommends: fonts-noto-core, zenity | kdialog
 Installed-Size: $size_kb
 Maintainer: Agniflux Enterprise <info@agniflux.com>
 Homepage: https://likhon.agniflux.com

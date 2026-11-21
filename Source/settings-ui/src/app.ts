@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Likhon Settings window (likhon.exe --settings [page]): Reference/design-v2/Likhon Desktop.dc.html §7.
 //
 // Plain TypeScript, no framework. The Rust side (app/src/settings_app.rs) serves these files from inside
@@ -18,6 +20,8 @@ interface Boot {
   page: string;
   version: string;
   edition: 'portable' | 'native';
+  /** The date of the current software license agreement (first run shows it; About names it). */
+  agreementDate: string;
   /** The Likhon site (likhon.agniflux.com by default). */
   site: string;
   /** Whether this Windows user's Run entry starts this likhon.exe. */
@@ -462,9 +466,11 @@ const PAGES: Record<string, () => Page> = {
               (e.currentTarget as HTMLElement).lastChild!.textContent = t('copied');
             },
           }, icon('copy', 14), t('about.copy')))),
+        h('p', { class: 'muted small', 'data-find': 'agreement' }, t('about.agreement', { date: boot.agreementDate })),
         cards([
           link('life-buoy', 'support', 'support'), link('graduation-cap', 'learn', 'learn'), link('message-circle', 'forum', 'forum'),
           link('scroll-text', 'license', 'legal'),
+          link('file-text', 'licensingTerms', 'legal/licensing'), link('feather', 'notices', 'legal/notices'),
           { icon: 'code', label: t('about.credits'), desc: t('about.creditsP'), onclick: async () => dialog(t('about.credits'), await (await fetch('licenses.txt')).text()) },
           link('hand-heart', 'contributors', 'contributors'),
         ]),
@@ -590,6 +596,8 @@ async function donate() {
   send.disabled = true;
   const body = h('div', { class: 'donate' },
     h('p', {}, t('priv.donateDlg', { site: host() })),
+    h('p', { class: 'notice-warn' }, t('priv.donateWarn')),
+    h('p', { class: 'muted small' }, t('priv.donateFinal')),
     h('div', { class: 'words', lang: 'bn' }, words.slice(0, 500).map((w) => h('label', {},
       h('input', { type: 'checkbox', onchange: (e: Event) => { (e.target as HTMLInputElement).checked ? picked.add(w) : picked.delete(w); send.disabled = !picked.size; } }), w))));
   const close = dialog(t('priv.donateH'), body, [send]);
@@ -1288,6 +1296,30 @@ function render() {
   main.scrollTop = keep;
 }
 
+/**
+ * First run (page "agreement"): the software license agreement with Accept and Decline, in this window with no
+ * navigation. Decline, or closing the window, leaves without accepting; the exe then does not start typing.
+ */
+async function renderAgreement() {
+  applyTheme();
+  const L = lang();
+  document.documentElement.lang = L;
+  document.title = t('agreement.title');
+  document.body.classList.add('agreement');
+  renderTitlebar();
+  const text = await fetch(`agreement.${L}.txt`).then((r) => r.text()).catch(() => '');
+  const lines = text.replace(/\r/g, '').split('\n');
+  const accept = button(t('agreement.accept'), { kind: 'primary', icon: 'check', onclick: () => { call('agreementAccept'); } });
+  const decline = button(t('agreement.decline'), { onclick: () => { call('agreementDecline'); } });
+  document.getElementById('nav')!.replaceChildren();
+  document.getElementById('main')!.replaceChildren(
+    h('h1', {}, t('agreement.title')),
+    h('p', { class: 'sub' }, t('agreement.intro', { date: boot.agreementDate })),
+    h('pre', { class: 'agreement-text', lang: L, tabindex: '0' }, lines.join('\n')),
+    h('div', { class: 'agreement-actions' }, decline, accept),
+    h('p', { class: 'muted small' }, t('agreement.more', { site: host() })));
+}
+
 async function start() {
   [boot, text, icons, THEMES] = await Promise.all([
     fetch('boot.json').then((r) => r.json()),
@@ -1296,6 +1328,7 @@ async function start() {
     fetch('themes.json').then((r) => r.json()),
   ]);
   S = boot.settings;
+  if (boot.page === 'agreement') { edges(); await renderAgreement(); call('ready'); return; }
   // "tools:how" opens a tool straight away (the quick hotkeys Ctrl+Alt+H and Ctrl+Alt+S).
   const [first, sub] = boot.page.split(':');
   const asked = MOVED[first] ?? first;

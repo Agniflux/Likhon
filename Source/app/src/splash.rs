@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The splash (Reference/design-v2/Likhon Desktop.dc.html §6): 480 × 320, frameless, never takes focus, shown for
 //! the moment Likhon takes to start when a person starts it by hand. The artwork (the `splash-art` slot) is bundled
 //! at build time as assets/splash/splash.jpg (scripts/icons/make-splash.ps1), never fetched. The name, tagline and

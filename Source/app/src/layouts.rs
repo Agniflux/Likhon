@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The layouts built into the exe: Probhat and Jatiya, JSON layout files (shared/schemas/layout.schema.json) converted
 //! from Avro Keyboard's MPL-2.0 files (assets/layouts/avro/, SOURCE.md there). Phonetic is not a file; it is the
 //! engine's own. Every other layout is added from the library (owner, 2026-10-23): JSON layouts become files in the

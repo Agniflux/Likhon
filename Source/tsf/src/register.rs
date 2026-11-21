@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Registration (regsvr32 likhon_tsf.dll, as administrator): the COM class under HKLM\Software\Classes, the keyboard
 //! profile for Bangla (Bangladesh), and the categories that make it a keyboard usable in Store apps and the tray's
 //! language switcher. Unregistration removes all three. Scripts: scripts/register-tsf.ps1, scripts/unregister-tsf.ps1.

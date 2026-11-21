@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! likhon_tsf.dll: Likhon as a Windows text service (Desktop/CLAUDE.md 5, "Text-service path"; milestone M3).
 //!
 //! Registered for Bangla (Bangladesh), so it is listed in Settings › Time & language › Bangla › Keyboards and in

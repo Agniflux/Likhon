@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Converts Avro Keyboard's word database (Database.db3: one table of Bangla words per first letter, plus a Suffix
 // table) and its phonetic autocorrect list (autodict.dct, a text file) into Likhon's dictionary file,
 // assets/dict/mpl/words.sqlite. Build-time only. Every built-in list is SQLite (owner decision 2026-10-22).

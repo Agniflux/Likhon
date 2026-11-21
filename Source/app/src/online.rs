@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! What Settings fetches from the Likhon site, always because the person clicked something (net.rs has the rules):
 //! the latest release (Updates), the library and adding an item from it (Library), the dictionary for a copy without
 //! one (Updates), and donating words (Privacy). Runs on a worker thread of the Settings process; the typing agent is

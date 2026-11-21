@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Fills Desktop/Product/Portable from a release build: likhon.exe and the dictionary folder beside it.
 #   cargo build --release -p likhon
 #   powershell -ExecutionPolicy Bypass -File scripts/make-portable.ps1

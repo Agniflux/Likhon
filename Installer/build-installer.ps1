@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds Desktop\Product\Setup\Likhon-Setup-<version>.exe from an already built (and signed) likhon.exe.
 #   .\build-installer.ps1                          uses ..\Product\Portable\likhon.exe
 #   .\build-installer.ps1 -Exe D:\path\likhon.exe  another build (for example the signed one from CI)

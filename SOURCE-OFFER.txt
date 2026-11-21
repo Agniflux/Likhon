@@ -1,0 +1,13 @@
+Source code offer (Mozilla Public License 2.0, section 3.2)
+
+The source code of Likhon, including every file made from Avro Keyboard that is covered by the Mozilla Public License,
+is published at:
+
+  https://github.com/Agniflux/Likhon
+
+Avro Keyboard's original files, at the commit these files were made from:
+
+  https://github.com/mugli/Avro-Keyboard/tree/6766d27fd2c7b41d0ce77fe872f90d2f6348c3b1
+
+If you cannot get the source from those addresses, write to info@agniflux.com and we will send it to you free of
+charge, in a timely way and for no more than the cost of sending it, for as long as we give out copies of Likhon.

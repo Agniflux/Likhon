@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 /* Likhon IBus engine (Linux). MPL-2.0.
  *
  * A thin shell around the Rust typing engine (likhon-ffi): it shows the word being typed as an underlined
@@ -92,10 +94,41 @@ static void end_word(IBusLikhonEngine *e) {
     show(e, commit, preedit);
 }
 
+/* The software license agreement (final legal documents, 2026-11-21): until this copy has accepted it, Likhon types
+ * nothing and every key passes straight through. The first key of a session starts the dialog (likhon-agreement),
+ * which writes the agreement's date to ~/.config/likhon/agreement when the person accepts. */
+#define AGREEMENT_DATE "2026-11-21"
+
+static gboolean agreement_accepted(void) {
+    gchar *path = g_build_filename(g_get_user_config_dir(), "likhon", "agreement", NULL);
+    gchar *text = NULL;
+    gboolean ok = g_file_get_contents(path, &text, NULL, NULL) && text && g_strcmp0(g_strstrip(text), AGREEMENT_DATE) == 0;
+    g_free(text);
+    g_free(path);
+    return ok;
+}
+
+static void ask_agreement_once(void) {
+    static gboolean asked = FALSE;
+    if (asked)
+        return;
+    asked = TRUE;
+    const char *libexec = g_getenv("LIKHON_LIBEXEC");
+    gchar *tool = g_build_filename(libexec ? libexec : "/usr/lib/ibus-likhon", "likhon-agreement", NULL);
+    gchar *argv[] = {tool, NULL};
+    g_spawn_async(NULL, argv, NULL, G_SPAWN_SEARCH_PATH | G_SPAWN_STDOUT_TO_DEV_NULL | G_SPAWN_STDERR_TO_DEV_NULL, NULL, NULL, NULL, NULL);
+    g_free(tool);
+}
+
 static gboolean process_key_event(IBusEngine *engine, guint keyval, guint keycode, guint state) {
     IBusLikhonEngine *e = (IBusLikhonEngine *)engine;
     const char *commit = NULL, *preedit = NULL;
     (void)keycode;
+
+    if (!agreement_accepted()) {
+        ask_agreement_once();
+        return FALSE;
+    }
 
     if (state & IBUS_RELEASE_MASK)
         return FALSE;

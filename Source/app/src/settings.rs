@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! settings.json (Desktop/CLAUDE.md section 2, data location rule): next to the exe when that folder is
 //! writable, otherwise in the user's profile (%LOCALAPPDATA%\Likhon).
 //!
@@ -65,6 +67,8 @@ pub fn defaults() -> Map<String, Value> {
         // Kept by the agent
         "start_bangla": false,
         "tray_hint_shown": false,
+        // The date of the software license agreement the person accepted (first run; Desktop/CLAUDE.md section 9).
+        "agreement_accepted": "",
         "tray_notice_shown": false,
         "topbar.x": null,
         "topbar.y": null,
@@ -114,6 +118,15 @@ pub fn dir() -> (PathBuf, bool) {
     let dir = base.join("Likhon");
     let _ = std::fs::create_dir_all(&dir);
     (dir, false)
+}
+
+/// The date of the current software license agreement (Web/Laravel/resources/legal/en/license.md, `updated`). Raising it
+/// asks everyone to accept again at the next start.
+pub const AGREEMENT_DATE: &str = "2026-11-21";
+
+/// Has this copy accepted the current agreement? (Installed copies accepted it in the installer, which also records it.)
+pub fn agreement_accepted() -> bool {
+    stored().get("agreement_accepted").and_then(|v| v.as_str()) == Some(AGREEMENT_DATE)
 }
 
 pub fn path() -> PathBuf {

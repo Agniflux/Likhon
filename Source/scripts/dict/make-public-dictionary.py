@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 """Makes the public dictionary: assets/dict/mpl/words.sqlite from words.full.sqlite (the owner's enlarged list, local only).
 The public file keeps the Avro-derived curated words, suffixes and autocorrect, and drops the `more` table, so the repository
 holds only what has a known source and licence (MPL-2.0, Avro Keyboard). Run after build-dictionary.py."""

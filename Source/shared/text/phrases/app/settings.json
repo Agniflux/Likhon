@@ -2712,5 +2712,83 @@
     "bn": "প্রশিকা → ইউনিকোড",
     "status": "needs review",
     "bnFrom": "3c3b52ca"
+  },
+  "app.set.agreement.title": {
+    "en": "Software license agreement",
+    "bn": "সফটওয়্যার লাইসেন্স চুক্তি",
+    "status": "needs review",
+    "bnFrom": "ade48c0b"
+  },
+  "app.set.agreement.intro": {
+    "en": "Please read this agreement. Likhon starts only if you accept it. It was last updated on {date}.",
+    "bn": "অনুগ্রহ করে এই চুক্তি পড়ুন। আপনি রাজি হলে তবেই লিখন চালু হবে। শেষ হালনাগাদ {date}।",
+    "status": "needs review",
+    "bnFrom": "327f16a7"
+  },
+  "app.set.agreement.accept": {
+    "en": "I accept",
+    "bn": "আমি রাজি",
+    "status": "needs review",
+    "bnFrom": "dd2a9587"
+  },
+  "app.set.agreement.decline": {
+    "en": "Decline",
+    "bn": "রাজি নই",
+    "status": "needs review",
+    "bnFrom": "b59cf9ed"
+  },
+  "app.set.agreement.more": {
+    "en": "The same text is on {site} under Legal.",
+    "bn": "একই লেখা {site}-এ আইনি অংশে আছে।",
+    "status": "needs review",
+    "bnFrom": "48c2ea88"
+  },
+  "app.set.agreement.fallback": {
+    "en": "Likhon needs you to accept its software license agreement (updated {date}) before it starts. Read it at {site} under Legal. Do you accept?",
+    "bn": "শুরুর আগে লিখনের সফটওয়্যার লাইসেন্স চুক্তি (হালনাগাদ {date}) আপনাকে মানতে হবে। {site}-এ আইনি অংশে তা পড়ুন। আপনি কি রাজি?",
+    "status": "needs review",
+    "bnFrom": "e862be46"
+  },
+  "app.set.about.agreement": {
+    "en": "License agreement of {date}",
+    "bn": "{date} তারিখের লাইসেন্স চুক্তি",
+    "status": "needs review",
+    "bnFrom": "78bd799d"
+  },
+  "app.set.priv.donateWarn": {
+    "en": "Do not tick words that reveal personal information, such as names with phone numbers.",
+    "bn": "যেসব শব্দে ব্যক্তিগত তথ্য প্রকাশ পায়, যেমন ফোন নম্বরসহ নাম, সেগুলোতে টিক দেবেন না।",
+    "status": "needs review",
+    "bnFrom": "cda6d2cb"
+  },
+  "app.set.priv.donateFinal": {
+    "en": "A donation that is sent cannot be taken back, because it is not linked to you.",
+    "bn": "পাঠানো দান ফেরত নেওয়া যায় না, কারণ তা আপনার সঙ্গে যুক্ত নয়।",
+    "status": "needs review",
+    "bnFrom": "d7ec9285"
+  },
+  "app.set.about.licensingTerms": {
+    "en": "Software licensing terms",
+    "bn": "সফটওয়্যার লাইসেন্সিং শর্ত",
+    "status": "needs review",
+    "bnFrom": "5c23cac6"
+  },
+  "app.set.about.licensingTermsP": {
+    "en": "How Likhon's own code is licensed (MPL-2.0).",
+    "bn": "লিখনের নিজের কোড কোন লাইসেন্সে (MPL-2.0)।",
+    "status": "needs review",
+    "bnFrom": "d2884a93"
+  },
+  "app.set.about.notices": {
+    "en": "License notices",
+    "bn": "লাইসেন্স নোটিশ",
+    "status": "needs review",
+    "bnFrom": "4c7f7050"
+  },
+  "app.set.about.noticesP": {
+    "en": "Credits and the source of each part.",
+    "bn": "প্রতিটি অংশের কৃতজ্ঞতা ও উৎস।",
+    "status": "needs review",
+    "bnFrom": "6d3d2366"
   }
 }

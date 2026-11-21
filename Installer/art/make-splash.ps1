@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Crops a banner out of the design's splash artwork for the installer's Welcome page, as plain .bmp files
 # (100%, 150% and 200% DPI), with rounded corners painted in the page colour (design system `bg`, #FBF9F4).
 #   powershell -File Desktop\Installer\art\make-splash.ps1

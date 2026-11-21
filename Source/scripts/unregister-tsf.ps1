@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Undo for register-tsf.ps1: takes the Likhon keyboard out of this user's keyboard list, unregisters the text service
 # (64-bit and 32-bit) and deletes its files. Run in an elevated PowerShell:
 #   powershell -ExecutionPolicy Bypass -File unregister-tsf.ps1

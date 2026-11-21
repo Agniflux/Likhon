@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Build step for likhon.exe:
 //! 1. Compiles likhon.rc: the exe icon, the two tray icons, and version information.
 //! 2. Compiles the app's phrases from the shared text library (shared/text/phrases/app/*.json and

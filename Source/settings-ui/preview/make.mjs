@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Copies dist/ into preview/site/ with the IPC mock and a sample boot.json, for checking the page in a browser.
 import fs from 'node:fs';
 import path from 'node:path';

@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! A session for input methods that show a word being typed (a "preedit") and commit it when it ends: the Linux
 //! IBus engine and the macOS input method. Windows does not use this (it edits the screen in place).
 //!

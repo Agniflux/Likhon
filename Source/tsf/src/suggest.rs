@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Word suggestions while typing with the Likhon keyboard (owner decision 2026-10-24: in Windows-keyboard mode the
 //! list shows whether or not likhon.exe runs, as other Bangla keyboards do). The keyboard reads the dictionary and the
 //! person's My words and word choices itself, read-only (likhon-store: Dictionary, UserData::open_read_only), ranks

@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Layouts and themes added from a file (v2 §12 sideload; Desktop/CLAUDE.md 7: layouts and themes only, strict
 //! parse, size caps, a fixed set of allowed fields, a warning that the file was not reviewed, and removable).
 //!

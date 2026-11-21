@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds the engine for the website (crates/likhon-wasm) into Web/Laravel/public/engine/ (root CLAUDE.md 5a).
 # Needs the wasm32-unknown-unknown target and the wasm-bindgen CLI matching the crate (0.2.129). If it is missing:
 #   cargo install wasm-bindgen-cli --version 0.2.129 --root target/tools --bin wasm-bindgen

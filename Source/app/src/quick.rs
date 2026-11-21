@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Quick hotkeys on the selected text (Settings › Hotkeys; v2 §11 quick popups): Ctrl+Alt+U converts the selection
 //! between Unicode and Bijoy, Ctrl+Alt+Z undoes that conversion, Ctrl+Alt+W adds the selected Bangla words to My
 //! words. Ctrl+Alt+T, H and S open the Tools page, How do I type this and the symbol palette in Settings.

@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Undo for the Default Bangla font changer (app/src/fontdefault.rs), by hand: puts Windows' font-link lists back
 # exactly as they were before Likhon first changed them, from the backup the changer saved, and removes a font file
 # the changer copied into the Windows fonts folder. Run in an elevated PowerShell:

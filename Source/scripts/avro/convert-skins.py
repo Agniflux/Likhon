@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 """Turns Avro Keyboard skins (.avroskin: XML holding BMP pictures of Avro's top bar buttons) into Likhon themes
 (JSON, shared/schemas/theme.schema.json). Build-time only; needs Python 3 with Pillow.
 

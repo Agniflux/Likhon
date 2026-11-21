@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds the Likhon macOS input method as one universal (Apple Silicon + Intel) app, an installer package, and a
 # disk image:  Desktop/Product/Mac/Likhon-<version>-macOS.dmg
 #   ./build-mac.sh
@@ -29,7 +31,7 @@ lipo -create "$target/aarch64-apple-darwin/release/liblikhon_ffi.a" \
 for arch in arm64 x86_64; do
   swiftc -O -target "$arch-apple-macos$min_macos" \
     -import-objc-header "$here/Likhon-Bridging-Header.h" -Xcc "-I$src/crates/likhon-ffi/include" \
-    "$here/Sources/main.swift" "$here/Sources/LikhonInputController.swift" \
+    "$here/Sources/main.swift" "$here/Sources/LikhonInputController.swift" "$here/Sources/Agreement.swift" \
     "$build/liblikhon_ffi.a" -framework Cocoa -framework InputMethodKit -liconv \
     -o "$build/LikhonInputMethod-$arch"
 done
@@ -44,7 +46,10 @@ dict="$src/assets/dict/mpl"
 # words.full.sqlite (the owner's enlarged list, never in git) wins over the public Avro-derived words.sqlite when it exists.
 words="$dict/words.sqlite"; [ -f "$dict/words.full.sqlite" ] && words="$dict/words.full.sqlite"
 cp "$words" "$app/Contents/Resources/words.sqlite"
+# The first-run agreement text (the same as the installer's and the website's; Desktop/Installer/license/make-eula.mjs).
+for l in en bn; do perl -pe 's/^\xEF\xBB\xBF//; s/\r$//' "$here/../Installer/license/eula.$l.txt" > "$app/Contents/Resources/agreement.$l.txt"; done
 cp "$dict/LICENSE" "$app/Contents/Resources/DICTIONARY-LICENSE.txt"
+for f in NOTICE NOTICES.md SOURCE-OFFER.txt; do cp "$here/../$f" "$app/Contents/Resources/$f"; done
 cp "$dict/SOURCE.md" "$app/Contents/Resources/DICTIONARY-SOURCE.md"
 plutil -lint "$app/Contents/Info.plist"
 # An ad-hoc signature (no Apple account): Apple Silicon refuses to run unsigned code at all.

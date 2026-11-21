@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Emoji by name (Settings › Typing, "Emoji by name"): `:hashi:` or `:smile:` becomes an emoji. Names come from the
 //! Unicode CLDR annotations in English and Bangla (emoji.tsv, Unicode License v3, SOURCE.md here).
 

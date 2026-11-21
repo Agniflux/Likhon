@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Writes assets/licenses/rust-crates.txt (not to be edited by hand): the license notices of every Rust crate compiled into what Likhon ships
 // (likhon.exe, likhon_tsf.dll, and the website's typing engine, crates/likhon-wasm). See LICENSING.md at the root.
 //

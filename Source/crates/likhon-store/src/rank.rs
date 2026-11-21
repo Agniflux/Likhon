@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The suggestion rows for a typed word and which one starts selected, shared by likhon.exe's suggestion window
 //! (app/src/suggest.rs) and the Likhon keyboard's (tsf/src/suggest.rs), so both modes offer the same words.
 

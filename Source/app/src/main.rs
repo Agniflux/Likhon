@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! likhon.exe — one file for every mode (Desktop/CLAUDE.md, section 1).
 //!
 //! Agent mode types phonetic Bangla through a keyboard hook (agent.rs) and shows the top bar (topbar.rs).
@@ -7,12 +9,15 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 mod agent;
+mod agreement;
 mod icons;
 mod layouts;
 mod fontdefault;
 mod legacy;
 mod net;
 mod online;
+#[cfg(test)]
+mod privacy_tests;
 mod osk;
 mod quick;
 mod settings;
@@ -56,6 +61,8 @@ enum Mode {
     KeyboardAdd(String),
     /// `likhon.exe --keyboard-remove` (elevated).
     KeyboardRemove,
+    /// `likhon.exe --accept-agreement`: the installer, which showed the agreement and was accepted, records it for this user.
+    AcceptAgreement,
 }
 
 fn parse(args: &[String]) -> Result<Mode, String> {
@@ -68,6 +75,7 @@ fn parse(args: &[String]) -> Result<Mode, String> {
         Some("--font-default-restore") => Ok(Mode::FontDefaultRestore),
         Some("--keyboard-add") => args.get(1).cloned().map(Mode::KeyboardAdd).ok_or_else(|| "--keyboard-add needs the data folder".into()),
         Some("--keyboard-remove") => Ok(Mode::KeyboardRemove),
+        Some("--accept-agreement") => Ok(Mode::AcceptAgreement),
         Some(other) => Err(format!("unknown argument: {other}")),
     }
 }
@@ -82,12 +90,22 @@ fn main() -> ExitCode {
             println!("likhon {} (engine {})", env!("CARGO_PKG_VERSION"), likhon_engine::VERSION);
             ExitCode::SUCCESS
         }
-        Ok(Mode::Agent) => ExitCode::from(agent::run() as u8),
+        Ok(Mode::Agent) => {
+            // First run: the agreement is shown once; declining means nothing starts and nothing is read.
+            if !agreement::gate() {
+                return ExitCode::SUCCESS;
+            }
+            ExitCode::from(agent::run() as u8)
+        }
         Ok(Mode::Settings(page)) => ExitCode::from(settings_app::run(page) as u8),
         Ok(Mode::FontDefault(face)) => ExitCode::from(fontdefault::make_default(&face) as u8),
         Ok(Mode::FontDefaultRestore) => ExitCode::from(fontdefault::restore() as u8),
         Ok(Mode::KeyboardAdd(data)) => ExitCode::from(winkb::add(&data) as u8),
         Ok(Mode::KeyboardRemove) => ExitCode::from(winkb::remove() as u8),
+        Ok(Mode::AcceptAgreement) => {
+            settings::set("agreement_accepted", settings::AGREEMENT_DATE.into());
+            ExitCode::SUCCESS
+        }
         Ok(mode) => {
             // Not built yet: each mode lands in its milestone. Never block typing on this PC.
             eprintln!("likhon: {mode:?} is not built yet (milestone M2 onward)");

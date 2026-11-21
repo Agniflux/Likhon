@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 """A one-line GTK text box for the headless typing test. Writes what it holds to the file given as argument, every
 time it changes, so the test can read the result. Not shipped.
 

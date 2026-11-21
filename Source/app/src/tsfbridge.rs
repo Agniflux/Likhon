@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Learning from the Likhon keyboard (likhon_tsf.dll). The keyboard shows its own suggestions (tsf/src/suggest.rs);
 //! when a word is finished or picked it sends COMMIT "word" by WM_COPYDATA to the agent's hidden window, and the agent
 //! learns it with the same rules as for the hook: learning on, Bangla, and not in a password field (UI Automation).

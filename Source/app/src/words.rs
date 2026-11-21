@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The word being typed, and what happens when it ends: shortcuts and autocorrect (v2 §7, Shortcuts and Autocorrect).
 //!
 //! The agent keeps the keys typed since the word began and the text it put on screen for them. When the word ends

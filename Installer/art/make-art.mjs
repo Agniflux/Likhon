@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Draws the installer's brand mark: the Likhon feather in white on the accent blue, as plain 24-bit .bmp files
 // (Inno Setup's script can load .bmp without any plugin). Run:  node Desktop/Installer/art/make-art.mjs
 // Output: mark-44.bmp, mark-66.bmp, mark-88.bmp (100%, 150% and 200% DPI) beside this file. Dependency free.

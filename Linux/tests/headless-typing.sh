@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Types into a GTK text box through a real ibus-daemon with the Likhon engine, on a virtual display.
 #   ./tests/headless-typing.sh       (run after ./build.sh)
 #   LIKHON_INSTALLED=1 ./tests/headless-typing.sh      tests the engine installed from the .deb instead
@@ -12,6 +14,8 @@ trap 'kill $(jobs -p) 2>/dev/null || true; rm -rf "$work"' EXIT
 # The engine reads ~/.config/likhon/settings.json and writes ~/.local/share/likhon/user.sqlite; point both here.
 export XDG_CONFIG_HOME="$work/config" XDG_DATA_HOME="$work/data"
 mkdir -p "$XDG_CONFIG_HOME/likhon" "$XDG_DATA_HOME"
+# The first-run agreement (likhon-agreement) writes this file when the person accepts; the test plays that part.
+printf '2026-11-21' > "$XDG_CONFIG_HOME/likhon/agreement"
 
 export DISPLAY=:97
 Xvfb :97 -screen 0 800x600x24 >/dev/null 2>&1 &
@@ -79,5 +83,13 @@ start_entry --password
 typed "ami tumi " >/dev/null
 stop_entry
 if [ -z "$(learned)" ]; then echo "PASS  nothing learned in a password field"; else echo "FAIL  learned in a password field: [$(learned)]"; fail=1; fi
+
+# 5. Agreement not accepted (declined, or not yet shown): the engine types nothing and keys pass straight through.
+rm -f "$XDG_CONFIG_HOME/likhon/agreement"
+export LIKHON_LIBEXEC=/nonexistent   # so no dialog opens in this headless session
+start_entry
+check "no agreement: keys pass through" "$(typed "ami ")" "ami "
+stop_entry
+printf '2026-11-21' > "$XDG_CONFIG_HOME/likhon/agreement"
 
 [ "$fail" = 0 ] && echo "PASS" || { echo "FAILED"; exit 1; }

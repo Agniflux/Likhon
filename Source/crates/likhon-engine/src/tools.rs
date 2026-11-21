@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! The text tools (v2 §7 Tools, Desktop/CLAUDE.md 8): clean pasted text, Taka in words, numbers and dates with the
 //! Bangla calendar, and "how do I type this word". Pure functions, the same as the website's tools page
 //! (Web/Laravel/public/js/tools.js), which moves to this code through the WASM build.

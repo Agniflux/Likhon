@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 """Builds the dictionary Likhon ships (assets/dict/mpl/words.sqlite): the curated Avro word list plus a larger list
 of added words. Build-time only.
 

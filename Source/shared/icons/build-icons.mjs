@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Exports icons from the duotone pack (Reference/design-v2/icons.js) at build time. The pack's generator
 // never ships; consumers embed only the element lists for the names they use.
 //

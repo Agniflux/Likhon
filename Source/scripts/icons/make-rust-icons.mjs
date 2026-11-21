@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // Writes app/src/icons.rs: the v2 pack icons the native windows draw (Direct2D), as path data with which parts take the
 // primary or the secondary colour, plus the quill mark. Build-time only; run after the pack or this list changes:
 //   node scripts/icons/make-rust-icons.mjs

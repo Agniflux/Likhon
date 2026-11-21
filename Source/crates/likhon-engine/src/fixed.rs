@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Fixed keyboard layouts (Probhat, Jatiya, Munir...): each key position types what the layout file says.
 //!
 //! Layouts are JSON files only (shared/schemas/layout.schema.json, owner decision 2026-10-22). This module parses

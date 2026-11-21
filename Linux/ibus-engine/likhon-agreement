@@ -1,0 +1,27 @@
+#!/bin/sh
+# First-run software license agreement for Likhon on Linux (the final legal documents of 2026-11-21).
+# Shows the agreement with Accept and Decline. Accept writes the agreement's date to ~/.config/likhon/agreement;
+# Decline writes nothing, and the engine then types nothing (keys pass straight through) until it is accepted.
+#   likhon-agreement          ask now (the engine runs this once per session, when typing starts)
+#   likhon-agreement --reset  forget the answer
+DATE="2026-11-21"
+SHARE="${LIKHON_SHARE:-/usr/share/ibus-likhon}"
+CONF="${XDG_CONFIG_HOME:-$HOME/.config}/likhon"
+FILE="$CONF/agreement"
+[ "$1" = "--reset" ] && { rm -f "$FILE"; exit 0; }
+[ "$(cat "$FILE" 2>/dev/null)" = "$DATE" ] && exit 0
+case "${LC_ALL:-${LC_MESSAGES:-${LANG:-}}}" in
+  bn*) TEXT="$SHARE/agreement.bn.txt"; TITLE="লিখন: সফটওয়্যার লাইসেন্স চুক্তি"; OK="আমি রাজি"; NO="রাজি নই" ;;
+  *)   TEXT="$SHARE/agreement.en.txt"; TITLE="Likhon: software license agreement"; OK="I accept"; NO="Decline" ;;
+esac
+[ -r "$TEXT" ] || exit 1
+accept() { mkdir -p "$CONF" && printf '%s' "$DATE" > "$FILE" && chmod 600 "$FILE"; }
+if command -v zenity >/dev/null 2>&1; then
+  zenity --text-info --title="$TITLE" --filename="$TEXT" --width=720 --height=560 --ok-label="$OK" --cancel-label="$NO" && accept
+elif command -v kdialog >/dev/null 2>&1; then
+  kdialog --title "$TITLE" --textbox "$TEXT" 720 560 --yes-label "$OK" --no-label "$NO" >/dev/null 2>&1 && kdialog --title "$TITLE" --yesno "$OK?" --yes-label "$OK" --no-label "$NO" && accept
+elif [ -t 0 ]; then
+  ${PAGER:-less} "$TEXT"; printf '%s [y/N] ' "$OK"; read -r a; [ "$a" = y ] || [ "$a" = Y ] && accept
+else
+  exit 1
+fi

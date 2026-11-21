@@ -1,3 +1,5 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds the splash artwork the exe embeds (v2 §6): Reference/design-v2/assets/splash.png scaled to 960 x 640 (the
 # 480 x 320 splash at 200%), saved as JPEG quality 90 (about 65 KB; PNG would be about 170 KB) to
 # assets/splash/splash.jpg. Build-time only; run again when the design's splash picture changes, then build the exe.

@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Settings mode: `likhon.exe --settings [page]` (Desktop/CLAUDE.md section 1).
 //!
 //! A separate process with one window: a WebView2 web view (through wry and tao, the libraries Tauri 2
@@ -170,7 +172,7 @@ fn missing(lang: Lang) -> i32 {
             MB_OK | MB_ICONINFORMATION,
         );
     }
-    1
+    crate::agreement::NO_WINDOW
 }
 
 // ---- Files ----------------------------------------------------------------------------------------
@@ -180,6 +182,10 @@ fn serve(path: &str, page: &str) -> Response<Cow<'static, [u8]>> {
     let path = if path.is_empty() { "index.html" } else { path };
     let (body, kind): (Cow<'static, [u8]>, &str) = if path == "boot.json" {
         (Cow::Owned(boot(page).to_string().into_bytes()), "application/json")
+    } else if path == "agreement.en.txt" || path == "agreement.bn.txt" {
+        // The software license agreement, the same text as the installer's page and the website (make-eula.mjs).
+        let text = if path == "agreement.en.txt" { include_str!("../../../Installer/license/eula.en.txt") } else { include_str!("../../../Installer/license/eula.bn.txt") };
+        (Cow::Borrowed(text.trim_start_matches('\u{feff}').as_bytes()), "text/plain; charset=utf-8")
     } else if let Some((_, bytes)) = UI.iter().find(|(p, _)| *p == path) {
         let kind = match path.rsplit('.').next() {
             Some("html") => "text/html; charset=utf-8",
@@ -205,6 +211,7 @@ fn boot(page: &str) -> Value {
         "defaults": Value::Object(settings::defaults()),
         "page": page,
         "version": env!("CARGO_PKG_VERSION"),
+        "agreementDate": settings::AGREEMENT_DATE,
         // The native add-on (installer, text service) arrives with M3; every build is Portable for now.
         "edition": "portable",
         "site": settings::site(),
@@ -235,6 +242,12 @@ fn handle(body: &str, proxy: &EventLoopProxy<UserEvent>) {
             let _ = proxy.send_event(UserEvent::Show);
             Value::Null
         }
+        // First run (page "agreement"): Accept keeps the date and closes; Decline closes without it (agreement.rs asks again).
+        "agreementAccept" => {
+            settings::set("agreement_accepted", settings::AGREEMENT_DATE.into());
+            std::process::exit(0);
+        }
+        "agreementDecline" => std::process::exit(1),
         "set" => {
             let key = args["key"].as_str().unwrap_or_default();
             if settings::defaults().contains_key(key) {
@@ -367,7 +380,7 @@ fn handle(body: &str, proxy: &EventLoopProxy<UserEvent>) {
             // the dictionary already has are left out: only new words are worth donating.
             let dict = settings::dictionary_path().and_then(|p| likhon_store::Dictionary::open(&p).ok());
             let words = likhon_store::UserData::open(&likhon_store::user_db(&settings::dir().0)).map(|db| db.learned()).unwrap_or_default();
-            Value::Array(words.into_iter().filter(|w| !dict.as_ref().is_some_and(|d| d.contains(w))).map(Value::String).collect())
+            Value::Array(words.into_iter().filter(|w| likhon_store::donatable(w) && !dict.as_ref().is_some_and(|d| d.contains(w))).map(Value::String).collect())
         }
         "forgetLearned" => {
             if let Ok(db) = likhon_store::UserData::open(&likhon_store::user_db(&settings::dir().0)) {

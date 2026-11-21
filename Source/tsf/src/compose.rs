@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! What the text service types: the word being composed, kept as the keys pressed and rendered again from the start
 //! after every key (so Backspace inside a word is exact). The same engine and layouts as the agent's hook path.
 

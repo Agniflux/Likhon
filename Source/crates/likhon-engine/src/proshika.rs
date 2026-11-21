@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //! Unicode Bangla to Proshika, the legacy encoding of Proshika Computer Systems' Lipi fonts (1995). Likhon's own code;
 //! the map is `proshika.tsv`, read from the fonts' glyphs without real Proshika documents to check against, so its
 //! "unsure" rows (and the order of reph, assumed from Bijoy) need checking with real text.

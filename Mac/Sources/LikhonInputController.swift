@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+// not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // One controller per text field (InputMethodKit creates it). MPL-2.0. See main.swift: not yet run on a Mac.
 
 import Cocoa
@@ -34,6 +36,12 @@ class LikhonInputController: IMKInputController {
 
     override func handle(_ event: NSEvent!, client sender: Any!) -> Bool {
         guard let event = event, event.type == .keyDown, let client = sender as? IMKTextInput else { return false }
+
+        // The agreement comes first: until it is accepted nothing is typed and the key goes straight through.
+        if !Agreement.accepted {
+            Agreement.askOnce()
+            return false
+        }
 
         // Shortcuts belong to the application: end the word and let the key through.
         let shortcut: NSEvent.ModifierFlags = [.command, .control, .option]
