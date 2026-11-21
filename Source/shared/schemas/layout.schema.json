@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://likhon.app/schemas/layout-1.json",
+  "$id": "https://likhon.agniflux.com/schemas/layout-1.json",
   "title": "Likhon keyboard layout",
   "description": "A fixed keyboard layout: what each key types at each level. Layouts are JSON files only (owner decision 2026-10-22). Plain data: no scripts, no links followed, size capped by the reader.",
   "type": "object",

@@ -80,13 +80,13 @@ fn default_language() -> &'static str {
     if unsafe { GetUserDefaultUILanguage() } & 0x3FF == 0x45 { "bn" } else { "en" }
 }
 
-/// The Likhon website the app talks to and opens pages of: likhon.test for now (owner decision 2026-10-23; the site
-/// lives there until likhon.app is ready). settings.json may set "site" to another https address; nothing else is
+/// The Likhon website the app talks to and opens pages of: https://likhon.agniflux.com (owner decision 2026-11-21; during
+/// development it was likhon.test). settings.json may set "site" to another https address; nothing else is
 /// accepted, so a changed file can never point the app at plain http or a non-web scheme.
 /// A build can name another site with the LIKHON_SITE environment variable (scripts/make-portable.ps1 -Site).
 pub const DEFAULT_SITE: &str = match option_env!("LIKHON_SITE") {
     Some(s) => s,
-    None => "https://likhon.test",
+    None => "https://likhon.agniflux.com",
 };
 
 pub fn site() -> String {

@@ -36,9 +36,9 @@ AppName=Likhon
 AppVersion={#AppVersion}
 AppVerName=Likhon {#AppVersion}
 AppPublisher=Agniflux Enterprise
-AppPublisherURL=https://likhon.app
-AppSupportURL=https://likhon.app/support
-AppUpdatesURL=https://likhon.app/download
+AppPublisherURL=https://likhon.agniflux.com
+AppSupportURL=https://likhon.agniflux.com/support
+AppUpdatesURL=https://likhon.agniflux.com/download
 VersionInfoVersion={#AppVersion}
 DefaultDirName={autopf}\Likhon
 DefaultGroupName=Likhon
@@ -383,7 +383,7 @@ procedure HelpClick(Sender: TObject);
 var
   rc: Integer;
 begin
-  ShellExec('open', 'https://likhon.app/support', '', '', SW_SHOWNORMAL, ewNoWait, rc);
+  ShellExec('open', 'https://likhon.agniflux.com/support', '', '', SW_SHOWNORMAL, ewNoWait, rc);
 end;
 
 function NewLabel(AParent: TWinControl; const Cap: String; ALeft, ATop, AWidth, AHeight, SizePx: Integer; Bold: Boolean; Clr, BgClr: Integer): TNewStaticText;

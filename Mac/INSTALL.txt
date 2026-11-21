@@ -15,4 +15,4 @@ or Intel. Nothing you type is stored or sent anywhere.
 
 To remove it: delete "Likhon.app" from /Library/Input Methods, remove Likhon from Input Sources, and log out.
 
-Help: https://likhon.app/support
+Help: https://likhon.agniflux.com/support

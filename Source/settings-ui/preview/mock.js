@@ -26,7 +26,7 @@
     fontDefault: () => { S.fontRestored = true; return { ok: true, face: null }; },
     windowsKeyboard: (a) => ({ ok: true, added: !!a.on }),
     phonetic: (a) => '[' + a.text + ']',
-    checkUpdate: () => ({ ok: true, version: '0.2.0', newer: true, download: 'https://likhon.test/en/download' }),
+    checkUpdate: () => ({ ok: true, version: '0.2.0', newer: true, download: 'https://likhon.agniflux.com/en/download' }),
     libraryAdded: () => ({ 'mina': { type: 'font', version: '1.0', name: { en: 'Mina', bn: 'মিনা' } }, 'unijoy': { type: 'layout', version: '1.0', name: { en: 'UniJoy', bn: 'ইউনিজয়' } } }),
     libraryList: () => ({ ok: true, items: [
       { id: 'mina', type: 'font', name: { en: 'Mina', bn: 'মিনা' }, author: 'Suvro Kumar Das', license: 'OFL-1.1', version: '1.0', signed: false, added: '1.0', can: true },

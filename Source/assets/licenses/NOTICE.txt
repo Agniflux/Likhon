@@ -1,6 +1,6 @@
 Likhon is free to download and use. Unless a file or component states otherwise, Likhon's own code is licensed
 under the Mozilla Public License 2.0 (MPL-2.0). Its full text is in the Mozilla Public License section, and
-https://likhon.app/en/legal/licensing explains what it lets you do. The parts below were made by others and keep
+https://likhon.agniflux.com/en/legal/licensing explains what it lets you do. The parts below were made by others and keep
 their own licenses. Their full license texts follow, in the sections listed above.
 
 "Built in" means the part is inside likhon.exe. "Library" means Likhon offers it as an item you add from
@@ -16,7 +16,7 @@ AVRO KEYBOARD
                and under the same license)
     Library    the Munir and Avro Easy layouts; eleven color themes made from Avro Keyboard's skins
   These files stay under MPL-2.0, with OmicronLab's copyright. Their source, in the form Likhon edits them,
-  is published with Likhon's source code: see https://likhon.app/en/legal#source
+  is published with Likhon's source code: see https://likhon.agniflux.com/en/legal#source
 
 KHIPRO
   Copyright (c) 2024 rank_coder and Copyright (c) 2026 KhiproTeam. MIT.

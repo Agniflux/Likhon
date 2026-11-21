@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://likhon.app/schemas/theme-1.json",
+  "$id": "https://likhon.agniflux.com/schemas/theme-1.json",
   "title": "Likhon theme",
   "description": "Colours for the top bar and the suggestion window. Themes are JSON files only (owner decision 2026-10-22): colours, no images, no fonts, no scripts. Every theme has a light and a dark version (owner decision 2026-10-22); Windows' light or dark mode, or Light or dark in Settings, picks one. A colour is #RRGGBB, or @name for a design token (Reference/design-tokens.json) in that version's set.",
   "type": "object",

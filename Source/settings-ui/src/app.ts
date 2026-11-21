@@ -18,7 +18,7 @@ interface Boot {
   page: string;
   version: string;
   edition: 'portable' | 'native';
-  /** The Likhon site (likhon.test for now). */
+  /** The Likhon site (likhon.agniflux.com by default). */
   site: string;
   /** Whether this Windows user's Run entry starts this likhon.exe. */
   startWithWindows: boolean;

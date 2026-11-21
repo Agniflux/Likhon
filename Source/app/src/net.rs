@@ -1,6 +1,6 @@
 //! The only network code in likhon.exe (root CLAUDE.md: no telemetry, no background calls). Every request starts from
 //! something the person clicked in Settings (check for updates, the library, the dictionary, donating words), and goes
-//! only to the Likhon site (settings::site(); likhon.test for now, likhon.app later), over https. WinHTTP is Windows'
+//! only to the Likhon site (settings::site(), likhon.agniflux.com unless a build or settings.json names another), over https. WinHTTP is Windows'
 //! own HTTP client, so there is no extra library and the certificates are the ones Windows trusts. Nothing is sent
 //! but the request itself (no cookies, no identifiers).
 

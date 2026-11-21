@@ -14,7 +14,7 @@ if ($Sub) {
     if ($Sub -notmatch '^[a-z0-9-]+$') { throw "-Sub must be a plain folder name" }
     $out = Join-Path $out $Sub
 }
-if ($Site -and $Site -notmatch '^https://[a-z0-9.-]+(:[0-9]+)?$') { throw "-Site must be an https address with no path, like https://likhon.app" }
+if ($Site -and $Site -notmatch '^https://[a-z0-9.-]+(:[0-9]+)?$') { throw "-Site must be an https address with no path, like https://likhon.agniflux.com" }
 $running = Get-CimInstance Win32_Process -Filter "Name='likhon.exe'" | Where-Object { $_.ExecutablePath -and (Split-Path $_.ExecutablePath) -eq (New-Item -ItemType Directory -Force $out).FullName }
 if ($running) { "Likhon is running from $out (PID $($running.ProcessId -join ', ')). Exit it from the tray, then run this again."; exit 1 }
 if ($Site) {

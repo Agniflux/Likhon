@@ -31,7 +31,7 @@ chmod 0644 "$root/usr/share/ibus/component/likhon.xml"
 cat > "$root/usr/share/doc/$pkg/copyright" <<EOF
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Likhon
-Source: https://likhon.app
+Source: https://likhon.agniflux.com
 
 Files: *
 Copyright: Agniflux Enterprise
@@ -40,7 +40,7 @@ License: MPL-2.0
  not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
  .
  Third-party notices (okkhor, MIT, and the other Rust crates linked in) are listed in Likhon's About page and at
- https://likhon.app/licenses.
+ https://likhon.agniflux.com/licenses.
 EOF
 chmod 0644 "$root/usr/share/doc/$pkg/copyright"
 
@@ -54,8 +54,8 @@ Architecture: $arch
 Depends: ibus (>= 1.5), libc6 (>= 2.31), libglib2.0-0
 Recommends: fonts-noto-core
 Installed-Size: $size_kb
-Maintainer: Agniflux Enterprise <hello@likhon.app>
-Homepage: https://likhon.app
+Maintainer: Agniflux Enterprise <info@agniflux.com>
+Homepage: https://likhon.agniflux.com
 Description: Likhon, free Bangla phonetic typing for IBus
  Type Bangla with English letters (ami -> আমি). Shows the word being typed with suggestions from a built-in
  dictionary, and commits it when it ends.

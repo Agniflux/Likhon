@@ -448,7 +448,7 @@ mod tests {
         assert!(!newer("0.2", "0.10"));
     }
 
-    /// Talks to the development site (likhon.test must be running): cargo test -p likhon -- --ignored online
+    /// Talks to the live site and needs the network (build with LIKHON_SITE=https://… for another site): cargo test -p likhon -- --ignored online
     #[test]
     #[ignore]
     fn online_against_the_site() {

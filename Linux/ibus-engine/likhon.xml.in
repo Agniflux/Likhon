@@ -7,7 +7,7 @@
   <version>@VERSION@</version>
   <author>Agniflux Enterprise</author>
   <license>MPL-2.0</license>
-  <homepage>https://likhon.app</homepage>
+  <homepage>https://likhon.agniflux.com</homepage>
   <textdomain>ibus-likhon</textdomain>
   <engines>
     <engine>

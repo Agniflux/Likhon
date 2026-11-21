@@ -24,7 +24,7 @@ Measured so far (SPIKES.md, M2): hook handling has a median of 152 µs per key a
 
 | Option | What | For | Against |
 | --- | --- | --- | --- |
-| **A. Signed static manifest on likhon.app (recommended)** | `https://likhon.app/updates/manifest.json` plus a detached Ed25519 signature, read **only when the person taps Check for updates**. It lists the version, per-edition file URLs, SHA-256 and size, notes titles (en/bn) and the revoke-list URL. The app verifies the signature, downloads, verifies the hash, then runs `likhon.exe --update`. | No server logic, so a CDN can serve it. Nothing per-person is recorded. Matches the root CLAUDE.md "no background network". | The owner signs each release offline (already the plan). |
+| **A. Signed static manifest on likhon.agniflux.com (recommended)** | `https://likhon.agniflux.com/updates/manifest.json` plus a detached Ed25519 signature, read **only when the person taps Check for updates**. It lists the version, per-edition file URLs, SHA-256 and size, notes titles (en/bn) and the revoke-list URL. The app verifies the signature, downloads, verifies the hash, then runs `likhon.exe --update`. | No server logic, so a CDN can serve it. Nothing per-person is recorded. Matches the root CLAUDE.md "no background network". | The owner signs each release offline (already the plan). |
 | B. GitHub Releases API | The app reads the releases JSON. | Free hosting. | Third-party host, rate limits. Release notes aren't bilingual by default. Still needs our own signature. |
 | C. Background auto-update | Periodic checks. | Users stay current. | **Not allowed:** breaks "no network unless the person acts". |
 
@@ -42,6 +42,6 @@ Measured so far (SPIKES.md, M2): hook handling has a median of 152 µs per key a
 
 1. **Input method: A.** The hook for Portable, plus a TSF DLL for the Native add-on.
 2. **Native UI: A.** Rust with Direct2D/DirectWrite for typing-time surfaces, and wry + tao (WebView2) for Settings.
-3. **Update channel: A.** A signed static manifest on likhon.app, read only when the person taps Check for updates.
+3. **Update channel: A.** A signed static manifest on likhon.agniflux.com, read only when the person taps Check for updates.
 4. **Downloads are signed `.exe` files, not zips.** Portable, the installer and self-updates ship as signed executables. **Library packs stay data only:** zip + `manifest.json` + detached Ed25519 signature, with no executable content (owner confirmed).
 5. **Offline installer: yes. Online installer: dropped.** The downloads are Portable and the offline Native add-on installer.

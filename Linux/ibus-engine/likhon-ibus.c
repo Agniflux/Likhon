@@ -244,7 +244,7 @@ int main(int argc, char **argv) {
     } else {
         /* Started by hand (development): register the component so the engine can be selected. */
         IBusComponent *component = ibus_component_new(BUS_NAME, "Likhon Bangla", likhon_version(), "MPL-2.0",
-                                                      "Agniflux Enterprise", "https://likhon.app", "", "ibus-likhon");
+                                                      "Agniflux Enterprise", "https://likhon.agniflux.com", "", "ibus-likhon");
         ibus_component_add_engine(component, ibus_engine_desc_new(ENGINE_NAME, "Likhon Bangla (Phonetic)", "Bangla phonetic typing",
                                                                   "bn", "MPL-2.0", "Agniflux Enterprise", "", "us"));
         ibus_bus_register_component(bus, component);

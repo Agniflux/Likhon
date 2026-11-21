@@ -10,7 +10,7 @@
 //! maximize and close through IPC, and the window keeps the system shadow.
 //!
 //! Nothing here goes online: the page is served from memory under the `likhon` scheme, and navigation
-//! anywhere else is refused. Links to the Likhon site (settings::site(); likhon.test for now) open in the default browser, never in the web view.
+//! anywhere else is refused. Links to the Likhon site (settings::site(), likhon.agniflux.com by default) open in the default browser, never in the web view.
 
 use crate::settings;
 use crate::text::{t, wide, Lang};

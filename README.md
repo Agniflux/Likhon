@@ -1,20 +1,26 @@
-<p align="center">
-  <img src="Reference/design-v2/assets/likhon-icon.svg" width="120" alt="Likhon">
-</p>
-
 # Likhon (লিখন)
 
-Free Bangla typing for **Windows, Mac and Linux**. You write English letters (`ami`) and Likhon gives you Bangla
-(আমি), shows spelling suggestions as you type, and learns the words you use. There is no account, no tracking and no
-paid tier, and the same Rust typing engine runs on all three systems and in the browser tools on the website.
+<img src="Reference/design-v2/assets/likhon-icon.svg" width="120" alt="Likhon">
+
+**Version 0.2.1** · alpha · [MPL-2.0](LICENSE)
+
+**Supported systems**
+
+- **Windows** 10 and 11 (64-bit)
+- **macOS** 13 (Ventura) or later, on Apple Silicon and Intel
+- **Linux** with IBus 1.5 or later, 64-bit Intel or AMD (the `.deb` needs glibc 2.31 or later: Ubuntu 20.04 or Debian 11
+  and newer; tested on Ubuntu 24.04)
+
+Free Bangla typing. You write English letters (`ami`) and Likhon gives you Bangla (আমি), shows spelling suggestions as
+you type, and learns the words you use. There is no account, no tracking and no paid tier, and the same Rust typing
+engine runs on all three systems and in the browser tools on the website.
+
+On Windows you get the full app, with a tray icon, a top bar, a suggestion window and a Settings window, as Portable
+(one file, nothing to install) or an installer. On Mac it is an input method, one download for Apple Silicon and Intel.
+On Linux it is an IBus engine as a `.deb` package.
 
 Everything in Likhon is **alpha**: it works and we use it, and it still has rough edges. What is not done yet is in
 [ENHANCEMENTS.md](ENHANCEMENTS.md). The Mac version has never been run on a real Mac.
-
-- **Windows** 10 and 11: the full app, with a tray icon, a top bar, a suggestion window and a Settings window.
-  Portable (one file, nothing to install) or an installer.
-- **Mac** (macOS 13 or later): an input method, one download for Apple Silicon and Intel.
-- **Linux**: an IBus engine as a `.deb` package.
 
 ## Features
 
@@ -32,7 +38,7 @@ Everything in Likhon is **alpha**: it works and we use it, and it still has roug
   into an old font, or convert text you already have with one shortcut.
 - **Tools** (Windows): the converter, a cleaner for pasted text, Taka in words, Bangla numbers and dates, "How do I type
   this word?", a symbol palette, an on-screen keyboard and a printable layout chart. The same tools run in the browser
-  at likhon.app with no text sent anywhere.
+  at likhon.agniflux.com with no text sent anywhere.
 - **Emoji by name** (Windows): `:hashi:` or `:smile:` gives 😀.
 - **Windows keyboard list** (Windows): add Likhon to `Win` + `Space` from any copy, so it works in every app and
   shows its own suggestions.
@@ -45,7 +51,7 @@ Everything in Likhon is **alpha**: it works and we use it, and it still has roug
 
 ### Windows
 
-1. Download **Portable** (`likhon.exe`, one file) or **Full** (the installer) from likhon.app.
+1. Download **Portable** (`likhon.exe`, one file) or **Full** (the installer) from likhon.agniflux.com.
 2. Portable: put `likhon.exe` anywhere, a folder or a USB stick, and run it. It keeps its settings and your words
    beside it. Full: run the installer and choose *just me* or *everyone on this PC*. The installer is offline and
    downloads nothing. *Everyone* asks for administrator permission once; Likhon's own typing never needs it.
@@ -110,7 +116,7 @@ in `~/.local/share/likhon/user.sqlite`; delete the file to forget them.
 
 ## Downloads
 
-- **Windows**: `likhon.exe` (Portable) and `Likhon-Setup-<version>.exe` (the installer) from likhon.app. Both carry a
+- **Windows**: `likhon.exe` (Portable) and `Likhon-Setup-<version>.exe` (the installer) from likhon.agniflux.com. Both carry a
   Likhon signature. A newer file replaces the old one and keeps your words.
 - **Linux**: `ibus-likhon_<version>_amd64.deb`.
 - **Mac**: `Likhon-<version>-macOS.dmg`, one file for Apple Silicon and Intel.
@@ -141,6 +147,10 @@ cargo build --release -p likhon                                      # likhon.ex
 powershell -File scripts\make-portable.ps1                           # Portable folder in Product\Portable
 powershell -File ..\Installer\build-installer.ps1                    # the installer (Inno Setup 6 or 7)
 ```
+
+The app talks to `https://likhon.agniflux.com` (updates, library, dictionary), and only when you click. To build a copy
+that talks to another site, for example a local one, set `LIKHON_SITE` first (`$env:LIKHON_SITE = "https://example.org"`)
+or run `scripts\make-portable.ps1 -Site https://example.org -Sub other`.
 
 **Linux** (`build-essential`, `pkg-config`, `libibus-1.0-dev`, `dpkg-dev`):
 

@@ -12,7 +12,7 @@ fs.writeFileSync(index, fs.readFileSync(index, 'utf8').replace('<script type="mo
 const lang = process.argv[2] === 'bn' ? 'bn' : 'en';
 const page = process.argv[3] || 'general';
 fs.writeFileSync(path.join(site, 'boot.json'), JSON.stringify({
-  settings: { language: lang }, page, version: '0.1.0', edition: 'portable', site: 'https://likhon.test', startWithWindows: false, learned: 4, windowsKeyboard: false, windows: 'Windows 11 24H2 (build 26100)',
+  settings: { language: lang }, page, version: '0.1.0', edition: 'portable', site: 'https://likhon.agniflux.com', startWithWindows: false, learned: 4, windowsKeyboard: false, windows: 'Windows 11 24H2 (build 26100)',
   dataDir: 'D:\Likhon', dataPortable: true, diagnostics: null, dictionary: { words: 159380, path: 'D:\Likhon\dict\words.sqlite', license: 'MPL-2.0' },
   defaults: { language: 'en', color: 'system', 'topbar.mode': 'always', start_with_windows: false, 'typing.suggestions': true, 'typing.suggestion_count': 5,
     'typing.next_word': true, 'typing.next_count': 3, 'typing.autocorrect': true, 'typing.emoji': false, 'typing.bangla_digits': false, 'typing.dari': true,

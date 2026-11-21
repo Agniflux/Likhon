@@ -1,5 +1,5 @@
 // Makes the installer's licence pages (eula.en.txt, eula.bn.txt) from the website's agreement, so the installer shows
-// the same text as https://likhon.app/en/legal/license (the site's own words: "The installer shows the same text").
+// the same text as https://likhon.agniflux.com/en/legal/license (the site's own words: "The installer shows the same text").
 //
 //   node Desktop/Installer/license/make-eula.mjs
 //
