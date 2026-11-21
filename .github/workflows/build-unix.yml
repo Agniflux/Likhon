@@ -1,4 +1,7 @@
 # Builds Likhon for Linux (.deb) and macOS (.dmg, universal, unsigned). Run by hand, or on a v* tag.
+# Linux and macOS are independent: one failing does not stop the other. The Mac runner is an Intel one
+# (macos-15-intel): GitHub does not offer this organization the Apple Silicon runner. build-mac.sh still makes the
+# universal app by cross-building the arm64 half with the Rust and Swift targets.
 name: Build Linux and macOS
 
 on:
@@ -7,19 +10,24 @@ on:
     tags: ["v*"]
 
 jobs:
-  engine-tests:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-22.04, macos-14]
+  test-linux:
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo test -p likhon-engine -p likhon-ffi
+      - run: cargo test -p likhon-engine -p likhon-store -p likhon-ffi
+        working-directory: Source
+
+  test-macos:
+    runs-on: macos-15-intel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test -p likhon-engine -p likhon-store -p likhon-ffi
         working-directory: Source
 
   linux-deb:
-    needs: engine-tests
+    needs: test-linux
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
@@ -41,8 +49,8 @@ jobs:
           path: Product/Linux/
 
   macos-dmg:
-    needs: engine-tests
-    runs-on: macos-14
+    needs: test-macos
+    runs-on: macos-15-intel
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
