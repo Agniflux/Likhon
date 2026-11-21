@@ -27,13 +27,13 @@ jobs:
       - name: Packages
         run: sudo apt-get update && sudo apt-get install -y build-essential pkg-config libibus-1.0-dev ibus ibus-gtk3 xvfb xdotool dbus-x11 python3-gi gir1.2-gtk-3.0 dpkg-dev
       - name: Build the engine
-        run: ./build.sh
+        run: bash ./build.sh
         working-directory: Linux
       - name: Typing test through a real ibus-daemon
-        run: ./tests/headless-typing.sh
+        run: bash ./tests/headless-typing.sh
         working-directory: Linux
       - name: Build the .deb
-        run: ./build-deb.sh
+        run: bash ./build-deb.sh
         working-directory: Linux
       - uses: actions/upload-artifact@v4
         with:
@@ -47,7 +47,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - name: Build the universal app, package and disk image
-        run: ./build-mac.sh
+        run: bash ./build-mac.sh
         working-directory: Mac
       - uses: actions/upload-artifact@v4
         with:
