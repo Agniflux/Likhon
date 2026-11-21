@@ -26,7 +26,7 @@ Everything in Likhon is **alpha**: it works and we use it, and it still has roug
 
 - **Phonetic typing**: Avro-style rules. `ami` gives আমি, `bangladesh` gives বাংলাদেশ, `.` gives ।, and `..` gives
   a full stop. The word you are typing stays underlined until it ends.
-- **Suggestions**: a list under the word, from a built-in dictionary of about 160,000 words, with common slips fixed
+- **Suggestions**: a list under the word, from a built-in dictionary of about 836,000 words, with common slips fixed
   as you type (`account` becomes অ্যাকাউন্ট). Easily confused letters (ি and ী, স, শ and ষ) are offered as spellings.
   `Space` types the selected row; `Up`, `Down` and `Enter` choose another.
 - **Fixed layouts**: Probhat and Jatiya, typed by key position. On Windows, more layouts and themes (UniJoy, Khipro,
@@ -227,9 +227,10 @@ Notes for contributors:
 
 ## The dictionary
 
-`Source/assets/dict/mpl/words.sqlite` is the Avro Keyboard word list: 159,380 words, 737 suffixes and 2,222 autocorrect
-entries, under the MPL-2.0, with its source in `SOURCE.md`. The larger `words.full.sqlite` beside it (the same words plus 676,678
-more, also MPL-2.0) is what the apps ship; the build scripts use it when it exists.
+`Source/assets/dict/mpl/words.full.sqlite` is the dictionary the apps ship: about 836,000 words (the 159,380 words of the Avro
+Keyboard word list and 676,678 more), 737 suffixes and 2,222 autocorrect entries, all under the MPL-2.0, with their sources
+in `SOURCE.md`. `words.sqlite` beside it is the Avro-only part (159,380 words); the build scripts use `words.full.sqlite`
+when it exists and fall back to the smaller file when it does not.
 
 ## Privacy
 
