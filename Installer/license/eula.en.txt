@@ -3,8 +3,8 @@ Version 0.2.1
 Last updated: 2026-11-21
 
 This agreement is between you and Agniflux Enterprise ("we", "us"), the maker of Likhon. It covers the
-Likhon app for Windows (likhon.exe, in its Portable and installed forms), its text service (likhon_tsf.dll),
-the installer, updates to any of these, and items you add to the app from the Likhon library. By installing,
+Likhon apps for Windows (likhon.exe, in its Portable and installed forms, its text service likhon_tsf.dll and
+the installer), for macOS (the Likhon input method) and for Linux (the Likhon IBus engine), updates to any of these, and items you add to the app from the Likhon library. By installing,
 copying or using Likhon you accept this agreement. If you do not accept it, do not install or use Likhon.
 
 1. Your license
@@ -40,6 +40,10 @@ So that you know what you are agreeing to:
 - Typing. To turn your keystrokes into Bangla, Likhon reads them while it is switched on, either through a
   keyboard hook (Portable) or as a Windows text service (installed with the keyboard-list option). What you type is
   processed on your computer only. It is never sent anywhere and never written to a log.
+- On macOS and Linux. Likhon is an input method. The system sends it your keystrokes while you type in a text box
+  where it is switched on, and it turns them into Bangla on your computer only. On Linux it keeps its settings and the
+  words it learns in files in your home folder (~/.config/likhon/ and ~/.local/share/likhon/) that you can read and
+  delete. The macOS version does not keep any files of yours yet.
 - Learning words. Likhon can remember words you type so it can suggest them later. They are kept in a file on
   your computer. It never learns from fields that Windows reports as password fields, and you can see, export
   or delete these words in Settings.
@@ -92,7 +96,7 @@ negligence.
 8. Ending this agreement
 
 You can end this agreement at any time by deleting every copy of Likhon you have (the installer's uninstaller
-removes what it added; for Portable, delete its folder). If you break this agreement, your license under it ends
+removes what it added; for Portable, delete its folder; on macOS delete Likhon from /Library/Input Methods; on Linux remove the package). If you break this agreement, your license under it ends
 automatically. Sections 2, 6, 7, 8 and 9 continue after it ends.
 
 9. General

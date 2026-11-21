@@ -1,5 +1,4 @@
 # Builds Likhon for Linux (.deb) and macOS (.dmg, universal, unsigned). Run by hand, or on a v* tag.
-# Needs the repository on GitHub (it is not yet). Windows signing stays in sign-release.yml.
 name: Build Linux and macOS
 
 on:
@@ -12,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-14]
+        os: [ubuntu-22.04, macos-15-intel]
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -43,7 +42,9 @@ jobs:
 
   macos-dmg:
     needs: engine-tests
-    runs-on: macos-14
+    # An Intel Mac runner: this repository is private, where GitHub does not offer the Apple Silicon one. build-mac.sh
+    # still makes the universal app (it cross-builds the arm64 half with the Rust and Swift targets).
+    runs-on: macos-15-intel
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
