@@ -26,7 +26,13 @@ if [ "${LIKHON_INSTALLED:-0}" != 1 ]; then
   export LIKHON_DICTIONARY="$here/../Source/assets/dict/mpl/words.sqlite"
 fi
 export GTK_IM_MODULE=ibus XMODIFIERS=@im=ibus QT_IM_MODULE=ibus
-ibus-daemon --daemonize --replace --xim --panel disable --cache none --config /usr/libexec/ibus-memconf >"$work/ibus.log" 2>&1
+# Fedora does not build ibus-memconf: use it when the host provides it, and run without a config module otherwise.
+if [ -x /usr/libexec/ibus-memconf ]; then
+  config=(--config /usr/libexec/ibus-memconf)
+else
+  config=(--config disable)
+fi
+ibus-daemon --daemonize --replace --xim --panel disable --cache none "${config[@]}" >"$work/ibus.log" 2>&1
 sleep 2
 ibus engine likhon
 echo "engine: $(ibus engine)"
