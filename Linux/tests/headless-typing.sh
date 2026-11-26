@@ -3,7 +3,7 @@
 # not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Types into a GTK text box through a real ibus-daemon with the Likhon engine, on a virtual display.
 #   ./tests/headless-typing.sh       (run after ./build.sh)
-#   LIKHON_INSTALLED=1 ./tests/headless-typing.sh      tests the engine installed from the .deb instead
+#   LIKHON_INSTALLED=1 ./tests/headless-typing.sh      tests the engine installed from the .deb or .rpm instead
 # No admin rights and nothing in your home folder: the settings and the words database live in a temporary folder.
 set -uo pipefail
 here="$(cd "$(dirname "$0")/.." && pwd)"
