@@ -62,6 +62,8 @@ jobs:
       - name: Install git
         run: dnf -y install git ca-certificates
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Packages
         run: dnf -y install gcc make pkgconf-pkg-config ibus-devel ibus ibus-gtk3 xorg-x11-server-Xvfb xdotool dbus-x11 python3-gobject gtk3 setxkbmap rust cargo rpm-build redhat-rpm-config
       - name: Build the engine
@@ -77,6 +79,14 @@ jobs:
         run: |
           rpm -qlp Product/Linux/*.rpm > /tmp/rpm-files.txt
           ! grep -i unijoy /tmp/rpm-files.txt
+      - name: Install the RPM and run the installed test
+        working-directory: Linux
+        run: |
+          dnf -y install ../Product/Linux/*.rpm
+          LIKHON_INSTALLED=1 bash tests/headless-typing.sh
+          dnf -y remove -y ibus-likhon
+          ! rpm -q ibus-likhon
+          test ! -e /usr/share/ibus/component/likhon.xml
       - uses: actions/upload-artifact@v4
         with:
           name: likhon-linux-rpm
