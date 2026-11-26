@@ -34,5 +34,5 @@ honest. Nothing here is promised for a date.
 
 - A settings window. Settings are a file for now.
 - More testing: Wayland, KDE, Qt apps, Firefox and Chrome, and a real look at the candidate window.
-- A package for ARM64 and a signed apt repository, so `apt install` works.
+- A package for ARM64 and signed apt and dnf (Copr) repositories, so `apt install` and `dnf install` work.
 - Fcitx support, for people who do not use IBus.
