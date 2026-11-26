@@ -1,4 +1,4 @@
-# Builds Likhon for Linux (.deb) and macOS (.dmg, universal, unsigned). Run by hand, or on a v* tag.
+# Builds Likhon for Linux (.deb and .rpm) and macOS (.dmg, universal, unsigned). Run by hand, or on a v* tag.
 # Linux and macOS are independent: one failing does not stop the other. The Mac runner is an Intel one
 # (macos-15-intel): GitHub does not offer this organization the Apple Silicon runner. build-mac.sh still makes the
 # universal app by cross-building the arm64 half with the Rust and Swift targets.
@@ -50,6 +50,36 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: likhon-linux
+          path: Product/Linux/
+
+  linux-rpm:
+    needs: test-linux
+    runs-on: ubuntu-24.04
+    container: fedora:44
+    permissions:
+      contents: read
+    steps:
+      - name: Install git
+        run: dnf -y install git ca-certificates
+      - uses: actions/checkout@v4
+      - name: Packages
+        run: dnf -y install gcc make pkgconf-pkg-config ibus-devel ibus ibus-gtk3 xorg-x11-server-Xvfb xdotool dbus-x11 python3-gobject gtk3 setxkbmap rust cargo rpm-build redhat-rpm-config
+      - name: Build the engine
+        run: bash ./build.sh
+        working-directory: Linux
+      - name: Typing test through a real ibus-daemon
+        run: bash ./tests/headless-typing.sh
+        working-directory: Linux
+      - name: Build the RPM
+        run: bash ./build-rpm.sh
+        working-directory: Linux
+      - name: UniJoy must not be in the package
+        run: |
+          rpm -qlp Product/Linux/*.rpm > /tmp/rpm-files.txt
+          ! grep -i unijoy /tmp/rpm-files.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: likhon-linux-rpm
           path: Product/Linux/
 
   macos-dmg:
