@@ -1,0 +1,59 @@
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
+# not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+# Fedora RPM package for Likhon. build-rpm.sh replaces @RPM_VERSION@ and stages
+# the payload in the RPM source directory.
+# Binaries are prebuilt outside rpmbuild, so debuginfo is useless.
+%global debug_package %{nil}
+
+Name:           ibus-likhon
+Version:        @RPM_VERSION@
+Release:        1%{?dist}
+Summary:        Likhon, free Bangla phonetic typing for IBus
+License:        MPL-2.0
+URL:            https://likhon.agniflux.com
+Requires:       ibus >= 1.5
+# Any Bangla font; Fedora resolves it to default-fonts-bn.
+Requires:       font(:lang=bn)
+Requires:       zenity
+
+%description
+Likhon, free Bangla phonetic typing for IBus. Type Bangla with English letters
+(ami -> আমি). Shows the word being typed with suggestions from a built-in
+dictionary, and commits it when it ends.
+Nothing you type is stored or sent anywhere.
+
+After installing, add "Likhon (Bangla phonetic)" under Settings > Keyboard >
+Input Sources (GNOME), or run ibus-setup on other desktops. If it does not
+appear, run: ibus restart
+
+%prep
+# Nothing to unpack: build-rpm.sh already placed the payload in the source directory.
+
+%build
+# Nothing to build: the engine is prebuilt by ./build.sh before rpmbuild runs.
+
+%install
+rm -rf %{buildroot}
+cp -a %{_sourcedir}/tree/. %{buildroot}/
+
+%files
+%defattr(-,root,root,-)
+%dir /usr/lib/ibus-likhon
+%dir /usr/share/ibus-likhon
+%dir /usr/share/licenses/ibus-likhon
+/usr/lib/ibus-likhon/ibus-engine-likhon
+/usr/lib/ibus-likhon/likhon-agreement
+/usr/bin/likhon-delete-words
+/usr/share/ibus-likhon/agreement.en.txt
+/usr/share/ibus-likhon/agreement.bn.txt
+/usr/share/ibus-likhon/words.sqlite
+/usr/share/ibus-likhon/SOURCE.md
+%license /usr/share/ibus-likhon/LICENSE
+/usr/share/ibus/component/likhon.xml
+%license /usr/share/licenses/ibus-likhon/NOTICE
+%license /usr/share/licenses/ibus-likhon/NOTICES.md
+%license /usr/share/licenses/ibus-likhon/SOURCE-OFFER.txt
+
+%changelog
+* Thu Nov 26 2026 Agniflux Enterprise <info@agniflux.com> - @RPM_VERSION@-1
+- Fedora RPM package.
