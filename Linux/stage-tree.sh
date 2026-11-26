@@ -10,6 +10,9 @@ here="$(cd "$(dirname "$0")" && pwd)"
 src="$here/../Source"
 out="$here/out"
 version="$(sed -n 's/^version = "\(.*\)"/\1/p' "$src/Cargo.toml" | head -1 | tr -d '\r')"
+case "$version" in
+  ''|*[!0-9A-Za-z.+~-]*) echo "unsupported version: $version" >&2; exit 1 ;;
+esac
 root="${1:?usage: stage-tree.sh ROOT}"
 
 [ -x "$out/ibus-engine-likhon" ] || { echo "run ./build.sh first" >&2; exit 1; }

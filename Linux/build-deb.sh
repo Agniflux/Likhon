@@ -2,7 +2,7 @@
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
 # not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds ibus-likhon_<version>_<arch>.deb from the engine built by ./build.sh.
-#   ./build-deb.sh            output: Desktop/Product/Linux/
+#   ./build-deb.sh            output: Product/Linux/
 # Needs: dpkg-deb (dpkg-dev), strip. Run ./build.sh first. The package installs only system files under /usr
 # (the engine, its IBus component file, the licence notices); it writes nothing to a person's home folder.
 set -euo pipefail
@@ -10,6 +10,9 @@ here="$(cd "$(dirname "$0")" && pwd)"
 src="$here/../Source"
 out="$here/out"
 version="$(sed -n 's/^version = "\(.*\)"/\1/p' "$src/Cargo.toml" | head -1 | tr -d '\r')"
+case "$version" in
+  ''|*[!0-9A-Za-z.+~-]*) echo "unsupported version: $version" >&2; exit 1 ;;
+esac
 arch="$(dpkg --print-architecture)"
 pkg="ibus-likhon"
 root="$(mktemp -d)"
@@ -54,7 +57,7 @@ Homepage: https://likhon.agniflux.com
 Description: Likhon, free Bangla phonetic typing for IBus
  Type Bangla with English letters (ami -> আমি). Shows the word being typed with suggestions from a built-in
  dictionary, and commits it when it ends.
- Nothing you type is stored or sent anywhere.
+ Nothing you type is sent anywhere. Learned words stay on your computer.
  .
  After installing, add "Likhon (Bangla phonetic)" under Settings > Keyboard > Input Sources (GNOME), or run
  ibus-setup on other desktops. If it does not appear, run: ibus restart
@@ -72,5 +75,5 @@ mkdir -p "$here/../Product/Linux"
 deb="$here/../Product/Linux/${pkg}_${version}_${arch}.deb"
 dpkg-deb --build --root-owner-group "$root" "$deb" >/dev/null
 echo "built $deb ($(stat -c %s "$deb") bytes)"
-"$here/write-sums.sh"
+"$here/write-sums.sh" "$version"
 dpkg-deb --info "$deb" | sed -n '1,14p'
