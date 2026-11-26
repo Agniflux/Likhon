@@ -10,7 +10,7 @@ A pre-release version uses a tilde in the RPM file name: `0.2.1-alpha.1` becomes
 | `ibus-engine/likhon-ibus.c` | The engine: keys in, preedit and committed text out, the suggestion list (IBus lookup table) |
 | `ibus-engine/likhon.xml.in` | The IBus component file (the engine's name, language, symbol) |
 | `build.sh` | Builds `out/ibus-engine-likhon` (needs a C compiler, pkg-config, `libibus-1.0-dev` on Debian and Ubuntu or `ibus-devel` on Fedora, Rust) |
-| `stage-tree.sh` | Stages the files both packages install under `/usr` (the engine, its IBus component file, and the dictionary with its licence) |
+| `stage-tree.sh` | Stages the payload both packages install under `/usr`. |
 | `build-deb.sh` | Builds the `.deb` into `Product/Linux/` (needs `dpkg-dev`) |
 | `ibus-likhon.spec.in` | The RPM spec; `build-rpm.sh` fills in the version |
 | `build-rpm.sh` | Builds the `.rpm` into `Product/Linux/` (needs `rpm-build` and `redhat-rpm-config`) |
@@ -19,8 +19,23 @@ A pre-release version uses a tilde in the RPM file name: `0.2.1-alpha.1` becomes
 
 ## Using it
 
-After `sudo dpkg -i ibus-likhon_*.deb` (Debian and Ubuntu) or `sudo dnf install ./ibus-likhon-*.rpm` (Fedora):
-Settings > Keyboard > Input Sources > + > Bangla > Likhon (GNOME), or `ibus-setup` on other desktops. If it does not
+In the folder with the downloaded package:
+
+On Debian and Ubuntu:
+
+```sh
+sha256sum -c SHA256SUMS.txt
+sudo dpkg -i ibus-likhon_<version>_amd64.deb
+```
+
+On Fedora:
+
+```sh
+sha256sum -c SHA256SUMS.txt
+sudo dnf install ./ibus-likhon-<version>-1.fc44.x86_64.rpm
+```
+
+Then Settings > Keyboard > Input Sources > + > Bangla > Likhon (GNOME), or `ibus-setup` on other desktops. If it does not
 show, `ibus restart` or log out and in.
 
 ## Settings
@@ -57,7 +72,7 @@ Ubuntu 24.04 (WSL), IBus 1.5.29, a GTK 3 text box on a virtual X display: the ph
 autocorrect, Down then Space picking another row, learning, the settings file (colon, Bangla digits, Probhat) and
 a password box. The installed `.deb` passes the same run.
 
-Fedora 44, IBus 1.5.34: the source build, the installed `.rpm` and the headless typing test pass.
+In a Fedora 44 container with IBus 1.5.34: the source build, the installed `.rpm` and the headless typing test pass.
 
 ## Not done or not checked
 
