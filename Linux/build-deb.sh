@@ -2,7 +2,7 @@
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was
 # not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 # Builds ibus-likhon_<version>_<arch>.deb from the engine built by ./build.sh.
-#   ./build-deb.sh            output: Desktop/Product/Linux/
+#   ./build-deb.sh            output: Product/Linux/
 # Needs: dpkg-deb (dpkg-dev), strip. Run ./build.sh first. The package installs only system files under /usr
 # (the engine, its IBus component file, the licence notices); it writes nothing to a person's home folder.
 set -euo pipefail
@@ -10,6 +10,9 @@ here="$(cd "$(dirname "$0")" && pwd)"
 src="$here/../Source"
 out="$here/out"
 version="$(sed -n 's/^version = "\(.*\)"/\1/p' "$src/Cargo.toml" | head -1 | tr -d '\r')"
+case "$version" in
+  ''|*[!0-9A-Za-z.+~-]*) echo "unsupported version: $version" >&2; exit 1 ;;
+esac
 arch="$(dpkg --print-architecture)"
 pkg="ibus-likhon"
 root="$(mktemp -d)"
@@ -17,22 +20,10 @@ trap 'rm -rf "$root"' EXIT
 
 [ -x "$out/ibus-engine-likhon" ] || { echo "run ./build.sh first" >&2; exit 1; }
 
-install -d "$root/usr/bin" "$root/usr/lib/ibus-likhon" "$root/usr/share/ibus-likhon" "$root/usr/share/ibus/component" "$root/usr/share/doc/$pkg" "$root/DEBIAN"
-install -m 0755 "$out/ibus-engine-likhon" "$root/usr/lib/ibus-likhon/ibus-engine-likhon"
+"$here/stage-tree.sh" "$root"
 strip --strip-unneeded "$root/usr/lib/ibus-likhon/ibus-engine-likhon"
-# The first-run agreement (shown once, by the engine), its text, and the command that deletes learned words.
-install -m 0755 "$here/ibus-engine/likhon-agreement" "$root/usr/lib/ibus-likhon/likhon-agreement"
-install -m 0755 "$here/ibus-engine/likhon-delete-words" "$root/usr/bin/likhon-delete-words"
-for l in en bn; do sed -e '1s/^\xEF\xBB\xBF//' -e 's/\r$//' "$src/assets/legal/eula.$l.txt" > "$root/usr/share/ibus-likhon/agreement.$l.txt"; chmod 0644 "$root/usr/share/ibus-likhon/agreement.$l.txt"; done
-# The dictionary (read-only SQLite, MPL-2.0, from Avro Keyboard's word list and ours) with its licence and source note.
-dict="$src/assets/dict/mpl"
-# words.full.sqlite (the enlarged list, in git since 2026-11-21) wins over the Avro-only words.sqlite when it exists.
-words="$dict/words.sqlite"; [ -f "$dict/words.full.sqlite" ] && words="$dict/words.full.sqlite"
-install -m 0644 "$words" "$root/usr/share/ibus-likhon/words.sqlite"
-install -m 0644 "$dict/LICENSE" "$root/usr/share/ibus-likhon/LICENSE"
-install -m 0644 "$dict/SOURCE.md" "$root/usr/share/ibus-likhon/SOURCE.md"
-sed -e "s|@LIBEXEC@|/usr/lib/ibus-likhon|" -e "s|@VERSION@|$version|" "$here/ibus-engine/likhon.xml.in" > "$root/usr/share/ibus/component/likhon.xml"
-chmod 0644 "$root/usr/share/ibus/component/likhon.xml"
+# Only the Debian packaging is left to add: the documentation folder and the control area.
+install -d "$root/usr/share/doc/$pkg" "$root/DEBIAN"
 
 cat > "$root/usr/share/doc/$pkg/copyright" <<EOF
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
@@ -66,7 +57,7 @@ Homepage: https://likhon.agniflux.com
 Description: Likhon, free Bangla phonetic typing for IBus
  Type Bangla with English letters (ami -> আমি). Shows the word being typed with suggestions from a built-in
  dictionary, and commits it when it ends.
- Nothing you type is stored or sent anywhere.
+ Nothing you type is sent anywhere. Learned words stay on your computer.
  .
  After installing, add "Likhon (Bangla phonetic)" under Settings > Keyboard > Input Sources (GNOME), or run
  ibus-setup on other desktops. If it does not appear, run: ibus restart
@@ -84,5 +75,5 @@ mkdir -p "$here/../Product/Linux"
 deb="$here/../Product/Linux/${pkg}_${version}_${arch}.deb"
 dpkg-deb --build --root-owner-group "$root" "$deb" >/dev/null
 echo "built $deb ($(stat -c %s "$deb") bytes)"
-sha256sum "$deb" | sed "s|$here/../Product/Linux/||" > "$here/../Product/Linux/SHA256SUMS.txt"
-dpkg-deb --info "$deb" | head -14
+"$here/write-sums.sh" "$version"
+dpkg-deb --info "$deb" | sed -n '1,14p'

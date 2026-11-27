@@ -25,3 +25,4 @@
 *.sqlite binary
 *.dmg binary
 *.deb binary
+*.rpm binary

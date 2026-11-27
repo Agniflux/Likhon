@@ -9,7 +9,7 @@
 - **Windows** 10 and 11 (64-bit)
 - **macOS** 13 (Ventura) or later, on Apple Silicon and Intel
 - **Linux** with IBus 1.5 or later, 64-bit Intel or AMD (the `.deb` needs glibc 2.31 or later: Ubuntu 20.04 or Debian 11
-  and newer; tested on Ubuntu 24.04)
+  and newer, tested on Ubuntu 24.04; the `.rpm` is built and tested in a Fedora 44 container)
 
 Free Bangla typing. You write English letters (`ami`) and Likhon gives you Bangla (আমি), shows spelling suggestions as
 you type, and learns the words you use. There is no account, no tracking and no paid tier, and the same Rust typing
@@ -17,7 +17,7 @@ engine runs on all three systems and in the browser tools on the website.
 
 On Windows you get the full app, with a tray icon, a top bar, a suggestion window and a Settings window, as Portable
 (one file, nothing to install) or an installer. On Mac it is an input method, one download for Apple Silicon and Intel.
-On Linux it is an IBus engine as a `.deb` package.
+On Linux it is an IBus engine as a `.deb` or `.rpm` package.
 
 Everything in Likhon is **alpha**: it works and we use it, and it still has rough edges. What is not done yet is in
 [ENHANCEMENTS.md](ENHANCEMENTS.md). The Mac version has never been run on a real Mac.
@@ -77,17 +77,30 @@ terminals, Google Docs, Electron apps) may need more work.
 
 ### Linux
 
+In the folder with the downloaded package:
+
+On Debian and Ubuntu:
+
 ```sh
-sudo dpkg -i ibus-likhon_*.deb
+sha256sum -c SHA256SUMS.txt
+sudo dpkg -i ibus-likhon_<version>_amd64.deb
+```
+
+On Fedora:
+
+```sh
+sha256sum -c SHA256SUMS.txt
+sudo dnf install ./ibus-likhon-<version>-1.fc44.x86_64.rpm
 ```
 
 Then log out and back in, or run `ibus restart`. Add **Likhon** under Settings → Keyboard → Input Sources → **+** →
 Bangla (GNOME), or run `ibus-setup` on other desktops. It needs IBus; on Debian and Ubuntu, `im-config -n ibus` makes
-IBus your input method. Switch with `Super` + `Space`.
+IBus your input method. Fedora Workstation uses IBus by default. Switch with `Super` + `Space`.
 
 The word you are typing is underlined. `Up` and `Down` move in the suggestion list, `Space` types the selected word,
 `Enter` types it without a space, `Esc` drops the word and `Backspace` takes one letter off it. We have tested it on
-Ubuntu 24.04 with IBus 1.5; Wayland, KDE, Qt apps, Firefox and Chrome are still to be checked.
+Ubuntu 24.04 and in a Fedora 44 container with IBus 1.5; Wayland, KDE, Qt apps, Firefox and Chrome
+are still to be checked.
 
 ## Settings
 
@@ -118,12 +131,17 @@ in `~/.local/share/likhon/user.sqlite`; delete the file to forget them.
 
 - **Windows**: `likhon.exe` (Portable) and `Likhon-Setup-<version>.exe` (the installer) from likhon.agniflux.com. Both carry a
   Likhon signature. A newer file replaces the old one and keeps your words.
-- **Linux**: `ibus-likhon_<version>_amd64.deb`.
+- **Linux**: `ibus-likhon_<version>_amd64.deb` (Debian and Ubuntu) and `ibus-likhon-<version>-1.fc44.x86_64.rpm`
+  (Fedora 44). Each Linux build includes `SHA256SUMS.txt`.
 - **Mac**: `Likhon-<version>-macOS.dmg`, one file for Apple Silicon and Intel.
+
+A pre-release version uses a tilde in the RPM name: `0.2.1-alpha.1` becomes
+`ibus-likhon-0.2.1~alpha.1-1.fc44.x86_64.rpm`.
 
 The Linux and Mac files are built by the **Build Linux and macOS** workflow (`.github/workflows/build-unix.yml`) when you
 push a tag that starts with `v` (for example `git tag v0.2.1-alpha.1 && git push origin v0.2.1-alpha.1`). Open the run on
-the Actions tab and download `likhon-linux` or `likhon-macos` from its Artifacts.
+the Actions tab and download `likhon-linux` (the `.deb`), `likhon-linux-rpm` (the `.rpm`) or `likhon-macos` from its
+Artifacts.
 
 ## Building from source
 
@@ -152,13 +170,18 @@ The app talks to `https://likhon.agniflux.com` (updates, library, dictionary), a
 that talks to another site, for example a local one, set `LIKHON_SITE` first (`$env:LIKHON_SITE = "https://example.org"`)
 or run `scripts\make-portable.ps1 -Site https://example.org -Sub other`.
 
-**Linux** (`build-essential`, `pkg-config`, `libibus-1.0-dev`, `dpkg-dev`):
+**Linux** (Debian and Ubuntu: `build-essential`, `pkg-config`, `libibus-1.0-dev`, `dpkg-dev`; Fedora: `gcc`, `make`,
+`pkgconf-pkg-config`, `ibus-devel`, `rpm-build`, `redhat-rpm-config`, `rust`, `cargo`):
 
 ```sh
 cd Linux
 ./build.sh                        # out/ibus-engine-likhon
 ./tests/headless-typing.sh        # types through a real ibus-daemon on a virtual display
 ./build-deb.sh                    # Product/Linux/ibus-likhon_<version>_amd64.deb
+./build-rpm.sh                    # Product/Linux/ibus-likhon-<version>-1.fc44.x86_64.rpm
+
+The headless test also needs `ibus`, `ibus-gtk3`, `xorg-x11-server-Xvfb`, `xdotool`, `dbus-x11`,
+`python3-gobject`, `gtk3` and `setxkbmap`.
 ```
 
 **Mac** (Xcode command line tools):
@@ -207,7 +230,7 @@ Source/
   assets/                    fonts, icons, layouts, themes, the dictionary and licence texts
   shared/                    the text library (English source, Bangla marked for review), schemas, icon export
   scripts/                   build, conversion and measuring scripts
-Linux/                       the IBus engine in C and the .deb
+Linux/                       the IBus engine in C, and the .deb and .rpm packages
 Mac/                         the InputMethodKit app in Swift and the .dmg
 Installer/                   the Windows installer (Inno Setup) and its licence text
 Reference/                   the design snapshot (see Design)
